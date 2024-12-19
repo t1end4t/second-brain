@@ -4,28 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "89ce12d529b0a9c1",
+        "id": "23ced47ff15a4c72",
         "type": "tabs",
         "children": [
           {
-            "id": "82864de52bb094da",
+            "id": "bf8c9b467932ad83",
             "type": "leaf",
             "state": {
-              "type": "kanban",
-              "state": {
-                "file": "1-PROJECT/LLM thesis.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false
-                  ]
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "LLM thesis"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -158,8 +147,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -193,10 +182,10 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "82864de52bb094da",
+  "active": "bf8c9b467932ad83",
   "lastOpenFiles": [
-    "Instructing tuning with alpaca method.md",
     "1-PROJECT/LLM thesis.md",
+    "Instructing tuning with alpaca method.md",
     "1-PROJECT/Instructing tuning with alpaca method.md",
     "4-ARCHIVE/4-ARCHIVE.md",
     "1-PROJECT/1-PROJECT.md",
