@@ -4,21 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "17591ef5b69f5e14",
+        "id": "89ce12d529b0a9c1",
         "type": "tabs",
         "children": [
           {
-            "id": "df61cdcf0310e29b",
+            "id": "82864de52bb094da",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "Readme.md",
-                "mode": "source",
-                "source": false
+                "file": "1-PROJECT/LLM thesis.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false,
+                    false
+                  ]
+                }
               },
-              "icon": "lucide-file",
-              "title": "Readme"
+              "icon": "lucide-trello",
+              "title": "LLM thesis"
             }
           }
         ]
@@ -144,13 +151,33 @@
               "icon": "lucide-list",
               "title": "Outline of Readme"
             }
+          },
+          {
+            "id": "025093fd784aa8b1",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "79ee1735db3f4c42",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,11 +186,48 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-kanban:Create new board": false
     }
   },
-  "active": "6791218a1cb17d98",
+  "active": "82864de52bb094da",
   "lastOpenFiles": [
-    "Readme.md"
+    "Instructing tuning with alpaca method.md",
+    "1-PROJECT/LLM thesis.md",
+    "1-PROJECT/Instructing tuning with alpaca method.md",
+    "4-ARCHIVE/4-ARCHIVE.md",
+    "1-PROJECT/1-PROJECT.md",
+    "2-AREA/2-AREA.md",
+    "2-AREA/RL in Haskell.md",
+    "2-AREA/LLM things in Rust.md",
+    "2-AREA/Lil’Log in C++.md",
+    "3-RESOURCE/3-RESOURCE.md",
+    "4-ARCHIVE/NLP",
+    "3-RESOURCE/Things I want to do.md",
+    "4-ARCHIVE/MLOps",
+    "3-RESOURCE/Research/Research.md",
+    "3-RESOURCE/Research/Typst for research paper.md",
+    "3-RESOURCE/Foreign languages",
+    "3-RESOURCE/Personal skills/Focus.md",
+    "3-RESOURCE/Personal skills/Personal skills.md",
+    "3-RESOURCE/Personal skills/Learning how to learn.md",
+    "3-RESOURCE/Personal skills/E-mailing for busy people.md",
+    "3-RESOURCE/Research",
+    "3-RESOURCE/Personal skills",
+    "2-AREA/Drawing 2024-12-19 11.47.46.excalidraw.md",
+    "3-RESOURCE/Things I want to do.canvas",
+    "3-RESOURCE/test.md",
+    "3-RESOURCE/Things I want to do in my life.md",
+    "README.md",
+    "4-ARCHIVE",
+    "3-RESOURCE",
+    "2-AREA",
+    "1-PROJECT",
+    "LLM thesis.md",
+    "2024-12-19.md",
+    "test.md"
   ]
 }

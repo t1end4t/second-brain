@@ -1,3 +1,7 @@
 {
-  "vimMode": true
+  "vimMode": true,
+  "defaultViewMode": "source",
+  "livePreview": true,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true
 }
