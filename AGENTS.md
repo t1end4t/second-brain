@@ -35,12 +35,17 @@ Each project lives in `1-Projects/{project-name}/` and uses templates from `_tem
 - `Project.md` — raw user thinking: motivation, constraints, open questions. Preserve the user's voice; messy is fine.
 - `Brief.md` — LLM-synthesized summary built from `Project.md` + linked resources. Clean, readable cold. Regenerate when direction changes.
 - `TODO.md` — phased action plan: Now / Next / Later / Done.
+- `SYNC_STATUS.md` — target path, sync direction, and synced/not-synced state.
+- `AGENTS.md` — project-local instructions for Codex/Claude Code.
+- `scripts/sync-project-context.sh` — push/pull/status helper for target `docs/` sync.
 
 **Target sync:**
 
 - If a project has an execution repo or target folder, sync project context into that target's `docs/` folder.
 - The vault remains the source of truth for thinking; the target `docs/` folder receives execution-ready context.
 - Ask for the target folder before syncing if it is not already known.
+- Track sync state in `SYNC_STATUS.md`: `not-configured`, `synced`, `vault-ahead`, `target-ahead`, or `conflict`.
+- When synced docs change on either side, update status and remind the user to run the sync script.
 - Do not create `_bridge.md`; track the target path in project metadata or `Project.md` only when needed.
 - Sync only useful project context, usually `Brief.md`, `TODO.md`, and any relevant decisions/results. Do not copy raw resources wholesale.
 
