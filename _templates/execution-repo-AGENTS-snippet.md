@@ -1,26 +1,25 @@
-# Second Brain Bridge
+# Second Brain Sync
 
-<!-- Copy the relevant sections below into the AGENTS.md (or CLAUDE.md) of your execution repo. -->
-<!-- Adjust the relative path to match your repo's location under codebases/. -->
+<!-- This file lives in the execution repo to bridge from the vault. -->
+<!-- Project context is synced from second-brain/1-Projects/{name}/ to docs/ -->
 
-## Project context
+## Project Context
 
-This project has a thinking space in the second-brain vault.
+- **Vault**: `../../second-brain/1-Projects/{project-name}/`
+- **Synced docs**: `./docs/` (Brief.md, TODO.md, Decisions.md, Results.md)
 
-- **Thinking space**: `../../second-brain/1-Projects/{project-name}/`
-- Before starting work, read `Brief.md` and `TODO.md` from there for project context, goals, and current status.
-- You may also check `Experiments.md`, `Decisions.md`, and `Dead-ends.md` if they exist, to avoid repeating past work.
-- **Do NOT edit any files outside this repository.** The second-brain is read-only from here.
+Before starting work, read the synced docs in `./docs/` for project context, goals, and current status.
 
-## After completing work
+**Do NOT edit files in the vault.** The vault is read-only from here unless explicitly asked.
 
-When finishing a task or session, remind the user:
+## After Completing Work
 
-> Remember to update your second-brain project notes:
-> - Update `TODO.md` to check off completed items
-> - Log any experiments in `Experiments.md`
+When finishing a task or session, remind the user to update the vault:
+
+> Update your second-brain project notes:
+> - Check off completed items in `TODO.md`
+> - Log experiments in `Experiments.md`
 > - Record key decisions in `Decisions.md`
-> - Note any dead ends in `Dead-ends.md`
-> - Add meaningful results to `Results.md`
-> - Update `Brief.md` if the project direction changed
-
+> - Note dead ends in `Dead-ends.md`
+> - Add results to `Results.md`
+> - Update `Brief.md` if direction changed

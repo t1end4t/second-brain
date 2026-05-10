@@ -35,7 +35,14 @@ Each project lives in `1-Projects/{project-name}/` and uses templates from `_tem
 - `Project.md` — raw user thinking: motivation, constraints, open questions. Preserve the user's voice; messy is fine.
 - `Brief.md` — LLM-synthesized summary built from `Project.md` + linked resources. Clean, readable cold. Regenerate when direction changes.
 - `TODO.md` — phased action plan: Now / Next / Later / Done.
-- `_bridge.md` — links this thinking space to its execution repo (path, type, sync checklist).
+
+**Target sync:**
+
+- If a project has an execution repo or target folder, sync project context into that target's `docs/` folder.
+- The vault remains the source of truth for thinking; the target `docs/` folder receives execution-ready context.
+- Ask for the target folder before syncing if it is not already known.
+- Do not create `_bridge.md`; track the target path in project metadata or `Project.md` only when needed.
+- Sync only useful project context, usually `Brief.md`, `TODO.md`, and any relevant decisions/results. Do not copy raw resources wholesale.
 
 **Extended files (add when the project warrants):**
 
@@ -53,15 +60,23 @@ Each project lives in `1-Projects/{project-name}/` and uses templates from `_tem
 
 ---
 
-## Execution Repo Bridge
+## Execution Target Sync
 
-Each execution repo under `codebases/` should have an `AGENTS.md` or `CLAUDE.md` that:
-- Points to `second-brain/1-Projects/{name}/`
-- Instructs the agent to read `Brief.md` and `TODO.md` before starting
-- Forbids editing files outside the execution repo
+Each execution repo or target folder should receive synced project context under `docs/`, for example:
 
-See `_templates/execution-repo-AGENTS-snippet.md` for the standard snippet.
-From the vault side: read `_bridge.md` to find the linked repo and check what needs syncing.
+- `docs/Brief.md` — current project summary and direction
+- `docs/TODO.md` — current Now / Next / Later / Done plan
+- `docs/Decisions.md` — synced only when decisions matter for execution
+- `docs/Results.md` — synced only when results matter for execution
+
+Target-side agent behavior:
+
+- Read `docs/Brief.md` and `docs/TODO.md` before starting execution work.
+- Treat the target folder as the execution workspace.
+- Do not edit the vault unless explicitly asked.
+- After execution work, report what changed so the vault project files can be updated.
+
+From the vault side: update `Project.md`, regenerate `Brief.md` when direction changes, update `TODO.md` as work progresses, then re-sync the target `docs/` folder.
 
 ---
 
