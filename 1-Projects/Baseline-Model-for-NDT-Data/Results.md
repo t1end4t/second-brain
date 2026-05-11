@@ -48,3 +48,24 @@ Skipped missing paths:
 
 Key finding: direct `reshape(300, 301, 500)` gives the expected cube but still needs serpentine raster correction; otherwise plots show diagonal fold artifacts.
 
+## User-Preferred Orientation Export — 2026-05-11
+
+Updated the preferred-orientation workflow to use `external/CorrosionFlip.xlsx` and added TDMS export support for user-approved transforms.
+
+Execution repo changes:
+- `scripts/export_user_preferred_tdms.py` — exports preferred-orientation TDMS-derived arrays.
+- `run_export_preferred_tdms.sh` — convenience wrapper for the export script.
+- `scripts/plot_user_preferred_orientation.py` — reads inline-string XLSX cells, handles `xl/` relationship targets, and supports flip statuses with rotation offsets.
+- `run_preferred_orientation.sh` — uses `external/CorrosionFlip.xlsx` as the preferences file.
+
+Key implication: downstream modeling can use user-preferred TDMS orientation artifacts instead of relying only on visual preview outputs.
+
+## Training Dataset and Lift-Off CSVs — 2026-05-11
+
+User-provided processed data is available under `~/Documents` and should be treated as read-only.
+
+Available inputs:
+- `~/Documents/user_preferred_tdms` — preferred processed dataset for training; contains `HallAirCore/`, `HallPotCore/`, `TMR/`, and `user_preferred_tdms.csv`.
+- `~/Documents/Lift-off` — lift-off CSV files for LOI plotting; 46 CSV files found.
+
+Key implication: baseline training should start from `~/Documents/user_preferred_tdms`; LOI plotting can use the separate lift-off CSV folder.

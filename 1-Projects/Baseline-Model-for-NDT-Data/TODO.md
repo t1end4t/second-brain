@@ -9,12 +9,15 @@
 - [x] Build safe TDMS loader for all files, including short files
 - [x] Generate quick heatmaps to verify raster orientation
 - [x] Generate Slice / LOI / Peak feature-map previews for available TDMS files
+- [x] Register preferred training dataset at `~/Documents/user_preferred_tdms`
+- [x] Register lift-off CSV folder for LOI plotting at `~/Documents/Lift-off`
 
 ### Next
 - [ ] Define label schema for rivet/corrosion classification
 - [ ] Define regression targets for depth/diameter/volume
 - [ ] Design leakage-safe train/validation/test split
-- [ ] Save Slice / LOI / Peak feature maps as arrays for modeling
+- [ ] Inspect `~/Documents/user_preferred_tdms` schema for training inputs
+- [ ] Inspect `~/Documents/Lift-off` CSV schema for LOI plotting
 - [ ] Extract simple baseline features from transient signals
 - [ ] Train first classical ML baseline
 
@@ -29,6 +32,10 @@
 - [x] Noted loader risk: 20 files have short waveform arrays
 - [x] Created single-TDMS heatmap preview script and output PNG in execution repo
 - [x] Created batch TDMS feature-map previews: 113 PNGs generated, 2 missing raw files skipped
+- [x] Switched preferred-orientation workflow to `external/CorrosionFlip.xlsx`
+- [x] Added export script for user-preferred TDMS orientation artifacts
+- [x] User provided processed preferred dataset for training: `~/Documents/user_preferred_tdms`
+- [x] User provided lift-off CSVs for LOI plotting: `~/Documents/Lift-off`
 
 ## 2026-05-08 — Orientation/crop calibration
 

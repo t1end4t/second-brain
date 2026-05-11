@@ -39,3 +39,9 @@
 - Target: a local `scripts/autoresearch_ndt/` harness where the agent edits `train_ndt.py`.
 - Metric will be task-specific (e.g. AUROC for corrosion detection, MSE for depth regression).
 - Time budget will be task-sized (e.g. 2–5 min per experiment).
+
+## 2026-05-11 — Use preferred processed dataset for training
+
+- Training baseline should use `~/Documents/user_preferred_tdms` as the preferred processed dataset.
+- Treat `~/Documents/user_preferred_tdms` as read-only input; write derived artifacts inside this repo.
+- Use `~/Documents/Lift-off` as the source for lift-off CSVs when plotting LOI.
