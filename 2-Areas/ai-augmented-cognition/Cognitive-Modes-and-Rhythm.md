@@ -96,6 +96,6 @@ Major ideas arrive sideways. Not during "maximum productivity mode."
 
 ## See Also
 
-- [[AI-Augmented-Cognition]]
+- [[Socratic-AI-Learning]]
 - [[AI-Usage-Archetypes]]
 - [[Fundamentals-in-the-AI-Era]]
