@@ -1,0 +1,9 @@
+# Workbase git repos managed by scripts/sync-workbase.sh.
+# One path per line. ~ and $HOME are supported. Blank lines/comments ignored.
+~/nix-dev/nixos-conf
+~/nix-dev/nix-templates
+~/second-brain
+~/codebases/research-lab
+~/codebases/dev-sandbox
+~/codebases/company-stack
+~/codebases/side-projects
