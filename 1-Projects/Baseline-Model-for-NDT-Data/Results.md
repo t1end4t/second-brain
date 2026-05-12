@@ -1,8 +1,21 @@
 # Baseline Model for NDT Data — Results
 
+## Processing Verification Status — 2026-05-12
+
+Preprocessing/model artifacts exist but are provisional until verified under `verification/`. Inventory verification on 2026-05-12 found `inventories/tdms_inventory.csv` stale for current full `~/Documents` scope: saved rows 115, rerun rows 167. Trusted scope is split into raw audit and preferred training inventories.
+
+## Trusted TDMS Inventories — 2026-05-12
+
+Trusted inventories are separated by source scope so raw files and processed preferred files are not mixed.
+
+- Raw audit inventory: `inventories/raw_tdms_inventory.csv`, source `~/Documents/NDT-data`, 113 rows
+- Raw counts: HallAirCore 36, HallPotCore 36, TMR 41; ok 93, short 20; deltas 0 x 93, -500 x 18, -1500 x 2
+- Preferred training inventory: `inventories/preferred_tdms_inventory.csv`, source `~/Documents/user_preferred_tdms`, 54 rows
+- Preferred counts: HallAirCore 18, HallPotCore 18, TMR 18; ok 54; delta 0 x 54
+
 ## TDMS Inventory — 2026-05-07
 
-Only TDMS files were inspected. Raw data was not modified.
+Original saved inventory; verification later found it stale for current full `~/Documents` scope. Raw data was not modified.
 
 - Total TDMS files under `~/Documents`: 115
 - HallAirCore: 38 files
@@ -15,7 +28,6 @@ Only TDMS files were inspected. Raw data was not modified.
 - Short by 3 scan points: 2
 
 Execution repo outputs:
-- `docs/tdms_context.md`
 - `inventories/tdms_inventory.csv`
 
 Key implication: fix TDMS loading before modeling. Loader must handle short files explicitly.
