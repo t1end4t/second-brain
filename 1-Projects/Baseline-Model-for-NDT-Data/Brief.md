@@ -2,7 +2,7 @@
 
 ## Summary
 
-Build a simple, reproducible baseline ML pipeline for a pulsed eddy current testing (PECT) TDMS dataset of aircraft aluminum corrosion/rivet specimens. Current priority is safe TDMS loading and preview generation from files in `~/Documents`; metadata lookup is deferred until labels are needed.
+Build a simple, reproducible baseline ML pipeline for a pulsed eddy current testing (PECT) TDMS dataset of aircraft aluminum corrosion/rivet specimens. Current priority is reviewing raw TDMS rotate/crop choices in the local app before continuing LOI or model work; metadata lookup is deferred until labels are needed.
 
 ## Objective
 
@@ -19,7 +19,7 @@ Build a simple, reproducible baseline ML pipeline for a pulsed eddy current test
 
 ## Current Status
 
-Paper context is read. The old TDMS inventory `inventories/tdms_inventory.csv` is stale for current full `~/Documents` scope. Trusted inventory scope is now split: raw audit uses `inventories/raw_tdms_inventory.csv` from `~/Documents/NDT-data` with 113 rows, and baseline training uses `inventories/preferred_tdms_inventory.csv` from `~/Documents/user_preferred_tdms` with 54 rows. Expected complete TDMS waveform length is 45,150,000 values = 300 x 301 scan points x 500 samples. Lift-off CSVs for LOI plotting are available at `~/Documents/Lift-off`. Preprocessing/model artifacts are provisional until verified under `verification/`.
+Paper context is read. The old TDMS inventory `inventories/tdms_inventory.csv` is stale for current full `~/Documents` scope. Trusted raw audit inventory is `inventories/raw_tdms_inventory.csv` from `~/Documents/NDT-data` with 113 rows. Expected complete TDMS waveform length is 45,150,000 values = 300 x 301 scan points x 500 samples. A local Streamlit app is the active preprocessing step for raw TDMS rotate/crop review; downstream LOI/model work proceeds after reviewed transforms are saved as metadata.
 
 ## Label Context
 
@@ -31,5 +31,4 @@ Paper context is read. The old TDMS inventory `inventories/tdms_inventory.csv` i
 
 - `3-Resources/raw/Development-of-an-Experimental-Pulsed-Eddy-Current-Testing-Dataset-for-Defect-Detectionin-Aircraft-Aluminum-Structures.docx`
 - Execution repo: `~/codebases/research-lab/paper-lab/ndt-pect-baseline`
-- Preferred training dataset: `~/Documents/user_preferred_tdms`
-- Lift-off LOI plotting CSVs: `~/Documents/Lift-off`
+- Raw TDMS dataset: `~/Documents/NDT-data`

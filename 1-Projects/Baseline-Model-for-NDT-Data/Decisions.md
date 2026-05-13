@@ -2,6 +2,12 @@
 
 ## Template
 
+## 2026-05-13 — Raw TDMS rotate/crop app is active preprocessing path
+
+- The local Streamlit rotate/crop app is the active tool for raw TDMS preprocessing review.
+- Reviewed rotations, flips, and crops are saved per file as JSON metadata before downstream LOI/model work.
+- Serpentine raster correction and backside 180° rotation remain part of the standard pipeline; the app only handles the final transform/crop selection.
+- Do not revert to the older "skip orientation" bypass once reviewed metadata exists for a file.
 
 ## 2026-05-07 — TDMS-first workflow
 
@@ -73,3 +79,6 @@
 - Save human-approved LOI windows under `configs/`, starting with `configs/loi_windows.csv`.
 - Train the first baseline with `[slice, peak]` until LOI windows are approved.
 - After approval, rebuild features with `[slice, peak, loi]` and compare against the `[slice, peak]` baseline.
+- LOI selection must allow manual center edits because some automatic LOI lines are poor.
+- The LOI selection app should load existing PNG previews from `outputs/preferred_tdms_loi_method`; plotting/regeneration stays in `ndt-plot-preferred-tdms-loi-method`.
+- Manual correction of poor automatic LOI points is done in a separate editor app that writes back to `inventories/lift_off_loi_inventory.csv`.

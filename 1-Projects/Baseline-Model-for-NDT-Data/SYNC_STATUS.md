@@ -4,7 +4,7 @@
 - **Vault project**: `1-Projects/Baseline-Model-for-NDT-Data/`
 - **Target folder**: `/home/tiendat/codebases/research-lab/paper-lab/ndt-pect-baseline`
 - **Target docs**: `docs/`
-- **Last sync**: 2026-05-12 18:15:14 +0700
+- **Last sync**: 2026-05-13 17:14:17 +0700
 - **Last direction**: target-to-vault
 
 ## Status Values
