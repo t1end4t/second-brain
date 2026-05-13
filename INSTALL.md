@@ -2,37 +2,8 @@
 
 ## 1. Set up workbase repos
 
-Use `--recurse-submodules` because several repos contain submodules.
-
-```bash
-mkdir -p ~/nix-dev ~/codebases
-
-ensure_repo() {
-  local url="$1" dir="$2"
-  if [ ! -d "$dir/.git" ]; then
-    git clone --recurse-submodules "$url" "$dir"
-  else
-    echo "Repo exists: $dir. Pulling latest..."
-    git -C "$dir" pull --recurse-submodules
-  fi
-}
-
-# nix-dev
-ensure_repo git@github.com:t1end4t/nixos-conf.git      ~/nix-dev/nixos-conf
-ensure_repo git@github.com:t1end4t/nix-templates.git   ~/nix-dev/nix-templates
-
-# home
-ensure_repo git@github.com:t1end4t/second-brain.git    ~/second-brain
-
-# codebases
-ensure_repo git@github.com:t1end4t/research-lab.git    ~/codebases/research-lab
-ensure_repo git@github.com:t1end4t/dev-sandbox.git     ~/codebases/dev-sandbox
-ensure_repo git@github.com:t1end4t/company-stack.git   ~/codebases/company-stack
-ensure_repo git@github.com:t1end4t/side-projects.git   ~/codebases/side-projects
-```
-
-For ongoing workbase sync and submodule refreshes, use the repo list in
-`sync-repos.txt` instead of editing this install snippet:
+Repos are listed in `sync-repos.txt`. Use the workbase sync script to clone,
+update, and refresh submodules:
 
 ```bash
 scripts/sync-workbase.sh status
@@ -160,10 +131,32 @@ command -v pi
 pi --help
 ```
 
-## 4. Smoke test
+## 4. Install coding-agent configs
+
+`dev-sandbox` contains the `dotcode` submodule for shared coding-agent configs.
+After syncing the workbase, install core configs from that submodule:
 
 ```bash
-for cmd in node npm bun uv python claude codex gemini opencode 9router; do
+cd ~/codebases/dev-sandbox
+git submodule update --init --recursive dotcode
+cd dotcode
+./install.sh --all-agents --core
+```
+
+This installs core config for Codex CLI, Claude Code, and Pi Coding Agent.
+
+Smoke check:
+
+```bash
+ls ~/.codex/AGENTS.md ~/.codex/skills/
+ls ~/.claude/CLAUDE.md ~/.claude/skills/
+ls ~/.pi/agent/AGENTS.md ~/.pi/agent/skills/
+```
+
+## 5. Smoke test
+
+```bash
+for cmd in node npm bun uv python claude codex gemini opencode 9router pi; do
   if command -v "$cmd" >/dev/null 2>&1; then
     echo "OK: $cmd"
   else
