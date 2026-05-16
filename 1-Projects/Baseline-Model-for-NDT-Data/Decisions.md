@@ -81,4 +81,4 @@
 - After approval, rebuild features with `[slice, peak, loi]` and compare against the `[slice, peak]` baseline.
 - LOI selection must allow manual center edits because some automatic LOI lines are poor.
 - The LOI selection app should load existing PNG previews from `outputs/preferred_tdms_loi_method`; plotting/regeneration stays in `ndt-plot-preferred-tdms-loi-method`.
-- Manual correction of poor automatic LOI points is done in a separate editor app that writes back to `inventories/lift_off_loi_inventory.csv`.
+- Manual correction of poor automatic LOI points is done in a separate editor app that writes back to `configs/lift_off_loi_inventory.csv`.

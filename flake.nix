@@ -102,6 +102,8 @@
                 packages = with pkgs; [
                   pyright
                   ruff
+                  pandoc
+                  poppler-utils
                 ];
 
                 languages.python = {

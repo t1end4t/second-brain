@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SYNC_FILES=(Brief.md TODO.md Decisions.md Results.md)
+SYNC_FILES=(Project.md Brief.md TODO.md Decisions.md Experiments.md Dead-ends.md Results.md)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 if [[ -f "$SCRIPT_DIR/../SYNC_STATUS.md" ]]; then
   VAULT_PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
