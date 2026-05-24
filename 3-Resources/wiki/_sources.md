@@ -71,5 +71,12 @@
 
 ### PPTX
 
+### unreasonable-effectiveness-of-html.md
+- **Type:** article
+- **Date added:** 2026-05-23
+- **Summary:** Anthropic blog post arguing that HTML can be a richer, more readable, more shareable output format than Markdown for Claude Code planning, review, prototyping, reporting, and custom editing interfaces.
+- **Key topics:** [Claude Code, HTML artifacts, agent workflows, technical communication]
+- **Wiki articles:** [[concepts/html-artifacts]], [[concepts/agent-communication-formats]], [[articles/html-vs-markdown-for-ai-agents]]
+
 ---
-_Last indexed: 2026-05-12_
+_Last indexed: 2026-05-23_
