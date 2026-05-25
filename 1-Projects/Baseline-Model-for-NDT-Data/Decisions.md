@@ -21,6 +21,7 @@
 - Apply serpentine raster correction before feature extraction/plotting.
 - Apply backside 180° rotation after serpentine correction.
 - Use Slice / LOI / Peak as simple preview features that collapse `300 x 301 x 500` to `300 x 301`.
+- NOTE: as of 2026-05-22, primary model input is raw waveform per scan point (1D), not 2D feature maps.
 
 
 ## 2026-05-08 — Detection baseline requires orientation and crop calibration
@@ -66,9 +67,9 @@
 - Start with binary corrosion detection before rivet classification or geometry regression.
 - Use exported preferred TDMS files as training inputs; do not re-apply serpentine correction, rotation, or flip at training load time.
 - Load preferred TDMS waveform arrays using stored preferred properties so `90°/270°` files are interpreted as `301 x 300 x 500`.
-- Use Slice / LOI / Peak maps as the initial feature channels for each scan pixel.
-- Use generated corrosion specimen masks as labels after transforming/cropping masks into the same preferred coordinate frame as each feature map.
-- Use a simple classical baseline first, such as logistic regression or random forest, before image/CNN models.
+- Primary input: raw waveform per scan point (500 samples, 1D signal). Slice / LOI / Peak maps are optional secondary views, not required inputs.
+- Use generated corrosion specimen masks as labels after transforming/cropping masks into the same preferred coordinate frame.
+- Use a simple classical baseline first, such as logistic regression or random forest, before MLP/token models.
 - Report AUROC, AUPRC, F1, confusion matrix, and visual prediction overlays; write all derived artifacts inside this repo.
 
 ## 2026-05-12 — Review LOI windows before using LOI features
