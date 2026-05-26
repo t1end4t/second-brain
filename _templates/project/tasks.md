@@ -1,9 +1,12 @@
-# {Area Name} — Tasks
+# {Project Name} — Tasks
 
 ## Now
 - [ ] 
 
 ## Next
+- [ ] 
+
+## Later
 - [ ] 
 
 ## Waiting

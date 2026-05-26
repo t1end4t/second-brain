@@ -14,6 +14,9 @@ Treat everything here as knowledge organization, not engineering scaffolding.
 | `3-Resources/` | Processed knowledge: papers, blogs, wiki, raw sources |
 | `4-Archive/` | Completed or inactive items — mostly read-only |
 | `_templates/` | Structural templates only — not PARA content |
+| `daily/` | Daily planning files (one per day) |
+| `weekly/` | Weekly review files (one per week) |
+| `inbox.md` | Quick capture for ideas, tasks, thoughts |
 
 ---
 
@@ -26,120 +29,164 @@ Treat everything here as knowledge organization, not engineering scaffolding.
 
 ---
 
-## Daily / Weekly Operating Workflow
+## File Conventions
 
-Use this workflow when the user asks to plan the day, review progress, decide priorities, or manage productivity.
+### Project files (`1-Projects/{name}/`)
+- `project.md` — raw user thinking: motivation, constraints, open questions. Preserve the user's voice; messy is fine.
+- `tasks.md` — phased action plan: Now / Next / Later / Waiting / Done.
+- `decisions.md` — (optional) key choices and rationale.
+- `results.md` — (optional) meaningful findings and conclusions.
 
-**Daily startup:**
+### Area files (`2-Areas/{name}/`)
+- `Overview.md` — what this area is, why it matters, current direction.
+- `TODO.md` — ongoing tasks: Now / Next / Waiting / Done.
 
-1. Capture loose thoughts first, without organizing too early.
-2. Review yesterday's completed work, blockers, and unfinished commitments.
-3. Check active project `TODO.md` files under `1-Projects/`.
-4. Check relevant area `TODO.md` or `Review.md` files under `2-Areas/`.
-5. Pick one main outcome for today and two or three secondary actions.
-6. Update the relevant project or area task files.
+### Daily files (`daily/{YYYY-MM-DD}.md`)
+- Time blocks, priorities, capture, reflection.
 
-**Monday / weekly review:**
+### Weekly files (`weekly/{YYYY-Www}.md`)
+- Weekly review: what happened, what's next, outcomes.
 
-1. Review last week's completed work and missed commitments.
-2. Review every active project for stale `Now` items, blockers, and next actions.
-3. Review ongoing areas for maintenance tasks, learning questions, and recurring responsibilities.
-4. Decide this week's outcomes.
-5. Move stale items to `Later`, `Waiting`, or archive notes when appropriate.
+---
 
-**End-of-day closeout:**
+## Daily Planning
 
-1. Move completed items to `Done` with the date.
+When the user says "plan my day", "what should I work on", or similar:
+
+1. Read `inbox.md` for uncaptured items.
+2. Read all `1-Projects/*/tasks.md` for active project tasks.
+3. Read relevant `2-Areas/*/TODO.md` for area tasks.
+4. Check yesterday's `daily/` file for unfinished items.
+5. Create today's `daily/{YYYY-MM-DD}.md` with:
+   - Main outcome (1 thing)
+   - Secondary actions (2-3 things)
+   - Time blocks (morning = deep work, afternoon = shallow/admin)
+   - Capture section for the day
+6. Update project `tasks.md` files if priorities shift.
+
+### Daily file format:
+```markdown
+# {YYYY-MM-DD}
+
+## Main Outcome
+- 
+
+## Secondary
+- [ ] 
+- [ ] 
+
+## Time Blocks
+- Morning (deep work): 
+- Afternoon: 
+
+## Capture
+<!-- Ideas, tasks, thoughts during the day -->
+
+## End of Day
+<!-- What got done. What's next. -->
+```
+
+---
+
+## Inbox Processing
+
+When the user says "process inbox" or during daily planning:
+
+1. Read `inbox.md`.
+2. For each item:
+   - `[task]` → move to relevant project `tasks.md` (Now/Next/Later)
+   - `[idea]` → move to relevant project `project.md` under Open Questions, or create new project
+   - `[read]` → move to `2-Areas/reading/TODO.md` or project tasks
+   - `[thought]` → move to relevant project `project.md` or daily file
+3. Clear processed items from `inbox.md`.
+
+---
+
+## Weekly Review
+
+When the user says "weekly review" or at start of week:
+
+1. Read all `daily/` files from the past week.
+2. Read all `1-Projects/*/tasks.md` for stale items, blockers, next actions.
+3. Read relevant `2-Areas/*/TODO.md`.
+4. Create `weekly/{YYYY-Www}.md` with:
+   - What got done this week
+   - What's blocked or stale
+   - Outcomes for next week
+   - Priority adjustments
+5. Clean up stale tasks (move to Later, Waiting, or Done).
+
+### Weekly file format:
+```markdown
+# Week {YYYY-Www}
+
+## This Week's Outcomes
+- 
+
+## What Got Done
+- 
+
+## Blocked / Stale
+- 
+
+## Next Week
+- 
+
+## Priority Shifts
+<!-- Move items between Now/Next/Later as needed -->
+```
+
+---
+
+## End of Day
+
+When the user says "end of day" or "close out":
+
+1. Move completed items to `Done` with date in relevant `tasks.md`.
 2. Record blockers or waiting states.
-3. Add any important context to `Project.md` or the relevant area `Overview.md` / notes.
+3. Add important context to `project.md` or daily file.
 4. Leave a clear next action for tomorrow.
 
-Do not turn the productivity system itself into a project unless the user defines a finish line. Ongoing review habits belong in `2-Areas/personal-productivity/`.
+---
+
+## Project Lifecycle
+
+### Create
+1. Create `1-Projects/{name}/` with `project.md` and `tasks.md` from templates.
+2. If the project has an execution repo, note it in `project.md`.
+
+### Work
+- Update `tasks.md` as work progresses.
+- Log important choices in `decisions.md` (create when needed).
+- Log findings in `results.md` (create when needed).
+
+### Archive
+When the user says this project is done:
+1. Move `1-Projects/{name}/` to `4-Archive/`.
+2. No other changes needed.
 
 ---
 
-## Projects (`1-Projects/`)
+## Cross-Project Visibility
 
-Each project lives in `1-Projects/{project-name}/` and uses templates from `_templates/project/`.
-
-**Core files (always create):**
-
-- `Project.md` — raw user thinking: motivation, constraints, open questions. Preserve the user's voice; messy is fine.
-- `Brief.md` — LLM-synthesized summary built from `Project.md` + linked resources. Clean, readable cold. Regenerate when direction changes.
-- `TODO.md` — phased action plan: Now / Next / Later / Done.
-- `SYNC_STATUS.md` — target path, sync direction, and synced/not-synced state.
-- `AGENTS.md` — project-local instructions for Codex/Claude Code.
-- `scripts/sync-project-context.sh` — push/pull/status helper for target `docs/` sync.
-
-**Target sync:**
-
-- If a project has an execution repo or target folder, sync project context into that target's `docs/` folder.
-- The vault remains the source of truth for thinking; the target `docs/` folder receives execution-ready context.
-- Ask for the target folder before syncing if it is not already known.
-- Track sync state in `SYNC_STATUS.md`: `not-configured`, `synced`, `vault-ahead`, `target-ahead`, or `conflict`.
-- When synced docs change on either side, update status and remind the user to run the sync script.
-- Do not create `_bridge.md`; track the target path in project metadata or `Project.md` only when needed.
-- Sync only useful project context, usually `Brief.md`, `TODO.md`, and any relevant decisions/results. Do not copy raw resources wholesale.
-
-**Extended files (add when the project warrants):**
-
-- `Experiments.md` — append-only log: hypothesis → setup → result → conclusion.
-- `Decisions.md` — key choices and rationale. Prevents revisiting settled debates.
-- `Dead-ends.md` — failed ideas and why. Not all dead ends are experiments.
-- `Results.md` — meaningful findings and conclusions.
-
-**When the user shares project context:** update `Project.md` first, then regenerate `Brief.md`.
-
-**When finishing work from an execution repo**, remind the user to:
-- Check off items in `TODO.md`
-- Log experiments, decisions, dead ends, results
-- Update `Brief.md` if direction changed
+To see all active work, read:
+- `1-Projects/*/tasks.md` — all project tasks
+- `2-Areas/*/TODO.md` — all area tasks
+- `inbox.md` — uncaptured items
 
 ---
 
-## Areas (`2-Areas/`)
+## Reading Workflow
 
-Areas are ongoing domains with no fixed finish line. They can be responsibilities, personal systems, learning topics, research directions, or long-running interests.
+### Track reading
+- General reading list: `2-Areas/reading/TODO.md`
+- Project-specific reading: in project `tasks.md`
 
-Use an area when:
-
-- The user wants to keep learning or thinking about a topic, such as `tinyAI`.
-- The work is a recurring system, such as personal productivity.
-- There is no single deliverable that would make the folder complete.
-
-Use a project instead when:
-
-- There is a concrete outcome, deadline, experiment, paper, app, or deliverable.
-- The work can eventually move to `4-Archive/`.
-
-Recommended area files:
-
-- `Overview.md` — what this area is, why it matters, current direction.
-- `TODO.md` — ongoing maintenance, learning, and improvement tasks.
-- `Review.md` — recurring review checklist or operating loop.
-- `AGENTS.md` — area-local instructions.
-
-Projects may link to areas, but do not copy area notes into project folders.
-
----
-
-## Execution Target Sync
-
-Each execution repo or target folder should receive synced project context under `docs/`, for example:
-
-- `docs/Brief.md` — current project summary and direction
-- `docs/TODO.md` — current Now / Next / Later / Done plan
-- `docs/Decisions.md` — synced only when decisions matter for execution
-- `docs/Results.md` — synced only when results matter for execution
-
-Target-side agent behavior:
-
-- Read `docs/Brief.md` and `docs/TODO.md` before starting execution work.
-- Treat the target folder as the execution workspace.
-- Do not edit the vault unless explicitly asked.
-- After execution work, report what changed so the vault project files can be updated.
-
-From the vault side: update `Project.md`, regenerate `Brief.md` when direction changes, update `TODO.md` as work progresses, then re-sync the target `docs/` folder.
+### When user finishes reading
+1. If user says "I read X" or "process this paper":
+   - Ingest into `3-Resources/` using knowledge base pipeline
+   - Move task to `Done` in relevant `tasks.md` or `2-Areas/reading/TODO.md`
+   - Link to wiki entries in project `project.md` if relevant
 
 ---
 
