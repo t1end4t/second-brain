@@ -1,9 +1,0 @@
-# Workbase git repos managed by .codex/skills/workbase/scripts/sync-workbase.sh and .codex/skills/workbase/scripts/workbase-commit.sh.
-# Format: <git-url> <repo-path>. ~ and $HOME are supported. Blank lines/comments ignored.
-git@github.com:t1end4t/nixos-conf.git      ~/nix-dev/nixos-conf
-git@github.com:t1end4t/nix-templates.git   ~/nix-dev/nix-templates
-git@github.com:t1end4t/second-brain.git    ~/second-brain
-git@github.com:t1end4t/research-lab.git    ~/codebases/research-lab
-git@github.com:t1end4t/dev-sandbox.git     ~/codebases/dev-sandbox
-git@github.com:t1end4t/company-stack.git   ~/codebases/company-stack
-git@github.com:t1end4t/side-projects.git   ~/codebases/side-projects

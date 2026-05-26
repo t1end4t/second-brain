@@ -10,7 +10,7 @@ Treat everything here as knowledge organization, not engineering scaffolding.
 | Folder | Purpose |
 |---|---|
 | `1-Projects/` | Active work: planning, tasks, experiments |
-| `2-Areas/` | Ongoing responsibilities with no end date |
+| `2-Areas/` | Ongoing domains: responsibilities, life systems, learning topics, research interests |
 | `3-Resources/` | Processed knowledge: papers, blogs, wiki, raw sources |
 | `4-Archive/` | Completed or inactive items — mostly read-only |
 | `_templates/` | Structural templates only — not PARA content |
@@ -23,6 +23,38 @@ Treat everything here as knowledge organization, not engineering scaffolding.
 - **Capture context before jumping to actions.** When the user is explaining background, write it into the relevant project note, then suggest next steps.
 - **Create only the minimal structure needed.** Propose new conventions for review before creating files.
 - **Don't duplicate across PARA layers.** Projects link to resources via `[[wiki-links]]`; they don't copy or co-locate resource content.
+
+---
+
+## Daily / Weekly Operating Workflow
+
+Use this workflow when the user asks to plan the day, review progress, decide priorities, or manage productivity.
+
+**Daily startup:**
+
+1. Capture loose thoughts first, without organizing too early.
+2. Review yesterday's completed work, blockers, and unfinished commitments.
+3. Check active project `TODO.md` files under `1-Projects/`.
+4. Check relevant area `TODO.md` or `Review.md` files under `2-Areas/`.
+5. Pick one main outcome for today and two or three secondary actions.
+6. Update the relevant project or area task files.
+
+**Monday / weekly review:**
+
+1. Review last week's completed work and missed commitments.
+2. Review every active project for stale `Now` items, blockers, and next actions.
+3. Review ongoing areas for maintenance tasks, learning questions, and recurring responsibilities.
+4. Decide this week's outcomes.
+5. Move stale items to `Later`, `Waiting`, or archive notes when appropriate.
+
+**End-of-day closeout:**
+
+1. Move completed items to `Done` with the date.
+2. Record blockers or waiting states.
+3. Add any important context to `Project.md` or the relevant area `Overview.md` / notes.
+4. Leave a clear next action for tomorrow.
+
+Do not turn the productivity system itself into a project unless the user defines a finish line. Ongoing review habits belong in `2-Areas/personal-productivity/`.
 
 ---
 
@@ -62,6 +94,32 @@ Each project lives in `1-Projects/{project-name}/` and uses templates from `_tem
 - Check off items in `TODO.md`
 - Log experiments, decisions, dead ends, results
 - Update `Brief.md` if direction changed
+
+---
+
+## Areas (`2-Areas/`)
+
+Areas are ongoing domains with no fixed finish line. They can be responsibilities, personal systems, learning topics, research directions, or long-running interests.
+
+Use an area when:
+
+- The user wants to keep learning or thinking about a topic, such as `tinyAI`.
+- The work is a recurring system, such as personal productivity.
+- There is no single deliverable that would make the folder complete.
+
+Use a project instead when:
+
+- There is a concrete outcome, deadline, experiment, paper, app, or deliverable.
+- The work can eventually move to `4-Archive/`.
+
+Recommended area files:
+
+- `Overview.md` — what this area is, why it matters, current direction.
+- `TODO.md` — ongoing maintenance, learning, and improvement tasks.
+- `Review.md` — recurring review checklist or operating loop.
+- `AGENTS.md` — area-local instructions.
+
+Projects may link to areas, but do not copy area notes into project folders.
 
 ---
 
