@@ -2,12 +2,9 @@
 
 ## Why This Exists
 
-I want to create a baseline model for the pulsed eddy current testing (PECT) TDMS dataset stored in `~/Documents`.
+I want to prepare and verify the pulsed eddy current testing (PECT) TDMS dataset stored in `~/Documents`.
 
-The model should eventually support:
-- Classification: rivet and corrosion.
-- Regression: corrosion depth, diameter, and volume.
-- CNR calculation for each corrosion case, later.
+Current scope is TMR-only split/data strategy for point-waveform models, after raw TDMS rotate/crop review, LOI review, and label/mask preparation.
 
 Before touching the dataset, first read the draft paper in `3-Resources/raw/Development-of-an-Experimental-Pulsed-Eddy-Current-Testing-Dataset-for-Defect-Detectionin-Aircraft-Aluminum-Structures.docx` to understand the experimental context, specimens, labels, and metadata.
 
@@ -118,10 +115,7 @@ A pixel is inside a circular defect if `(x - cx)^2 + (y - cy)^2 <= r_px^2`.
 ## Open Questions
 
 - Metadata/coordinate lookup is deferred until labels are needed.
-- Should classification be multi-label per scan point/image region (`rivet`, `corrosion`) or specimen-level/file-level first?
-- Should regression target per defect ID, per cropped defect patch, or per scan point?
 - How should corrosion volume be defined from flat-bottom hole geometry: cylinder approximation from depth and diameter unless metadata says otherwise?
-- Which probe/waveform/lift-off combinations should be used for the first baseline split?
 - Where are the missing scenarios? Paper claims 144 but current trusted inventory shows 113 TDMS files. Are Differential Pot-core files present under another naming convention, or are they simply not transferred?
 - Are lift-off distances 4 mm and 5 mm present in raw data or only in validation figures?
 - ISC2 `Dp=1.27` vs `Dp=1.0` for top-row corrosion IDs: which label set is correct? Need to cross-check with original fabrication drawings or metadata.
@@ -132,9 +126,13 @@ A pixel is inside a circular defect if `(x - cx)^2 + (y - cy)^2 <= r_px^2`.
 ## Constraints & Limitations
 
 - Raw TDMS data in `~/Documents` is read-only; write outputs only in the execution repo.
-- Keep the first model simple and reproducible before trying deep learning.
-- Avoid leakage across experimental conditions; split design must consider specimen/defect/probe/waveform/lift-off grouping.
-- CNR is a later task after labels, preprocessing, and baseline model pipeline are established.
+- Keep preprocessing and review steps simple and reproducible.
+- Model development currently uses only TMR TDMS files because TMR quality is best.
+- Train separate models per acquisition side and specimen type: frontside corrosion, backside corrosion, frontside mixed, and backside mixed when all four groups are available.
+- Use `templates/MonteCarlo_Deep.py` only as a modeling reference. First train on a single TMR TDMS file, with model input reshaped from `X.shape == (72_900, 500)` to `(72_900, 500, 1)`, before scaling to full split-aware datasets.
+- Corrosion training arrays use this shape sequence: raw `300 x 301 x 500` TDMS cube -> trim extra column to `300 x 300 x 500` -> crop `15` px from each side -> final `270 x 270 x 500`; flattened per-file arrays are `X.shape == (72_900, 500)` and `y.shape == (72_900,)`.
+- Split corrosion-detection data by whole TDMS file/scenario before flattening point samples; do not random-split points from the same map.
+- CNR is a later task after labels and preprocessing are stable.
 
 ## Related Resources
 

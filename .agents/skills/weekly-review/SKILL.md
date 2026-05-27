@@ -1,3 +1,8 @@
+---
+name: weekly-review
+description: Run a weekly review in the PARA vault. Use when the user says "weekly review", "review the week", "end of week", or at the start of a week; review dailies, project tasks, and area TODOs, then create the weekly review note.
+---
+
 # Weekly Review Skill
 
 Use this skill when the user says "weekly review", "review the week", "end of week", or at start of week.

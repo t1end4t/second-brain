@@ -153,7 +153,11 @@ When the user says "end of day" or "close out":
 
 ### Create
 1. Create `1-Projects/{name}/` with `project.md` and `tasks.md` from templates.
-2. If the project has an execution repo, note it in `project.md`.
+2. If the project has an execution repo:
+   - Copy `SYNC_STATUS.md` and `scripts/sync-project-context.sh` from `_templates/project/`.
+   - Set target path in `SYNC_STATUS.md`.
+   - Run `./scripts/sync-project-context.sh push` to initialize target `docs/`.
+   - Note the execution repo path in `project.md`.
 
 ### Work
 - Update `tasks.md` as work progresses.
@@ -164,6 +168,33 @@ When the user says "end of day" or "close out":
 When the user says this project is done:
 1. Move `1-Projects/{name}/` to `4-Archive/`.
 2. No other changes needed.
+
+---
+
+## Project Sync
+
+Projects with execution repos sync notes bidirectionally via `scripts/sync-project-context.sh`.
+
+### Synced files
+
+- `project.md`, `tasks.md`, `decisions.md`, `results.md` — same names on both sides.
+
+### When to sync
+
+- **After editing vault project notes** → run `push` or remind user.
+- **After execution repo work** → run `pull` or remind user.
+- **Before starting work on a project** → check `status` for stale state.
+
+### Commands
+
+```sh
+# From vault project folder (1-Projects/{name}/):
+./scripts/sync-project-context.sh status    # check sync state
+./scripts/sync-project-context.sh push      # vault -> execution repo
+./scripts/sync-project-context.sh pull      # execution repo -> vault
+```
+
+Load the `project-sync` skill for detailed sync instructions.
 
 ---
 

@@ -1,3 +1,8 @@
+---
+name: inbox-processing
+description: Process the PARA vault inbox. Use when the user says "process inbox", "clean up inbox", or during daily planning when inbox has items; categorize captured items, move them to the right project or area notes, and clear processed inbox entries.
+---
+
 # Inbox Processing Skill
 
 Use this skill when the user says "process inbox", "clean up inbox", or during daily planning when inbox has items.

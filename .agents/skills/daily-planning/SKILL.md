@@ -1,3 +1,8 @@
+---
+name: daily-planning
+description: Plan the user's day in the PARA vault. Use when the user says "plan my day", "what should I work on", "start the day", or similar; read inbox, project tasks, area TODOs, and yesterday's daily note, then create today's daily plan.
+---
+
 # Daily Planning Skill
 
 Use this skill when the user says "plan my day", "what should I work on", "start the day", or similar.

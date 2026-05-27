@@ -1,7 +1,7 @@
 # Reading
 
 ## Now
-- [ ] 
+- [ ] Decide reading volume: how many papers/month with AI assistance? (2026-05-27)
 
 ## Next
 - [ ] 
