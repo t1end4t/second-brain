@@ -1,7 +1,7 @@
 # Reading
 
 ## Now
-- [ ] Decide reading volume: how many papers/month with AI assistance? (2026-05-27)
+- [ ] 
 
 ## Next
 - [ ] 
@@ -10,4 +10,5 @@
 - [ ] 
 
 ## Done
+- [x] 2026-05-27: Reading strategy decided — survey papers are too general; keep reading broad instead of fixed survey-first plan
 <!-- - [x] 2026-05-26: Read "Paper Title" → ingested to 3-Resources -->

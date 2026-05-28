@@ -41,4 +41,3 @@
 - **Wiki articles:** [[concepts/ai-generated-text-detection]], [[concepts/stylometric-analysis]], [[concepts/llm-as-judge]], [[concepts/multi-agent-detection-systems]], [[concepts/adversarial-robustness-detection]], [[concepts/esl-bias-ai-detection]], [[concepts/citation-verification]], [[articles/editorial-ai-detection-system-design]]
 
 ---
-_Last indexed: 2026-05-27_
