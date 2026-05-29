@@ -8,6 +8,20 @@
 
 ### PDFs
 
+### BatteryLife.pdf
+- **Type:** paper
+- **Date added:** 2026-05-29
+- **Summary:** KDD 2025 paper introducing BatteryLife, a comprehensive dataset and benchmark for battery life prediction. Integrates 16 battery datasets with broad diversity across formats, chemistries, temperatures, and charge/discharge protocols, plus benchmark results and CyclePatch.
+- **Key topics:** [battery life prediction, battery degradation, time series forecasting, battery datasets, benchmarks, CyclePatch, materials informatics]
+- **Wiki articles:** (empty until compiled)
+
+### 2310.14714v5.pdf
+- **Type:** paper
+- **Date added:** 2026-05-29
+- **Summary:** ICLR 2024 paper introducing BatteryML, an open-source platform for machine learning on battery degradation. Covers standardized battery data representation, preprocessing, feature extraction, model training, and benchmarks for RUL/SOH/SOC-related degradation modeling.
+- **Key topics:** [BatteryML, battery degradation, machine learning, battery data preprocessing, remaining useful life, state of health, benchmark platform]
+- **Wiki articles:** (empty until compiled)
+
 ### 2303.18223v19.pdf
 - **Type:** survey paper
 - **Date added:** 2026-05-27

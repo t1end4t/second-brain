@@ -105,7 +105,6 @@
                   pandoc
                   poppler-utils
 
-                  pnpm
                 ];
 
                 languages.python = {
