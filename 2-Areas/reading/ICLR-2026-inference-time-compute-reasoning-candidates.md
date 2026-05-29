@@ -1,0 +1,246 @@
+# ICLR 2026 Inference-Time Compute / Reasoning Paper Candidates
+
+Date generated: 2026-05-29
+
+Filter: accepted ICLR 2026; topic = Inference-Time Compute / Reasoning; excludes benchmark/dataset/leaderboard terms.
+
+Legend: `[ ]` unread; `[x]` read/keep; `[~]` maybe; `[-]` skip; `[D]` download.
+
+Count: 117
+
+## Candidates
+
+- [ ] 1. **Trained on Tokens, Calibrated on Concepts: The Emergence of Semantic Calibration in LLMs** (Poster)
+  - OpenReview: https://openreview.net/forum?id=0sCyk9Tr5J 
+- [ ] 2. **Diversity-Enhanced Reasoning for Subjective Questions** (Poster)
+  - OpenReview: https://openreview.net/forum?id=1Bf0tToGT1 
+- [ ] 3. **LaSeR: Reinforcement Learning with Last-Token Self-Rewarding** (Poster)
+  - OpenReview: https://openreview.net/forum?id=1OhgEmix20 
+- [ ] 4. **CoT-RVS: Zero-Shot Chain-of-Thought Reasoning Segmentation for Videos** (Poster)
+  - OpenReview: https://openreview.net/forum?id=1RgXNloctI 
+- [ ] 5. **Latent Thinking Optimization: Your Latent Reasoning Language Model Secretly Encodes Reward Signals in its Latent Thoughts** (Poster)
+  - OpenReview: https://openreview.net/forum?id=2jkAk3EP0v 
+- [ ] 6. **Linear Mechanisms for Spatiotemporal Reasoning in Vision Language Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=2zXRGiorSu 
+- [ ] 7. **SLM-MUX: Orchestrating Small Language Models for Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=317bcKF4zv 
+- [ ] 8. **Expanding Reasoning Potential in Foundation Model by Learning Diverse Chains of Thought Patterns** (Poster)
+  - OpenReview: https://openreview.net/forum?id=3FQV4JHPpY 
+- [ ] 9. **ROC-n-reroll: How verifier imperfection affects test-time scaling** (Poster)
+  - OpenReview: https://openreview.net/forum?id=3Gy5mmyuxn 
+- [ ] 10. **PLoP: Precise LoRA Placement for Efficient Finetuning of Large Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=3lGkVgNZ5a 
+- [ ] 11. **A Simple "Motivation" Can Enhance Reinforcement Finetuning of Large Reasoning Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=3owSlsYDQf 
+- [ ] 12. **Linking Process to Outcome: Conditional Reward Modeling for LLM Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=4DJoBOQNd0 
+- [ ] 13. **Lookahead Tree-Based Rollouts for Enhanced Trajectory-Level Exploration in Reinforcement Learning with Verifiable Rewards** (Poster)
+  - OpenReview: https://openreview.net/forum?id=4nLvUk8edu 
+- [ ] 14. **CyclicReflex: Improving Reasoning Models via Cyclical Reflection Token Scheduling** (Poster)
+  - OpenReview: https://openreview.net/forum?id=4oOF4J2xSy 
+- [ ] 15. **LouisKV: Efficient KV Cache Retrieval for Long Input-Output Sequences** (Poster)
+  - OpenReview: https://openreview.net/forum?id=6RJ8fZwm4P 
+- [ ] 16. **SIM-CoT: Supervised Implicit Chain-of-Thought** (Poster)
+  - OpenReview: https://openreview.net/forum?id=6YRJ4jmVQl 
+- [ ] 17. **Learning Self-Critiquing Mechanisms for Region-Guided Chest X-Ray Report Generation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=6sOSwgCmpH 
+- [ ] 18. **Group-Relative REINFORCE Is Secretly an Off-Policy Algorithm: Demystifying Some Myths About GRPO and Its Friends** (Poster)
+  - OpenReview: https://openreview.net/forum?id=7CFlXvCoN6 
+- [ ] 19. **Mixture-of-Visual-Thoughts: Exploring Context-Adaptive Reasoning Mode Selection for General Visual Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=8qk6eUnvbH 
+- [ ] 20. **VFScale: Intrinsic Reasoning through Verifier-Free Test-time Scalable Diffusion Model** (Poster)
+  - OpenReview: https://openreview.net/forum?id=8ta0xgtsJK 
+- [ ] 21. **ContextPRM: Leveraging Contextual Coherence for multi-domain Test-Time Scaling** (Poster)
+  - OpenReview: https://openreview.net/forum?id=9H0gBsNjCv 
+- [ ] 22. **The Coverage Principle: How Pre-Training Enables Post-Training** (Oral)
+  - OpenReview: https://openreview.net/forum?id=AUXvYQlQLZ 
+- [ ] 23. **Test-time Verification via Optimal Transport: Coverage, ROC, & Sub-optimality** (Poster)
+  - OpenReview: https://openreview.net/forum?id=BBDhQJh6GB 
+- [ ] 24. **PRO-MOF: Policy Optimization with Universal Atomistic Models for Controllable MOF Generation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=BIzrFlp0hv 
+- [ ] 25. **MobileRL: Online Agentic Reinforcement Learning for Mobile GUI Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=C3F0G9nXhl 
+- [ ] 26. **Conditional Advantage Estimation for Reinforcement Learning in Large Reasoning Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=CTEXdHB1BB 
+- [ ] 27. **Verifying Chain-of-Thought Reasoning via Its Computational Graph** (Oral)
+  - OpenReview: https://openreview.net/forum?id=CxiNICq0Rr 
+- [ ] 28. **Incentivizing Consistent, Effective and Scalable Reasoning Capability in Audio LLMs via Reasoning Process Rewards** (Poster)
+  - OpenReview: https://openreview.net/forum?id=DUr48hxO2h 
+- [ ] 29. **Robust Amortized Bayesian Inference with Self-Consistency Losses on Unlabeled Data** (Poster)
+  - OpenReview: https://openreview.net/forum?id=E1dANKwo4I 
+- [ ] 30. **REA-RL: Reflection-Aware Online Reinforcement Learning for Efficient Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=E6keG5QDct 
+- [ ] 31. **MARTI: A Framework for Multi-Agent LLM Systems Reinforced Training and Inference** (Poster)
+  - OpenReview: https://openreview.net/forum?id=E7jZqo0A50 
+- [ ] 32. **From Curiosity to Caution: Mitigating Reward Hacking for Best-of-$N$ with Pessimism** (Poster)
+  - OpenReview: https://openreview.net/forum?id=EZn2TmBBfF 
+- [ ] 33. **TTS Can Speak in Any Style with Any Voice** (Poster)
+  - OpenReview: https://openreview.net/forum?id=F7GmbfyVg9 
+- [ ] 34. **Humanline: Online Alignment as Perceptual Loss** (Poster)
+  - OpenReview: https://openreview.net/forum?id=FONB5dIxSB 
+- [ ] 35. **Do Not Let Low-Probability Tokens Over-Dominate in RL for LLMs** (Poster)
+  - OpenReview: https://openreview.net/forum?id=FOnAdLo0tM 
+- [ ] 36. **The Pensieve Paradigm: Stateful Language Models with Learned Memory Management** (Poster)
+  - OpenReview: https://openreview.net/forum?id=GymjF88oGQ 
+- [ ] 37. **SWE-RM: Execution-free Feedback for Software Engineering Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=H9wMe1G76j 
+- [ ] 38. **LogicReward: Incentivizing LLM Reasoning via Step-Wise Logical Supervision** (Poster)
+  - OpenReview: https://openreview.net/forum?id=IRhYVOKFe0 
+- [ ] 39. **Stronger-MAS: Multi-Agent Reinforcement Learning for Collaborative LLMs** (Poster)
+  - OpenReview: https://openreview.net/forum?id=IdF6JqXWzx 
+- [ ] 40. **ACE: Attribution-Controlled Knowledge Editing for Multi-hop Factual Recall** (Poster)
+  - OpenReview: https://openreview.net/forum?id=IuWIzmMvKo 
+- [ ] 41. **Gogo: Group-wise granularity-ordered codec for stable and efficient speech generation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=JbLmIoWwDC 
+- [ ] 42. **Learn the Ropes, Then Trust the Wins: Self-imitation with Progressive Exploration for Agentic Reinforcement Learning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Kssko33Ekq 
+- [ ] 43. **wd1: Weighted Policy Optimization for Reasoning in Diffusion Language Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=L2rfd2Czbj 
+- [ ] 44. **RIG: Synergizing Reasoning and Imagination in End-to-End Generalist Policy** (Poster)
+  - OpenReview: https://openreview.net/forum?id=LQv9LU2Ufg 
+- [ ] 45. **Smarter Not Harder: Generative Process Evaluation with Intrinsic-Signal Driving and Ability‑Adaptive Reward Shaping** (Poster)
+  - OpenReview: https://openreview.net/forum?id=LZZENDlZt9 
+- [ ] 46. **Empowering LLM Tool Invocation with Tool-call Reward Model** (Poster)
+  - OpenReview: https://openreview.net/forum?id=LnBEASInVr 
+- [ ] 47. **Unlocking Long-Horizon Agentic Search with Large-Scale End-to-End RL** (Poster)
+  - OpenReview: https://openreview.net/forum?id=MfPDdPUGKi 
+- [ ] 48. **Learning from Algorithm Feedback: One-Shot SAT Solver Guidance with GNNs** (Poster)
+  - OpenReview: https://openreview.net/forum?id=NfWrLOKnfk 
+- [ ] 49. **Emergent Hierarchical Reasoning in LLMs through Reinforcement Learning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=NlkykTqAId 
+- [ ] 50. **Markovian Transformers for Informative Language Modeling** (Poster)
+  - OpenReview: https://openreview.net/forum?id=OMjcX1Z6Uu 
+- [ ] 51. **Consis-GCPO: Consistency-Preserving Group Causal Preference Optimization for Vision Customization** (Poster)
+  - OpenReview: https://openreview.net/forum?id=OswqOlTYR2 
+- [ ] 52. **Distilled Pretraining: A modern lens of Data, In-Context Learning and Test-Time Scaling** (Poster)
+  - OpenReview: https://openreview.net/forum?id=PNm2dl7HcY 
+- [ ] 53. **Lifelong Embodied Navigation Learning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=PaYo96rjij 
+- [ ] 54. **When Silence Is Golden: Can LLMs Learn to Abstain in Temporal QA and Beyond?** (Poster)
+  - OpenReview: https://openreview.net/forum?id=PhUCxfS0yf 
+- [ ] 55. **Learning to Reason Efficiently with Discounted Reinforcement Learning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=R4GPttoDyn 
+- [ ] 56. **Sample Complexity and Representation Ability of Test-time Scaling Paradigms** (Poster)
+  - OpenReview: https://openreview.net/forum?id=RJDIX75TEE 
+- [ ] 57. **GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning** (Oral)
+  - OpenReview: https://openreview.net/forum?id=RQm2KQTM5r 
+- [ ] 58. **Group Verification-based Policy Optimization for Interactive Coding Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=RY47Tq0VsV 
+- [ ] 59. **Buffer Matters: Unleashing the Power of Off-Policy Reinforcement Learning in Large Language Model Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=RduOiisl1S 
+- [ ] 60. **Representation-Based Exploration for Language Models: From Test-Time to Post-Training** (Poster)
+  - OpenReview: https://openreview.net/forum?id=S4PCF1YxoR 
+- [ ] 61. **BranchGRPO: Stable and Efficient GRPO with Structured Branching in Diffusion Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=T2nP2IQasd 
+- [ ] 62. **Hierarchy-of-Groups Policy Optimization for Long-Horizon Agentic Tasks** (Poster)
+  - OpenReview: https://openreview.net/forum?id=T8Dev99qnz 
+- [ ] 63. **ICPO: Provable and Practical In-Context Policy Optimization for Test-Time Scaling** (Poster)
+  - OpenReview: https://openreview.net/forum?id=TAthdtPe7k 
+- [ ] 64. **Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy Optimization** (Poster)
+  - OpenReview: https://openreview.net/forum?id=UOzxviKVFO 
+- [ ] 65. **Quantile Advantage Estimation for Entropy-Safe Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=WDP5b3mtFV 
+- [ ] 66. **Optimal Sparsity of Mixture-of-Experts Language Models for Reasoning Tasks** (Oral)
+  - OpenReview: https://openreview.net/forum?id=XFw2EPRUUR 
+- [ ] 67. **Revisiting Group Relative Policy Optimization: Insights into On-Policy and Off-Policy Training** (Poster)
+  - OpenReview: https://openreview.net/forum?id=XXfOf22o3K 
+- [ ] 68. **Understanding the Role of Training Data in Test-Time Scaling** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Y9FfDNa2nJ 
+- [ ] 69. **Tracing the Traces: Latent Temporal Signals for Efficient and Accurate Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Ytlj8Ckv9n 
+- [ ] 70. **CIAR: Interval-based Collaborative Decoding for Image Generation Acceleration** (Poster)
+  - OpenReview: https://openreview.net/forum?id=YzZ4pSAwZy 
+- [ ] 71. **e3: Learning to Explore Enables Extrapolation of Test-Time Compute for LLMs** (Poster)
+  - OpenReview: https://openreview.net/forum?id=aID0dZmMmM 
+- [ ] 72. **Native Reasoning Models: Training Language Models to Reason on Unverifiable Data** (Poster)
+  - OpenReview: https://openreview.net/forum?id=abAMONjBwb 
+- [ ] 73. **Self-Jailbreaking: Language Models Can Reason Themselves Out of Safety Alignment After Benign Reasoning Training** (Poster)
+  - OpenReview: https://openreview.net/forum?id=akbtPEZnDZ 
+- [ ] 74. **PCPO: Proportionate Credit Policy Optimization for Preference Alignment of Image Generation Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=alY08iknli 
+- [ ] 75. **Shortcut Diffusion Training with Cumulative Consistency Loss: An Optimal Control View** (Poster)
+  - OpenReview: https://openreview.net/forum?id=cZqAk87Lu4 
+- [ ] 76. **Scaling Agent Learning via Experience Synthesis** (Poster)
+  - OpenReview: https://openreview.net/forum?id=cf7qpBwttr 
+- [ ] 77. **A Joint Diffusion Model with Pre-Trained Priors for RNA Sequence–Structure Co-Design** (Poster)
+  - OpenReview: https://openreview.net/forum?id=cpc63YrVWN 
+- [ ] 78. **Efficient Regression-based Training of Normalizing Flows for Boltzmann Generators** (Poster)
+  - OpenReview: https://openreview.net/forum?id=ctdnzPxDI3 
+- [ ] 79. **Plan and Budget: Effective and Efficient Test-Time Scaling on Reasoning Large Language Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=ctspw4CqbS 
+- [ ] 80. **KaVa: Latent Reasoning via Compressed KV-Cache Distillation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=ePrhcLbtGv 
+- [ ] 81. **Reinforced Latent Reasoning for LLM-based Recommendation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=eUtIZT2ONS 
+- [ ] 82. **Variational Reasoning for Language Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=fGGcovg6oW 
+- [ ] 83. **Dynamic Reflections: Probing Video Representations with Text Alignment** (Poster)
+  - OpenReview: https://openreview.net/forum?id=gE17TwVMNh 
+- [ ] 84. **ActivationReasoning: Logical Reasoning in Latent Activation Spaces** (Poster)
+  - OpenReview: https://openreview.net/forum?id=gGJh5AZTG7 
+- [ ] 85. **Learn to Reason Efficiently with Adaptive Length-based Reward Shaping** (Poster)
+  - OpenReview: https://openreview.net/forum?id=hj9eKpqxQl 
+- [ ] 86. **THE PATH OF LEAST RESISTANCE: GUIDING LLM REASONING TRAJECTORIES WITH PREFIX CONSENSUS** (Poster)
+  - OpenReview: https://openreview.net/forum?id=hrnSqERgPn 
+- [ ] 87. **Think in Parallel, Answer as One: Logit Averaging for Open-Ended Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=hvit36Dyzl 
+- [ ] 88. **GPG: A Simple and Strong Reinforcement Learning Baseline for Model Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=inccdtfx8x 
+- [ ] 89. **Latent Visual Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=j84WR5ORsC 
+- [ ] 90. **ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory** (Poster)
+  - OpenReview: https://openreview.net/forum?id=jL7fwchScm 
+- [ ] 91. **Reinforcing Diffusion Models by Direct Group Preference Optimization** (Poster)
+  - OpenReview: https://openreview.net/forum?id=jymuXl8GYi 
+- [ ] 92. **Reward Is Enough: LLMs Are In-Context Reinforcement Learners** (Poster)
+  - OpenReview: https://openreview.net/forum?id=keCXNHOe4W 
+- [ ] 93. **RIDER: 3D RNA Inverse Design with Reinforcement Learning-Guided Diffusion** (Poster)
+  - OpenReview: https://openreview.net/forum?id=lDyS4Qg5Ww 
+- [ ] 94. **Complementing Self-Consistency with Cross-Model Disagreement for Uncertainty Quantification** (Poster)
+  - OpenReview: https://openreview.net/forum?id=lOoRJo8xWy 
+- [ ] 95. **BARREL: Boundary-Aware Reasoning for Factual and Reliable LRMs** (Poster)
+  - OpenReview: https://openreview.net/forum?id=lUEedsO2RO 
+- [ ] 96. **String Seed of Thought: Prompting LLMs for Distribution-Faithful and Diverse Generation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=luXtbX1lVK 
+- [ ] 97. **PROS: Towards Compute-Efficient RLVR via Rollout Prefix Reuse** (Poster)
+  - OpenReview: https://openreview.net/forum?id=lz1SRTcnUb 
+- [ ] 98. **ThinkMorph: Emergent Properties in Multimodal Interleaved Chain-of-Thought Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=mB3vxfrQZM 
+- [ ] 99. **Dual-IPO: Dual-Iterative Preference Optimization for Text-to-Video Generation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=mu8sO1Vw0C 
+- [ ] 100. **Harder Is Better: Boosting Mathematical Reasoning via Difficulty-Aware GRPO and Multi-Aspect Question Reformulation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=nfURupkdRJ 
+- [ ] 101. **Command-V: Training-Free Representation Finetuning Transfer** (Poster)
+  - OpenReview: https://openreview.net/forum?id=oRYzpI3cmJ 
+- [ ] 102. **Calibrating Verbalized Confidence with Self-Generated Distractors** (Poster)
+  - OpenReview: https://openreview.net/forum?id=pZs4hhemXc 
+- [ ] 103. **ReVeal: Self-Evolving Code Agents via Reliable Self-Verification** (Poster)
+  - OpenReview: https://openreview.net/forum?id=q56ZI1Co43 
+- [ ] 104. **WMPO: World Model-based Policy Optimization for Vision-Language-Action Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=qE2FyvRvuF 
+- [ ] 105. **Balancing the Experts: Unlocking LoRA-MoE for GRPO via Mechanism-Aware Rewards** (Poster)
+  - OpenReview: https://openreview.net/forum?id=rhD7ZuFAjU 
+- [ ] 106. **RAPID$^3$: Tri-Level Reinforced Acceleration Policies for Diffusion Transformer** (Poster)
+  - OpenReview: https://openreview.net/forum?id=sQ0g6EkpF7 
+- [ ] 107. **Test-Time Scaling with Reflective Generative Model** (Poster)
+  - OpenReview: https://openreview.net/forum?id=tF56uyxdDy 
+- [ ] 108. **Reasoning Models Can be Accurately Pruned Via Chain-of-Thought Reconstruction** (Poster)
+  - OpenReview: https://openreview.net/forum?id=tyGfwG6xTh 
+- [ ] 109. **NFT: Bridging Supervised Learning and Reinforcement Learning in Math Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=ujBrsQm6Zu 
+- [ ] 110. **Hidden Patterns in Chain-of-Thought Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=uwuSD63wbe 
+- [ ] 111. **Echoes as Anchors: Probabilistic Costs and Attention Refocusing in LLM Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=vndn1Wrult 
+- [ ] 112. **Dynamics-Predictive Sampling for Active RL Finetuning of Large Reasoning Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=voeheZjd8p 
+- [ ] 113. **LLMs are Greedy Agents: Effects of RL Fine-tuning on Decision-Making Abilities** (Poster)
+  - OpenReview: https://openreview.net/forum?id=weUP6H5Ko9 
+- [ ] 114. **Visual Planning: Let's Think Only with Images** (Oral)
+  - OpenReview: https://openreview.net/forum?id=wsnse46kRO 
+- [ ] 115. **Kevin: Multi-Turn RL for Generating CUDA Kernels** (Poster)
+  - OpenReview: https://openreview.net/forum?id=xu1XwVZtDi 
+- [ ] 116. **Programming by Backprop: Learning Behaviour from Symbolic Descriptions** (Poster)
+  - OpenReview: https://openreview.net/forum?id=y1OWj26FCo 
+- [ ] 117. **IceCache: Memory-Efficient KV-cache Management for Long-Sequence LLMs** (Poster)
+  - OpenReview: https://openreview.net/forum?id=yHxSKM9kdr 

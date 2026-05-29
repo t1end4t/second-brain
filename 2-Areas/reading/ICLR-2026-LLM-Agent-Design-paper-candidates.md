@@ -1,0 +1,425 @@
+# ICLR 2026 LLM Agent Design Paper Candidates
+
+Date generated: 2026-05-28
+
+Filter: accepted ICLR 2026; topic = LLM Agent Design; excludes benchmark/dataset/leaderboard terms.
+
+Legend: `[ ]` unread; `[x]` read/keep; `[~]` maybe; `[-]` skip; `[D]` download.
+
+Count: 205
+
+## Candidates
+
+- [-] 1. **Code World Models for General Game Playing** (Poster)
+  - OpenReview: https://openreview.net/forum?id=1UoB7IWiku
+- [x] 2. **Look Back to Reason Forward: Revisitable Memory for Long-Context LLM Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=1cymflI2Lh
+- [~] 3. **Achieving Expert-Level Agent from Foundation Model via Complexity Curriculum Reinforcement Learning with Synthetic Data** (Poster)
+  - OpenReview: https://openreview.net/forum?id=1sffPGGQyT
+- [-] 4. **Exploring the Potential of Encoder-free Architectures in 3D LMMs** (Poster)
+  - OpenReview: https://openreview.net/forum?id=22Hh0Vj5Dd
+- [-] 5. **ViTSP: A Vision Language Models Guided Framework for Large-Scale Traveling Salesman Problems** (Poster)
+  - OpenReview: https://openreview.net/forum?id=2LoaiaGKuV
+- [-] 6. **Latent Thinking Optimization: Your Latent Reasoning Language Model Secretly Encodes Reward Signals in its Latent Thoughts** (Poster)
+  - OpenReview: https://openreview.net/forum?id=2jkAk3EP0v
+- [-] 7. **Three Forward, One Backward: Memory-Efficient Full-Rank Fine-Tuning of Large Models via Extra Forward Passes** (Poster)
+  - OpenReview: https://openreview.net/forum?id=373rsDQsq4
+- [-] 8. **Meta-RL Induces Exploration in Language Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=4GiBscHW1k
+- [-] 9. **MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models for Robotic Manipulation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=54U3XHf7qq
+- [x] 10. **Unlocking the Power of Multi-Agent LLM for Reasoning: From Lazy Agents to Deliberation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=5J6u03ObRZ
+- [x] 11. **R-WoM: Retrieval-augmented World Model For Computer-use Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=5ZaoXB3MdP
+- [~] 12. **IR-Agent: Expert-Inspired LLM Agents for Structure Elucidation from Infrared Spectra** (Poster)
+  - OpenReview: https://openreview.net/forum?id=6bthH14pD8
+- [~] 13. **Learning Self-Critiquing Mechanisms for Region-Guided Chest X-Ray Report Generation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=6sOSwgCmpH
+- [~] 14. **Social Agents: Collective Intelligence Improves LLM Predictions** (Poster)
+  - OpenReview: https://openreview.net/forum?id=73J3hsato3
+- [~] 15. **CP-Agent: Context‑Aware Multimodal Reasoning for Cellular Morphological Profiling under Chemical Perturbations** (Poster)
+  - OpenReview: https://openreview.net/forum?id=7BLnSeWuei
+- [x] 16. **DreamPhase: Offline Imagination and Uncertainty-Guided Planning for Large-Language-Model Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=81PJ2KPnmK
+- [~] 17. **CodeQuant: Unified Clustering and Quantization for Enhanced Outlier Smoothing in Low-Precision Mixture-of-Experts** (Poster)
+  - OpenReview: https://openreview.net/forum?id=ATpchFiBQi
+- [x] 18. **Expert Merging: Model Merging with Unsupervised Expert Alignment and Importance-Guided Layer Chunking** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Awf3ebMpKw
+- [x] 19. **TokenSeek: Memory Efficient Fine Tuning via Instance-Aware Token Ditching** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Br1uoB0Jiy
+- [x] 20. **Demystifying and Enhancing the Efficiency of Large Language Model Based Search Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=BtWBi17eVi
+- [x] 21. **MobileRL: Online Agentic Reinforcement Learning for Mobile GUI Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=C3F0G9nXhl
+- [-] 22. **On the Limits of Sparse Autoencoders: A Theoretical Framework and Reweighted Remedy** (Poster)
+  - OpenReview: https://openreview.net/forum?id=DSOTgzeH3w
+- [x] 23. **Embodied Agents Meet Personalization: Investigating Challenges and Solutions Through the Lens of Memory Utilization** (Poster)
+  - OpenReview: https://openreview.net/forum?id=E5L43l5EIu
+- [x] 24. **MARTI: A Framework for Multi-Agent LLM Systems Reinforced Training and Inference** (Poster)
+  - OpenReview: https://openreview.net/forum?id=E7jZqo0A50
+- [-] 25. **AbsTopK: Rethinking Sparse Autoencoders For Bidirectional Features** (Poster)
+  - OpenReview: https://openreview.net/forum?id=EEs6I4cO7S
+- [x] 26. **DreamOn: Diffusion Language Models For Code Infilling Beyond Fixed-size Canvas** (Poster)
+  - OpenReview: https://openreview.net/forum?id=EQTPmqukiU
+- [x] 27. **Context Learning for Multi-Agent Discussion** (Poster)
+  - OpenReview: https://openreview.net/forum?id=EUu8TILWpR
+- [x] 28. **AutoCode: LLMs as Problem Setters for Competitive Programming** (Poster)
+  - OpenReview: https://openreview.net/forum?id=F96nsbbhXC
+- [x] 29. **R1-Code-Interpreter: LLMs Reason with Code via Supervised and Multi-stage Reinforcement Learning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=FNlNH0iFOx
+- [-] 30. **Learning Human Habits with Rule-Guided Active Inference** (Poster)
+  - OpenReview: https://openreview.net/forum?id=FZXwkBH6s7
+- [x] 31. **Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Fd1jgQQW28
+- [x] 32. **ToolWeaver: Weaving Collaborative Semantics for Scalable Tool Use in Large Language Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Ge1DKuzWTO
+- [x] 33. **The Pensieve Paradigm: Stateful Language Models with Learned Memory Management** (Poster)
+  - OpenReview: https://openreview.net/forum?id=GymjF88oGQ
+- [x] 34. **SWE-RM: Execution-free Feedback for Software Engineering Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=H9wMe1G76j
+- [x] 35. **A Problem-Oriented Perspective and Anchor Verification for Code Optimization** (Poster)
+  - OpenReview: https://openreview.net/forum?id=HGaUV3jjvo
+- [x] 36. **Rethinking Code Similarity for Automated Algorithm Design with LLMs** (Poster)
+  - OpenReview: https://openreview.net/forum?id=HIUqeO9OOr
+- [-] 37. **GenCtrl -- A Formal Controllability Toolkit for Generative Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=HJTFgDYoLO
+- [-] 38. **Beyond Markovian Drifts: Action-Biased Geometric Walks with Memory for Personalized Summarization** (Poster)
+  - OpenReview: https://openreview.net/forum?id=HvOKarTubb
+- [x] 39. **Multi-Agent Design: Optimizing Agents with Better Prompts and Topologies** (Poster)
+  - OpenReview: https://openreview.net/forum?id=I05H9RUzHB
+- [x] 40. **Stronger-MAS: Multi-Agent Reinforcement Learning for Collaborative LLMs** (Poster)
+  - OpenReview: https://openreview.net/forum?id=IdF6JqXWzx
+- [-] 41. **VTool-R1: VLMs Learn to Think with Images via Reinforcement Learning on Multimodal Tool Use** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Idst6X6gmy
+- [-] 42. **MeSH: Memory-as-State-Highways for Recursive Transformers** (Poster)
+  - OpenReview: https://openreview.net/forum?id=IhTrFvY7p3
+- [-] 43. **QLCoder: A Query Synthesizer For Static Analysis of Security Vulnerabilities** (Poster)
+  - OpenReview: https://openreview.net/forum?id=J91IKwJrqv
+- [-] 44. **Gogo: Group-wise granularity-ordered codec for stable and efficient speech generation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=JbLmIoWwDC
+- [x] 45. **CARD: Towards Conditional Design of Multi-agent Topological Structures** (Poster)
+  - OpenReview: https://openreview.net/forum?id=JgvJdICc6P
+- [-] 46. **VLM-Guided Adaptive Negative Prompting for Creative Generation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=JzA6d2II4Q
+- [-] 47. **VEAttack: Downstream-agnostic Vision Encoder Attack against Large Vision Language Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=KboFptAM8S
+- [x] 48. **One Skill, Many Websites: Learning Generalizable Skills Through Polymorphic Abstraction** (Poster)
+  - OpenReview: https://openreview.net/forum?id=KdEsujyiSV
+- [-] 49. **CoLLMLight: Cooperative Large Language Model Agents for Network-Wide Traffic Signal Control** (Poster)
+  - OpenReview: https://openreview.net/forum?id=KeJqoEVOeY
+- [x] 50. **Learn the Ropes, Then Trust the Wins: Self-imitation with Progressive Exploration for Agentic Reinforcement Learning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Kssko33Ekq
+- [x] 51. **ToolACE-MT: Non-Autoregressive Generation for Agentic Multi-Turn Interaction** (Poster)
+  - OpenReview: https://openreview.net/forum?id=KznJt9Fhjc
+- [x] 52. **Empowering LLM Tool Invocation with Tool-call Reward Model** (Poster)
+  - OpenReview: https://openreview.net/forum?id=LnBEASInVr
+- [x] 53. **Toward Efficient Exploration by Large Language Model Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=M3vwnscpL2
+- [-] 54. **HAMLET: Hyperadaptive Agent-based Modeling for Live Embodied Theatrics** (Poster)
+  - OpenReview: https://openreview.net/forum?id=MKwW04UHW1
+- [x] 55. **Unlocking Long-Horizon Agentic Search with Large-Scale End-to-End RL** (Poster)
+  - OpenReview: https://openreview.net/forum?id=MfPDdPUGKi
+- [-] 56. **Training-Free Text-Guided Color Editing with Multi-Modal Diffusion Transformer** (Poster)
+  - OpenReview: https://openreview.net/forum?id=N1DfzTVuUY
+- [-] 57. **Arbitrary-Order Block SignSGD for Memory-Efficient LLM Fine-Tuning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=NQsdnYkCar
+- [x] 58. **Speculative Actions: A Lossless Framework for Faster AI Agents** (Oral)
+  - OpenReview: https://openreview.net/forum?id=P0GOk5wslg
+- [-] 59. **Breaking and Fixing Defenses Against Control Flow Hijacking in Multi-Agent Systems** (Poster)
+  - OpenReview: https://openreview.net/forum?id=PNU9Rj5RDQ
+- [-] 60. **Does Higher Interpretability Imply Better Utility? A Pairwise Analysis on Sparse Autoencoders** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Q4ooLNOFeR
+- [-] 61. **UltraMemV2: Memory Networks Scaling to 120B Parameters with Superior Long-Context Learning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=QWuXU0qNX0
+- [x] 62. **The Matthew Effect of AI Programming Assistants: A Hidden Bias in Software Evolution** (Poster)
+  - OpenReview: https://openreview.net/forum?id=QjkJdcbSDe
+- [-] 63. **Trade in Minutes! Rationality-Driven Agentic System for Quantitative Financial Trading** (Poster)
+  - OpenReview: https://openreview.net/forum?id=ROEwZAxqyS
+- [x] 64. **TokMem: Tokenized Procedural Memory for Large Language Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=RWjEf9PdiJ
+- [x] 65. **Group Verification-based Policy Optimization for Interactive Coding Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=RY47Tq0VsV
+- [x] 66. **From What to Why: A Multi-Agent System for Evidence-based Chemical Reaction Condition Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Rh72R0VXPS
+- [-] 67. **JanusVLN: Decoupling Semantics and Spatiality with Dual Implicit Memory for Vision-Language Navigation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=RnuB0Nlbd5
+- [x] 68. **Emergent Coordination in Multi-Agent Language Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=SRn1MtMPRq
+- [-] 69. **Distilling the Thought, Watermarking the Answer: A Principle Semantic Guided Watermark for Reasoning Large Language Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=T6NVogsXCZ
+- [x] 70. **Hierarchy-of-Groups Policy Optimization for Long-Horizon Agentic Tasks** (Poster)
+  - OpenReview: https://openreview.net/forum?id=T8Dev99qnz
+- [x] 71. **LLEMA: Accelerating Materials Design via LLM-Guided Evolutionary Search** (Poster)
+  - OpenReview: https://openreview.net/forum?id=TIqzhBvCNB
+- [-] 72. **Learning Retrieval Models with Sparse Autoencoders** (Poster)
+  - OpenReview: https://openreview.net/forum?id=TuFjICawSc
+- [x] 73. **Improving Text-guided CAD Prototyping via Modality-Specific Tokenization** (Poster)
+  - OpenReview: https://openreview.net/forum?id=UKIsnwd1Oz
+- [x] 74. **Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy Optimization** (Poster)
+  - OpenReview: https://openreview.net/forum?id=UOzxviKVFO
+- [-] 75. **One Life to Learn: Inferring Symbolic World Models for Stochastic Environments from Unguided Exploration** (Poster)
+  - OpenReview: https://openreview.net/forum?id=UQ36IrVCw2
+- [x] 76. **CodeGenGuard: A Robust Watermark for Code Generation Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=UQZ0Y0dbP9
+- [-] 77. **Efficient Discriminative Joint Encoders for Large Scale Vision-Language Reranking** (Poster)
+  - OpenReview: https://openreview.net/forum?id=UXtTBAyqVB
+- [-] 78. **ChatInject: Abusing Chat Templates for Prompt Injection in LLM Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=WVhgFSKniL
+- [-] 79. **Transductive Visual Programming: Evolving Tool Libraries from Experience for Spatial Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=XCW1l9qcxy
+- [-] 80. **AnyBCQ: Hardware Efficient Flexible Binary-Coded Quantization for Multi-Precision LLMs** (Poster)
+  - OpenReview: https://openreview.net/forum?id=XPIEkFdEDi
+- [-] 81. **QKV Projections Require a Fraction of Their Memory** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Xvpk1g02u2
+- [-] 82. **MedAgent-Pro: Towards Evidence-based Multi-modal Medical Diagnosis via Reasoning Agentic Workflow** (Poster)
+  - OpenReview: https://openreview.net/forum?id=ZOuU0udyA4
+- [x] 83. **GraphPlanner: Graph-Based Agentic Routing for LLMs** (Poster)
+  - OpenReview: https://openreview.net/forum?id=ZdGB7MNQDT
+- [-] 84. **PhyScensis: Physics-Augmented LLM Agents for Complex Physical Scene Arrangement** (Poster)
+  - OpenReview: https://openreview.net/forum?id=aCVfhY4Qen
+- [-] 85. **HiVid: LLM-Guided Video Saliency For Content-Aware VOD And Live Streaming** (Poster)
+  - OpenReview: https://openreview.net/forum?id=aECIKvAYcd
+- [-] 86. **Selective Expert Guidance for Effective and Diverse Exploration in Reinforcement Learning of LLMs** (Poster)
+  - OpenReview: https://openreview.net/forum?id=axlFycAkoL
+- [-] 87. **Not All Bits Are Equal: How Model Scale Changes Memory-Optimal Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=b6qQmQ2F13
+- [x] 88. **Eigen-1: Scientific Reasoning through Adaptive Multi-Agent Refinement and Monitor-based RAG** (Poster)
+  - OpenReview: https://openreview.net/forum?id=bGtmGTbmaz
+- [x] 89. **GTool: Graph Enhanced Tool Planning with Large Language Model** (Poster)
+  - OpenReview: https://openreview.net/forum?id=bn47cqGQ7l
+- [-] 90. **Token-Importance Guided Direct Preference Optimization** (Oral)
+  - OpenReview: https://openreview.net/forum?id=cMEnMVvMw9
+- [-] 91. **Scaling Agent Learning via Experience Synthesis** (Poster)
+  - OpenReview: https://openreview.net/forum?id=cf7qpBwttr
+- [x] 92. **WALT: Web Agents that Learn Tools** (Poster)
+  - OpenReview: https://openreview.net/forum?id=cgIDqcJcoI
+- [-] 93. **Out of the Memory Barrier: A Highly Memory-Efficient Training System for LLMs with Million-Token Contexts** (Poster)
+  - OpenReview: https://openreview.net/forum?id=dSa3ImCQr7
+- [x] 94. **LightMem: Lightweight and Efficient Memory-Augmented Generation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=dyJ0GWpjJB
+- [-] 95. **Spatially Guided Training for Vision-Language-Action Model** (Poster)
+  - OpenReview: https://openreview.net/forum?id=eKhOrQWAVJ
+- [-] 96. **Forget Forgetting: Continual Learning in a World of Abundant Memory** (Poster)
+  - OpenReview: https://openreview.net/forum?id=fvL8IIEPxG
+- [x] 97. **Diffusion Language Model Knows the Answer Before It Decodes** (Oral)
+  - OpenReview: https://openreview.net/forum?id=g88nt4ieTG
+- [x] 98. **ResT: Reshaping Token-Level Policy Gradients for Tool-Use Large Language Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=gNZlaKRWki
+- [x] 99. **SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Reinforcement Learning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=gQSnEIA3Z3
+- [x] 100. **Are LLMs Really Not Knowledgeable? Mining the Submerged Knowledge in LLMs' Memory** (Poster)
+  - OpenReview: https://openreview.net/forum?id=gvUufgeJvV
+- [-] 101. **Toward Faithful Retrieval-Augmented Generation with Sparse Autoencoders** (Poster)
+  - OpenReview: https://openreview.net/forum?id=hgBZP67BkP
+- [x] 102. **THE PATH OF LEAST RESISTANCE: GUIDING LLM REASONING TRAJECTORIES WITH PREFIX CONSENSUS** (Poster)
+  - OpenReview: https://openreview.net/forum?id=hrnSqERgPn
+- [-] 103. **Attribution-Guided Decoding** (Poster)
+  - OpenReview: https://openreview.net/forum?id=ifBXz7ABV0
+- [x] 104. **CoMAS: Co-Evolving Multi-Agent Systems via Interaction Rewards** (Poster)
+  - OpenReview: https://openreview.net/forum?id=ihwAzktmWc
+- [x] 105. **ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory** (Poster)
+  - OpenReview: https://openreview.net/forum?id=jL7fwchScm
+- [-] 106. **CLUE: Conflict-guided Localization for LLM Unlearning Framework** (Poster)
+  - OpenReview: https://openreview.net/forum?id=jtRYvazBWv
+- [x] 107. **MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent** (Oral)
+  - OpenReview: https://openreview.net/forum?id=k5nIOvYGCL
+- [-] 108. **FlexiCodec: A Dynamic Neural Audio Codec for Low Frame Rates** (Poster)
+  - OpenReview: https://openreview.net/forum?id=kYkfCs4ZAH
+- [-] 109. **LingoLoop Attack: Trapping MLLMs via Linguistic Context and State Entrapment into Endless Loops** (Poster)
+  - OpenReview: https://openreview.net/forum?id=kxEM2vc7ne
+- [-] 110. **HLD: Approximate Hierarchical Linguistic Distribution Modeling for LLM-Generated Text Detection** (Poster)
+  - OpenReview: https://openreview.net/forum?id=l9mqzHROGu
+- [x] 111. **AlphaAgentEvo: Evolution-Oriented Alpha Mining via Self-Evolving Agentic Reinforcement Learning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=lNmZrawUMu
+- [-] 112. **Enhancing Persona Following at Decoding Time via Dynamic Importance Estimation for Role-Playing Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=lVE8H8QNcx
+- [-] 113. **Scaling Speech Tokenizers with Diffusion Autoencoders** (Poster)
+  - OpenReview: https://openreview.net/forum?id=llMfmDtWka
+- [x] 114. **Reinforcement Learning for Machine Learning Engineering Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=mfIbSouoaZ
+- [-] 115. **Real-Time Reasoning Agents in Evolving Environments** (Poster)
+  - OpenReview: https://openreview.net/forum?id=n1AvXiU2lu
+- [-] 116. **Searching for Privacy Risks in LLM Agents via Simulation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=nz4ZqbrBEi
+- [-] 117. **MIRA: Memory-Integrated Reinforcement Learning Agent with Limited LLM Guidance** (Poster)
+  - OpenReview: https://openreview.net/forum?id=oWagByDNPc
+- [x] 118. **ReVeal: Self-Evolving Code Agents via Reliable Self-Verification** (Poster)
+  - OpenReview: https://openreview.net/forum?id=q56ZI1Co43
+- [-] 119. **TINY BUT MIGHTY: A SOFTWARE-HARDWARE CO- DESIGN APPROACH FOR EFFICIENT MULTIMODAL IN- FERENCE ON BATTERY-POWERED SMALL DEVICES** (Poster)
+  - OpenReview: https://openreview.net/forum?id=ql30VWGyda
+- [x] 120. **Stochastic Self-Organization in Multi-Agent Systems** (Poster)
+  - OpenReview: https://openreview.net/forum?id=rS3Jb9AAej
+- [x] 121. **Enhancing Complex Symbolic Logical Rea­soning of Large Language Models via Sparse Multi-Agent Debate** (Poster)
+  - OpenReview: https://openreview.net/forum?id=rdE9qxGfIv
+- [x] 122. **To Infinity and Beyond: Tool-Use Unlocks Length Generalization in State Space Models** (Oral)
+  - OpenReview: https://openreview.net/forum?id=sSfep4udCb
+- [-] 123. **R4: Nested Reasoning-Retrieval for Reward Modeling in Role-Playing Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=sWQSbVsPEz
+- [-] 124. **PerfGuard: A Performance-Aware Agent for Visual Content Generation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=tdN42GTv4S
+- [-] 125. **Muon Outperforms Adam in Tail-End Associative Memory Learning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=twbMFL0DMp
+- [x] 126. **OptimSyn: Influence-Guided Rubrics Optimization for Synthetic Data Generation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=vFcm5sOitq
+- [-] 127. **Modeling Others' Minds as Code** (Poster)
+  - OpenReview: https://openreview.net/forum?id=vHXo7xIer6
+- [-] 128. **How Far Are LLMs from Professional Poker Players? Revisiting Game-Theoretic Reasoning with Agentic Tool Use** (Poster)
+  - OpenReview: https://openreview.net/forum?id=vV54ShHvGi
+- [-] 129. **KBVQ-MoE: KLT-guided SVD with Bias-Corrected Vector Quantization for MoE Large Language Models** (Poster)
+  - OpenReview: https://openreview.net/forum?id=veFs5UfYq9
+- [-] 130. **LLMs are Greedy Agents: Effects of RL Fine-tuning on Decision-Making Abilities** (Poster)
+  - OpenReview: https://openreview.net/forum?id=weUP6H5Ko9
+- [-] 131. **CoMem: Compositional Concept-Graph Memory for Vision–Language Adaptation** (Poster)
+  - OpenReview: https://openreview.net/forum?id=xp7wDU9JBW
+- [x] 132. **ProRe: A Proactive Reward System for GUI Agents via Reasoner–Actor Collaboration** (Poster)
+  - OpenReview: https://openreview.net/forum?id=xtysskccFc
+- [x] 133. **Code Driven Planning with Domain-Adaptive Selector** (Poster)
+  - OpenReview: https://openreview.net/forum?id=yDbJHQlrbf
+- [x] 134. **IceCache: Memory-Efficient KV-cache Management for Long-Sequence LLMs** (Poster)
+  - OpenReview: https://openreview.net/forum?id=yHxSKM9kdr
+- [x] 135. **Opponent Shaping in LLM Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=yJoHTqUNry
+- [x] 136. **In Agents We Trust, but Who Do Agents Trust? Latent Preferences Steer LLM Generations** (Poster)
+  - OpenReview: https://openreview.net/forum?id=yTUNl6jYGU
+- [-] 137. **FaSTA*: Fast-Slow Toolpath Agent with Subroutine Mining for Efficient Multi-turn Image Editing** (Poster)
+  - OpenReview: https://openreview.net/forum?id=yhhbL9T1QB
+- [x] 138. **All Code, No Thought: Language Models Struggle to Reason in Ciphered Language** (Poster)
+  - OpenReview: https://openreview.net/forum?id=yjFkeQ2ynQ
+- [-] 139. **Cautious Optimizers: Improving Training with One Line of Code** (Poster)
+  - OpenReview: https://openreview.net/forum?id=zBPZeRjfgu
+- [x] 140. **Towards True Speech-to-Speech Models Without Text Guidance** (Poster)
+  - OpenReview: https://openreview.net/forum?id=zjaV5zmlkl
+- [x] 141. **GuirlVG: Incentivize GUI Visual Grounding via Empirical Exploration on Reinforcement Learning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=zrH2A1upAo
+
+## Additional non-duplicate LLM Agent Design candidates
+
+- [-] 142. **Let's Think in Two Steps: Mitigating Agreement Bias in MLLMs with Self-Grounded Verification** (Poster)
+  - OpenReview: https://openreview.net/forum?id=rwo7bVlnzo
+- [-] 143. **ST-WebAgentBench: A Benchmark for Evaluating Safety and Trustworthiness in Web Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=MuCDzH0ctf
+- [-] 144. **Agent-X: Evaluating Deep Multimodal Reasoning in Vision-Centric Agentic Tasks** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Vjruxvp1Xd
+- [x] 145. **AgentFold: Long-Horizon Web Agents with Proactive Context Folding** (Poster)
+  - OpenReview: https://openreview.net/forum?id=IuZoTgsUws
+- [-] 146. **DAVE: A VLM Vision Encoder for Document Understanding and Web Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=kgk0NqjsoW
+- [x] 147. **Don't Just Fine-tune the Agent, Tune the Environment** (Poster)
+  - OpenReview: https://openreview.net/forum?id=nzodtGccEM
+- [x] 148. **Flash-Searcher: Fast and Effective Web Agents via DAG-Based Parallel Execution** (Poster)
+  - OpenReview: https://openreview.net/forum?id=QuaJ6kJaBm
+- [x] 149. **Go-Browse: Training Web Agents with Structured Exploration** (Poster)
+  - OpenReview: https://openreview.net/forum?id=IpzRWE52yw
+- [-] 150. **GUI-Shift: Enhancing VLM-Based GUI Agents through Self-supervised Reinforcement Learning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=NakMHPljT7
+- [x] 151. **How Dark Patterns Manipulate Web Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=G7Dan0L7ho
+- [x] 152. **Just Do It!? Computer-Use Agents Exhibit Blind Goal-Directedness** (Poster)
+  - OpenReview: https://openreview.net/forum?id=9W4bPRsEIT
+- [-] 153. **LiveResearchBench: Benchmarking Single- and Multi-Agent Systems for Citation-Grounded Deep Research** (Poster)
+  - OpenReview: https://openreview.net/forum?id=ghwbZ3uhEd
+- [x] 154. **UI-Ins: Enhancing GUI Grounding with Multi-Perspective Instruction as Reasoning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=dsQHm7YX9c
+- [x] 155. **Web-CogReasoner: Towards Knowledge-Induced Cognitive Reasoning for Web Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=siXHlHBYIe
+- [x] 156. **WebArbiter: A Generative Reasoning Process Reward Model for Web Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=canA6Ef0RP
+- [x] 157. **WebFactory: Automated Compression of Foundational Language Intelligence into Grounded Web Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=HaIEP2PD4S
+- [x] 158. **A Framework for Studying AI Agent Behavior: Evidence from Consumer Choice Experiments** (Poster)
+  - OpenReview: https://openreview.net/forum?id=xAPoscV2Bw
+- [x] 159. **Agentic Reinforced Policy Optimization** (Poster)
+  - OpenReview: https://openreview.net/forum?id=TX4k7BF6aO
+- [x] 160. **CoDA: Agentic Systems for Collaborative Data Visualization** (Poster)
+  - OpenReview: https://openreview.net/forum?id=M4RKeHIAxw
+- [x] 161. **Credit-Budgeted ICPC-Style Coding: When LLM Agents Must Pay for Every Decision** (Poster)
+  - OpenReview: https://openreview.net/forum?id=WC2g3zDF2o
+- [x] 162. **Discovering Hierarchical Software Engineering Agents via Bandit Optimization** (Poster)
+  - OpenReview: https://openreview.net/forum?id=O6stE173BD
+- [-] 163. **EvoTest: Evolutionary Test-Time Learning for Self-Improving Agentic Systems** (Poster)
+  - OpenReview: https://openreview.net/forum?id=JFnnajbkvP
+- [-] 164. **FHE-Coder: Secure Agentic Code Generation for Fully Homomorphic Encryption** (Poster)
+  - OpenReview: https://openreview.net/forum?id=4F1py5vQXm
+- [-] 165. **Financial fraud collusion among generative AI agents in social networks** (Poster)
+  - OpenReview: https://openreview.net/forum?id=a1d2smwmBS
+- [x] 166. **From Assumptions to Actions: Turning LLM Reasoning into Uncertainty-Aware Planning for Embodied Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=GODFBZhFcX
+- [x] 167. **From Reproduction to Replication: Evaluating Research Agents with Progressive Code Masking** (Poster)
+  - OpenReview: https://openreview.net/forum?id=qBcHWGBnIb
+- [-] 168. **Gaia2: Benchmarking LLM Agents on Dynamic and Asynchronous Environments** (Oral)
+  - OpenReview: https://openreview.net/forum?id=9gw03JpKK4
+- [-] 169. **GhostEI-Bench: Do Mobile Agent Resilience to Environmental Injection in Dynamic On-Device Environments?** (Poster)
+  - OpenReview: https://openreview.net/forum?id=2zi9z2geAO
+- [x] 170. **Graph-of-Agents: A Graph-based Framework for Multi-Agent LLM Collaboration** (Poster)
+  - OpenReview: https://openreview.net/forum?id=34cANdsHKV
+- [x] 171. **Helmsman: Autonomous Synthesis of Federated Learning Systems via Collaborative LLM Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Voiy13SK3r
+- [x] 172. **Huxley-G\"odel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine** (Oral)
+  - OpenReview: https://openreview.net/forum?id=T0EiEuhOOL
+- [x] 173. **In-The-Flow Agentic System Optimization for Effective Planning and Tool Use** (Oral)
+  - OpenReview: https://openreview.net/forum?id=Mf5AleTUVK
+- [x] 174. **Information Gain-based Policy Optimization: A Simple and Effective Approach for Multi-Turn LLM Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=qkWP6phrvZ
+- [-] 175. **KRAMABENCH: A Benchmark for AI Systems on Data-to-Insight Pipelines over Data Lakes** (Poster)
+  - OpenReview: https://openreview.net/forum?id=fZfUdeCC5X
+- [-] 176. **Learning to Orchestrate Agents in Natural Language with the Conductor** (Poster)
+  - OpenReview: https://openreview.net/forum?id=U23A2BUKYt
+- [x] 177. **M$^2$-Miner: Multi-Agent Enhanced MCTS for Mobile GUI Agent Data Mining** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Ms9MMN8STj
+- [-] 178. **MCP-Bench: Benchmarking Tool-Using LLM Agents with Complex Real-World Tasks via MCP Servers** (Poster)
+  - OpenReview: https://openreview.net/forum?id=fe8mzHwMxN
+- [x] 179. **MLE-Smith: Scaling MLE Tasks with Automated Multi-agent Pipeline** (Poster)
+  - OpenReview: https://openreview.net/forum?id=mXQslpfSU5
+- [-] 180. **OpenAgentSafety: A Comprehensive Framework For Evaluating Real-World AI Agent Safety** (Poster)
+  - OpenReview: https://openreview.net/forum?id=xggSxCFQbA
+- [x] 181. **OrchestrationBench: LLM-Driven Agentic Planning and Tool Use in Multi-Domain Scenarios** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Oljnxmf4pc
+- [x] 182. **Process-Level Trajectory Evaluation for Environment Configuration in Software Engineering Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Q8qgloDKUO
+- [-] 183. **ReWatch-R1: Boosting Complex Video Reasoning in Large Vision-Language Models through Agentic Data Synthesis** (Poster)
+  - OpenReview: https://openreview.net/forum?id=xindJJLSr1
+- [x] 184. **ScaleCUA: Scaling Open-Source Computer Use Agents with Cross-Platform Data** (Oral)
+  - OpenReview: https://openreview.net/forum?id=yBFUqdJFZn
+- [x] 185. **Scaling Agents via Continual Pre-training** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Dru5mm9anE
+- [x] 186. **Shoot First, Ask Questions Later? Building Rational Agents that Explore and Act Like People** (Oral)
+  - OpenReview: https://openreview.net/forum?id=EQhUvWH78U
+- [x] 187. **Stop Wasting Your Tokens: Towards Efficient Runtime Multi-Agent Systems** (Poster)
+  - OpenReview: https://openreview.net/forum?id=pzFhtpkabh
+- [-] 188. **The Alignment Waltz: Jointly Training Agents to Collaborate for Safety** (Poster)
+  - OpenReview: https://openreview.net/forum?id=2NBS9ilNqM
+- [-] 189. **The Tool Decathlon: Benchmarking Language Agents for Diverse, Realistic, and Long-Horizon Task Execution** (Poster)
+  - OpenReview: https://openreview.net/forum?id=z53s5p0qhf
+- [x] 190. **ToolTree: Efficient LLM Tool Planning via Dual-Feedback Monte Carlo Tree Search and Bidirectional Pruning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=Ef5O9gNNLE
+- [x] 191. **Towards Multimodal Data-Driven Scientific Discovery Powered by LLM Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=kZHSvETWdi
+- [-] 192. **TRAJECT-Bench:A Trajectory-Aware Benchmark for Evaluating Agentic Tool Use** (Poster)
+  - OpenReview: https://openreview.net/forum?id=TZWnWvsQ0X
+- [x] 193. **TUMIX: Multi-Agent Test-Time Scaling with Tool-Use Mixture** (Poster)
+  - OpenReview: https://openreview.net/forum?id=HBm3MFtszH
+- [-] 194. **VeriEquivBench: An Equivalence Score for Ground-Truth-Free Evaluation of Formally Verifiable Code** (Poster)
+  - OpenReview: https://openreview.net/forum?id=tRRHVUwP2B
+- [x] 195. **VisCoder2: Building Multi-Language Visualization Coding Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=4zoMnmZzh4
+- [-] 196. **VitaBench: Benchmarking LLM Agents with Versatile Interactive Tasks in Real-world Applications** (Poster)
+  - OpenReview: https://openreview.net/forum?id=rtcX9qOBaz
+- [-] 197. **VPI-Bench: Visual Prompt Injection Attacks for Computer-Use Agents** (Poster)
+  - OpenReview: https://openreview.net/forum?id=UMauKu2azg
+- [x] 198. **WebSailor-V2: Bridging the Chasm to Proprietary Agents via Synthetic Data and Scalable Reinforcement Learning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=HuP16O5SJf
+- [x] 199. **When Agents “Misremember” Collectively: Exploring the Mandela Effect in LLM-based Multi-Agent Systems** (Poster)
+  - OpenReview: https://openreview.net/forum?id=yIoMqDes7O
+- [x] 200. **Zephyrus: An Agentic Framework for Weather Science** (Poster)
+  - OpenReview: https://openreview.net/forum?id=aVeaNahsID
+- [x] 201. **FlowSearcher: Synthesizing Memory-Guided Agentic Workflows for Web Information Seeking** (Poster)
+  - OpenReview: https://openreview.net/forum?id=34v7DVz2l0
+- [x] 202. **Agent Data Protocol** (Oral)
+  - OpenReview: https://openreview.net/forum?id=tG6301ORHd
+- [x] 203. **ATLAS: Constraints-Aware Multi-Agent Collaboration for Real-World Travel Planning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=mIYGiBf9Pm
+- [-] 204. **ContextNav: Towards Agentic Multimodal In-Context Learning** (Poster)
+  - OpenReview: https://openreview.net/forum?id=k3DZzBl2EZ
+- [x] 205. **Multi-View Encoders for Performance Prediction in LLM-Based Agentic Workflows** (Poster)
+  - OpenReview: https://openreview.net/forum?id=7oeKDZsmWp
