@@ -54,7 +54,7 @@ Count: 205
   - OpenReview: https://openreview.net/forum?id=C3F0G9nXhl
 - [-] 22. **On the Limits of Sparse Autoencoders: A Theoretical Framework and Reweighted Remedy** (Poster)
   - OpenReview: https://openreview.net/forum?id=DSOTgzeH3w
-- [x] 23. **Embodied Agents Meet Personalization: Investigating Challenges and Solutions Through the Lens of Memory Utilization** (Poster)
+- [-] 23. **Embodied Agents Meet Personalization: Investigating Challenges and Solutions Through the Lens of Memory Utilization** (Poster)
   - OpenReview: https://openreview.net/forum?id=E5L43l5EIu
 - [x] 24. **MARTI: A Framework for Multi-Agent LLM Systems Reinforced Training and Inference** (Poster)
   - OpenReview: https://openreview.net/forum?id=E7jZqo0A50

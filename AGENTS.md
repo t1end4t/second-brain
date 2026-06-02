@@ -150,6 +150,16 @@ Load the `project-sync` skill for detailed sync instructions.
 
 ## Cross-Project Visibility
 
+When the user asks for tasks/TODOs/current work without naming a scope
+(for example: "todo list", "what should I do", "what needs doing",
+"what thing need to do right now", "current tasks", "next actions"), read and summarize:
+- today's `daily/{YYYY-MM-DD}.md`
+- `inbox.md`
+- `1-Projects/*/tasks.md`
+- `2-Areas/*/TODO.md`
+
+When the user names a project or area, limit to that scope unless they ask broadly.
+
 To see all active work, read:
 - `1-Projects/*/tasks.md` — all project tasks
 - `2-Areas/*/TODO.md` — all area tasks

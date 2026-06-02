@@ -4,7 +4,10 @@
 - [ ] 
 
 ## Next
-- [ ] 
+- [ ] Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems
+- [ ] Unlocking the Working Memory of Large Language Models for Latent Reasoning
+- [ ] Speculative Actions: A Lossless Framework for Faster AI Agents (ICLR)
+- [ ] Verifying Chain-of-Thought Reasoning via Its Computational Graph (ICLR)
 
 ## Waiting
 - [ ] 
