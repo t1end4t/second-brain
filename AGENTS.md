@@ -42,10 +42,10 @@ Treat everything here as knowledge organization, not engineering scaffolding.
 - `TODO.md` — ongoing tasks: Now / Next / Waiting / Done.
 
 ### Daily files (`daily/{YYYY-MM-DD}.md`)
-- Time blocks, priorities, capture, reflection.
+- Created from `_templates/planning/daily.md`.
 
 ### Weekly files (`weekly/{YYYY-Www}.md`)
-- Weekly review: what happened, what's next, outcomes.
+- Created from `_templates/planning/weekly.md`.
 
 ---
 
@@ -57,34 +57,8 @@ When the user says "plan my day", "what should I work on", or similar:
 2. Read all `1-Projects/*/tasks.md` for active project tasks.
 3. Read relevant `2-Areas/*/TODO.md` for area tasks.
 4. Check yesterday's `daily/` file for unfinished items.
-5. Create today's `daily/{YYYY-MM-DD}.md` with:
-   - Main outcome (1 thing)
-   - Secondary actions (2-3 things)
-   - Time blocks (morning = deep work, afternoon = shallow/admin)
-   - Capture section for the day
+5. Create today's `daily/{YYYY-MM-DD}.md` from `_templates/planning/daily.md`.
 6. Update project `tasks.md` files if priorities shift.
-
-### Daily file format:
-```markdown
-# {YYYY-MM-DD}
-
-## Main Outcome
-- 
-
-## Secondary
-- [ ] 
-- [ ] 
-
-## Time Blocks
-- Morning (deep work): 
-- Afternoon: 
-
-## Capture
-<!-- Ideas, tasks, thoughts during the day -->
-
-## End of Day
-<!-- What got done. What's next. -->
-```
 
 ---
 
@@ -104,37 +78,13 @@ When the user says "process inbox" or during daily planning:
 
 ## Weekly Review
 
-When the user says "weekly review" or at start of week:
+When the user says "weekly review", "review the week", "end of week", or at start of week:
 
 1. Read all `daily/` files from the past week.
 2. Read all `1-Projects/*/tasks.md` for stale items, blockers, next actions.
 3. Read relevant `2-Areas/*/TODO.md`.
-4. Create `weekly/{YYYY-Www}.md` with:
-   - What got done this week
-   - What's blocked or stale
-   - Outcomes for next week
-   - Priority adjustments
+4. Create `weekly/{YYYY-Www}.md` from `_templates/planning/weekly.md` (review variant).
 5. Clean up stale tasks (move to Later, Waiting, or Done).
-
-### Weekly file format:
-```markdown
-# Week {YYYY-Www}
-
-## This Week's Outcomes
-- 
-
-## What Got Done
-- 
-
-## Blocked / Stale
-- 
-
-## Next Week
-- 
-
-## Priority Shifts
-<!-- Move items between Now/Next/Later as needed -->
-```
 
 ---
 

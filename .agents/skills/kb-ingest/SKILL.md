@@ -1,9 +1,9 @@
 ---
 name: kb-ingest
-description: Ingest raw source documents into the knowledge base. Convert papers, articles, repos, datasets, images, and other source materials into wiki-ready markdown files in `3-Resources/raw/`.
+description: Ingest raw source documents into the knowledge base. Preserve originals in `3-Resources/raw/` and convert papers, articles, repos, datasets, images, and other source materials into wiki-ready markdown files under `3-Resources/raw/converted/`.
 ---
 
-Ingest raw source documents into the knowledge base. Convert papers, articles, repos, datasets, images, and other source materials into wiki-ready markdown files in `3-Resources/raw/`.
+Ingest raw source documents into the knowledge base. Preserve originals in `3-Resources/raw/` and convert papers, articles, repos, datasets, images, and other source materials into wiki-ready markdown files under `3-Resources/raw/converted/`.
 
 ## When to use
 - User provides a new document (PDF, DOCX, web article, URL, dataset, image collection)
@@ -22,7 +22,8 @@ Ingest raw source documents into the knowledge base. Convert papers, articles, r
 ### 2. Convert to markdown
 - Use `markitdown` skill for PDF, DOCX, PPTX, images, etc.
 - For web articles, preserve headers, code blocks, tables, and image references
-- Extract and save embedded images to `raw/{source-name}/images/` alongside the markdown
+- Save converted markdown under `raw/converted/`, mirroring the original relative path when practical
+- Extract and save embedded images to `raw/converted/{source-name}/images/` alongside the markdown
 - Keep the original file in `raw/` (do not delete)
 
 ### 3. Generate source metadata
@@ -30,6 +31,8 @@ Create a lightweight source entry in `3-Resources/wiki/_sources.md`:
 ```markdown
 ### {filename}
 - **Type:** paper / article / dataset / repo / image / other
+- **Source file:** 3-Resources/raw/{path-to-original}
+- **Converted markdown:** 3-Resources/raw/converted/{path-to-converted}.md / (pending)
 - **Date added:** {YYYY-MM-DD}
 - **Summary:** 1-2 sentence description of what this source contains
 - **Key topics:** [topic1, topic2, topic3]
@@ -37,8 +40,8 @@ Create a lightweight source entry in `3-Resources/wiki/_sources.md`:
 ```
 
 ### 4. Output
-- Raw markdown file(s) saved in `3-Resources/raw/`
-- Images saved in `3-Resources/raw/{source-name}/images/`
+- Raw markdown file(s) saved in `3-Resources/raw/converted/`
+- Images saved in `3-Resources/raw/converted/{source-name}/images/`
 - `_sources.md` updated with new entry
 - Report: "Ingested {N} source(s), {M} image(s). Ready for compilation."
 

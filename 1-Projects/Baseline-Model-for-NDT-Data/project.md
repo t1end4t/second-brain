@@ -4,20 +4,17 @@
 
 I want to prepare and verify the pulsed eddy current testing (PECT) TDMS dataset stored in `~/Documents`.
 
-Current scope is TMR-only split/data strategy for point-waveform models, after raw TDMS rotate/crop review, LOI review, and label/mask preparation.
+Current scope is planning and preprocessing first: raw TDMS inventory, rotate/crop review, LOI review, masks, feature-map previews, processed `.npy` export QA, statistical visualization, TSNR/PCA feature review, and grouped-dataset protocol design before any training work.
 
-Before touching the dataset, first read the draft paper in `3-Resources/raw/Development-of-an-Experimental-Pulsed-Eddy-Current-Testing-Dataset-for-Defect-Detectionin-Aircraft-Aluminum-Structures.docx` to understand the experimental context, specimens, labels, and metadata.
+## Modeling Plan Notes
+
+- Start with statistical visualizations such as mean, max, distribution, and related summaries.
+- Use TSNR and PCA to inspect feature visibility and separability before training.
+- Build grouped datasets four ways: different specimen, different lift-off, different sensor type, and different waveform.
+- Apply the grouped-dataset protocols to both classification and regression tasks.
+- For regression, input should preserve corrosion lateral surface area as `n x n x 500` patches, not isolated `1 x 500` sample vectors.
 
 ## Current Context
-
-Paper context read on 2026-05-07:
-- Dataset is an experimental PECT dataset for aircraft-grade aluminum A2024 structures.
-- Raw measurements are stored as TDMS transient signals with metadata.
-- Dataset has three specimen scenarios: TSC surface corrosion, ISC1 hidden corrosion at riveted Layer 1, and ISC2 deep-seated corrosion at riveted Layer 2.
-- Experimental factors: four probe configurations, three excitation waveforms, and three lift-off distances.
-- Main paper count: 144 measurement scenarios.
-- Each TDMS record is described as a 1D float64 waveform array from a 300 x 301 scan grid, 500 samples per scan point, sampled at 100 kHz.
-- Defect geometry is known by defect ID: depth and diameter tables are given for TSC, ISC1, and ISC2; ISC2 also includes non-corrosion rivet-only IDs.
 
 TDMS-only local inventory checked on 2026-05-07:
 - Local raw data under `~/Documents` contains 115 TDMS files.
@@ -116,7 +113,6 @@ A pixel is inside a circular defect if `(x - cx)^2 + (y - cy)^2 <= r_px^2`.
 
 - Metadata/coordinate lookup is deferred until labels are needed.
 - How should corrosion volume be defined from flat-bottom hole geometry: cylinder approximation from depth and diameter unless metadata says otherwise?
-- Where are the missing scenarios? Paper claims 144 but current trusted inventory shows 113 TDMS files. Are Differential Pot-core files present under another naming convention, or are they simply not transferred?
 - Are lift-off distances 4 mm and 5 mm present in raw data or only in validation figures?
 - ISC2 `Dp=1.27` vs `Dp=1.0` for top-row corrosion IDs: which label set is correct? Need to cross-check with original fabrication drawings or metadata.
 - Where are the missing scenarios? Paper claims 144 but current trusted inventory shows 113 TDMS files. Are Differential Pot-core files present under another naming convention, or are they simply not transferred?
@@ -127,13 +123,7 @@ A pixel is inside a circular defect if `(x - cx)^2 + (y - cy)^2 <= r_px^2`.
 
 - Raw TDMS data in `~/Documents` is read-only; write outputs only in the execution repo.
 - Keep preprocessing and review steps simple and reproducible.
-- Model development currently uses only TMR TDMS files because TMR quality is best.
-- Train separate models per acquisition side and specimen type: frontside corrosion, backside corrosion, frontside mixed, and backside mixed when all four groups are available.
-- Use `templates/MonteCarlo_Deep.py` only as a modeling reference. First train on a single TMR TDMS file, with model input reshaped from `X.shape == (72_900, 500)` to `(72_900, 500, 1)`, before scaling to full split-aware datasets.
-- Corrosion training arrays use this shape sequence: raw `300 x 301 x 500` TDMS cube -> trim extra column to `300 x 300 x 500` -> crop `15` px from each side -> final `270 x 270 x 500`; flattened per-file arrays are `X.shape == (72_900, 500)` and `y.shape == (72_900,)`.
-- Split corrosion-detection data by whole TDMS file/scenario before flattening point samples; do not random-split points from the same map.
+- Processed corrosion exports use this shape sequence: raw `300 x 301 x 500` TDMS cube -> trim extra column to `300 x 300 x 500` -> crop `15` px from each side -> final `270 x 270 x 500`.
 - CNR is a later task after labels and preprocessing are stable.
 
 ## Related Resources
-
-- `3-Resources/raw/Development-of-an-Experimental-Pulsed-Eddy-Current-Testing-Dataset-for-Defect-Detectionin-Aircraft-Aluminum-Structures.docx`

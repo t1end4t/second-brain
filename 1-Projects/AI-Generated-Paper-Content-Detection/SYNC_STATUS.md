@@ -2,9 +2,9 @@
 
 - **Status**: synced
 - **Vault project**: `1-Projects/AI-Generated-Paper-Content-Detection/`
-- **Target folder**: `/home/tiendat/codebases/dev-sandbox/ai-content-detection`
+- **Target folder**: `/home/tiendat/codebases/side-projects/paper-lens`
 - **Target docs**: `docs/`
-- **Last sync**: 2026-05-27 12:22:14 +0700
+- **Last sync**: 2026-06-02 14:18:37 +0700
 - **Last direction**: vault-to-target
 
 ## Status Values

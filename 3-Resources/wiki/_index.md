@@ -36,7 +36,7 @@
 ## Statistics
 - **Concepts:** 16
 - **Articles:** 4
-- **Raw sources:** 3
+- **Raw sources:** 117
 
 ---
-_Last compiled: 2026-05-27 (updated with AI detection concepts)_
+_Last health-checked: 2026-06-02_

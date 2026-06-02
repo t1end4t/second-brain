@@ -104,7 +104,6 @@
                   ruff
                   pandoc
                   poppler-utils
-
                 ];
 
                 languages.python = {

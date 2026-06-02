@@ -43,4 +43,5 @@ For this project, the custom agent should focus on these in a lean way:
 
 ## Related Resources
 
-- `3-Resources/raw/others/compass_artifact_wf-cc816ab0-9f2d-4d0c-9c19-37b4871d512a_text_markdown.md`
+- `[[articles/editorial-ai-detection-system-design]]` — comprehensive guide to multi-agent AI-content detection
+- https://github.com/blader/humanizer — reference for AI-Generated-Paper-Content-Detection project

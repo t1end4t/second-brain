@@ -4,25 +4,44 @@
 > Auto-maintained by LLM ingest and compile pipeline.
 
 ## Documents
-<!-- Each entry: filename — type, date, 1-2 sentence summary, linked wiki articles -->
+<!-- Each entry: filename — type, source file path, converted markdown path, date, 1-2 sentence summary, linked wiki articles -->
+<!-- Original files stay under 3-Resources/raw/. Converted markdown goes under 3-Resources/raw/converted/. Use Converted markdown: (pending) before conversion. -->
 
 ### PDFs
 
-### BatteryLife.pdf
+#### 2024 - Deep Learning - Foundations and Concepts (Christopher M. Bishop, Hugh Bishop).pdf
+- **Type:** book
+- **Source file:** `3-Resources/raw/books/2024 - Deep Learning - Foundations and Concepts (Christopher M. Bishop, Hugh Bishop).pdf`
+- **Converted markdown:** (pending)
+- **Date added:** 2026-06-02
+- **Summary:** Deep learning textbook source reconstructed into raw storage; pending markdown conversion and compilation.
+- **Key topics:** [deep learning, neural networks, machine learning foundations]
+- **Wiki articles:** (empty until compiled)
+
+#### Gerard Meijer, Michiel Pertijs, Kofi Makinwa - Smart Sensor Systems_ Emerging Technologies and Applications-Wiley (2014).pdf
+- **Type:** book
+- **Source file:** `3-Resources/raw/books/Gerard Meijer, Michiel Pertijs, Kofi Makinwa - Smart Sensor Systems_ Emerging Technologies and Applications-Wiley (2014).pdf`
+- **Converted markdown:** (pending)
+- **Date added:** 2026-06-02
+- **Summary:** Smart sensor systems book source reconstructed into raw storage; pending markdown conversion and compilation.
+- **Key topics:** [smart sensors, embedded systems, sensing circuits, instrumentation]
+- **Wiki articles:** (empty until compiled)
+
+#### BatteryLife.pdf
 - **Type:** paper
 - **Date added:** 2026-05-29
 - **Summary:** KDD 2025 paper introducing BatteryLife, a comprehensive dataset and benchmark for battery life prediction. Integrates 16 battery datasets with broad diversity across formats, chemistries, temperatures, and charge/discharge protocols, plus benchmark results and CyclePatch.
 - **Key topics:** [battery life prediction, battery degradation, time series forecasting, battery datasets, benchmarks, CyclePatch, materials informatics]
 - **Wiki articles:** (empty until compiled)
 
-### 2310.14714v5.pdf
+#### 2310.14714v5.pdf
 - **Type:** paper
 - **Date added:** 2026-05-29
 - **Summary:** ICLR 2024 paper introducing BatteryML, an open-source platform for machine learning on battery degradation. Covers standardized battery data representation, preprocessing, feature extraction, model training, and benchmarks for RUL/SOH/SOC-related degradation modeling.
 - **Key topics:** [BatteryML, battery degradation, machine learning, battery data preprocessing, remaining useful life, state of health, benchmark platform]
 - **Wiki articles:** (empty until compiled)
 
-### 2303.18223v19.pdf
+#### 2303.18223v19.pdf
 - **Type:** survey paper
 - **Date added:** 2026-05-27
 - **Summary:** Comprehensive survey of Large Language Models (v19, March 2026) by Zhao et al. (Renmin University). Covers pre-training, post-training/adaptation, utilization (prompting, ICL, CoT, agents), capacity evaluation, applications, and advanced topics (safety, alignment, efficiency). Includes a taxonomy of 100+ LLMs and future research directions.
@@ -30,6 +49,15 @@
 - **Wiki articles:** (empty until compiled)
 
 ### DOCX
+
+#### Development of an Experimental Pulsed Eddy Current Testing Dataset for Defect Detection in Aircraft Aluminum Structures.docx
+- **Type:** document
+- **Source file:** `3-Resources/raw/others/Development of an Experimental Pulsed Eddy Current Testing Dataset for Defect Detection in Aircraft Aluminum Structures.docx`
+- **Converted markdown:** (pending)
+- **Date added:** 2026-06-02
+- **Summary:** Pulsed eddy current testing dataset document reconstructed into raw storage; pending markdown conversion and compilation.
+- **Key topics:** [pulsed eddy current testing, defect detection, aircraft aluminum, NDT datasets]
+- **Wiki articles:** (empty until compiled)
 
 ### PPTX
 
