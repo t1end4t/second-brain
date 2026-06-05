@@ -3,7 +3,10 @@
 ## Active Phase
 
 ### Now
+- [ ] Debug training: investigate poor performance (overfitting? data quality? loss function?)
 - [x] Return to planning before any training work
+- [x] Implement classification training baselines: 1DCNN, random forest, logistic regression, MLP
+- [ ] Implement regression training baseline
 - [ ] Create statistical visualizations: mean, max, distribution, and related summaries
 - [ ] Explore TSNR and PCA views to show feature separability
 - [x] Define grouped-dataset protocols for classification and regression tasks
