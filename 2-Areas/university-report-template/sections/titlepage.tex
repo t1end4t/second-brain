@@ -1,0 +1,60 @@
+\newgeometry{
+	top=2.5cm,
+	bottom=2.5cm,
+	left=3.5cm,
+	right=2.5cm
+}
+
+\begin{titlepage}
+	\begin{tikzpicture}[overlay,remember picture]
+	\path 
+	(current page.north west) coordinate (A) 
+	(current page.north east) coordinate (B)
+	(current page.south east) coordinate (C)
+	(current page.south west) coordinate (D)
+	(current page.center) coordinate (E);
+	\draw[blue!70!black,line width=4pt] ([xshift=-1cm,yshift=-1cm]current page.north east) coordinate (A)--([xshift=2cm,yshift=-1cm]current page.north west) coordinate(B)--([xshift=2cm,yshift=1cm]current page.south west) coordinate (C)--([xshift=-1cm,yshift=1cm]current page.south east) coordinate(D)--cycle;
+	\draw ([yshift=0.25cm,xshift=-0.25cm]A)-- ([yshift=0.25cm,xshift=0.25cm]B)--
+	([yshift=-0.25cm,xshift=0.25cm]B) --([yshift=-0.25cm,xshift=-0.25cm]B)--([yshift=0.25cm,xshift=-0.25cm]C)--([yshift=0.25cm,xshift=0.25cm]C)--([yshift=-0.25cm,xshift=0.25cm]C)-- ([yshift=-0.25cm,xshift=-0.25cm]D)--([yshift=0.25cm,xshift=-0.25cm]D)--([yshift=0.25cm,xshift=0.25cm]D)--([yshift=-0.25cm,xshift=0.25cm]A)--([yshift=-0.25cm,xshift=-0.25cm]A)--([yshift=0.25cm,xshift=-0.25cm]A);
+	\draw ([yshift=-0.15cm,xshift=0.15cm]A)-- ([yshift=-0.15cm,xshift=-0.15cm]B)--
+	([yshift=0.15cm,xshift=-0.15cm]B) --([yshift=0.15cm,xshift=0.15cm]B)--([yshift=-0.15cm,xshift=0.15cm]C)--([yshift=-0.15cm,xshift=-0.15cm]C)--([yshift=0.15cm,xshift=-0.15cm]C)-- ([yshift=0.15cm,xshift=0.15cm]D)--([yshift=-0.15cm,xshift=0.15cm]D)--([yshift=-0.15cm,xshift=-0.15cm]D)--([yshift=0.15cm,xshift=-0.15cm]A)--([yshift=0.15cm,xshift=0.15cm]A)--([yshift=-0.15cm,xshift=0.15cm]A);
+	
+	\end{tikzpicture}
+	
+\begin{center}
+	\vspace{-30pt}{\textbf{\fontsize{18pt}{0pt} \selectfont   MINISTRY OF EDUCATION AND TRAINING}}\\[0.5cm]
+	\hspace{0.5 cm}{\fontsize{18pt}{0pt}\selectfont\textbf{PHENIKAA UNIVERSITY}}\\		
+	
+	\hspace{0.5 cm} \textbf{-----------------------  o0o  -----------------------}\\[1cm]
+	
+	\hspace{0.5 cm} \includegraphics[scale=0.2]{images/LOGO_PHENIKAA.png} \\[1cm]
+	
+	\hspace{0.5 cm} \textbf{\fontsize{18pt}{0pt} \selectfont BASIC SCIENTIFIC RESEARCH TOPIC I} \\[1cm]
+
+	\begin{center}
+%		\textbf{\fontsize{16pt}{6pt} \selectfont 
+%		Fuzzy Control Design for Inverted Pendulum Balancing,\\
+%		Level Regulation, and Iterative Learning Control\\
+%		of Linear Discrete-Time Systems
+		\hspace{0.5 cm} \centering \textbf{\fontsize{15pt}{0pt} \selectfont Fuzzy Control Design for Inverted Pendulum Balancing, \\ [0.5cm]
+		Level Control, and Iterative Learning Control \\ [0.5cm]
+		of Discrete-Time Systems}
+	\end{center}
+	
+	\vspace{1.4cm}
+	
+	\begin{tabular}{@{}p{3.5cm} l@{}}
+		\textbf{Student:} 		& \textbf{The Tuan Trinh} 	\\[0.5cm]
+		\textbf{Student ID:}  	& \textbf{25800153}         \\[0.5cm]
+		\textbf{Class:}         & \textbf{K2}		\\[1.0cm]
+		\textbf{Lecturer:}    & \textbf{Assoc. Prof. Dr. Nguyen Trong Thang}
+	\end{tabular}
+\end{center}
+
+\vspace{6cm}
+
+\begin{center}
+	\textbf{\fontsize{14pt}{0pt} \selectfont HANOI 2026}
+\end{center}
+
+\end{titlepage}

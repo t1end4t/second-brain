@@ -1,0 +1,177 @@
+\documentclass[12pt, oneside]{article}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{amsthm,amsmath,amssymb,amsfonts}
+%\usepackage[utf8]{vietnam}   
+%\usepackage[vietnamese]{babel}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{listings}
+\usepackage{subfiles} 
+\usepackage[T1]{fontenc}  
+\usepackage{indentfirst}
+\usepackage{enumerate}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{tabu}
+\usepackage[table]{xcolor}
+\usepackage{graphicx, wrapfig}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathrsfs, mathtext}
+\usepackage{colortbl}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{epstopdf,cmap,enumerate,float,indentfirst,setspace}
+\usepackage{algorithm}
+\newcommand{\algorithmautorefname}{Algorithm}
+\usepackage{array}
+\usepackage{algpseudocode}
+\usepackage{textcomp}
+\usepackage{stfloats}
+\usepackage{url,cite}
+\usepackage{booktabs}
+\usepackage{verbatim}
+\usepackage{xcolor, color}
+\usepackage{subcaption}
+\usepackage{chngcntr}
+\usepackage{tocloft}
+\usepackage{siunitx}
+\counterwithin{figure}{section}
+
+\renewcommand{\cftfigpresnum}{Figure\ }
+\renewcommand{\cftfigaftersnum}{\quad}
+\setlength{\cftfignumwidth}{5em}
+
+\counterwithin{table}{section}
+
+\renewcommand{\cfttabpresnum}{Table\ }
+\renewcommand{\cfttabaftersnum}{\quad}
+\setlength{\cfttabnumwidth}{5em}
+
+\lstdefinestyle{mystyle}{
+	basicstyle=\ttfamily\small,
+	numbers=left,
+	numberstyle=\tiny,
+	frame=single,
+	breaklines=true,
+	showstringspaces=false,
+	keywordstyle=\color{blue},
+	commentstyle=\color{gray},
+	stringstyle=\color{red}
+}
+
+\lstset{style=mystyle}
+
+\makeatother
+\usepackage{hyperref}
+\hypersetup{%
+	pdfborder = {0 0 0},
+	pdfauthor={The Tuan Trinh},
+	pdftitle={End-to-End FMCW Radar Gesture Recognition via Lightweight Complex-Valued (2+1)D Convolutional Network},
+	pdfsubject={Hand Gesture Recognition},
+	pdfcreator={The Tuan Trinh}, 
+	pdfproducer={ICSLab}, 
+	pdfkeywords={FMCW Radar, Complex-Valued CNN, Uncertainty Estimation, Monte Carlo Dropout, Deep Ensemble Learning}, 
+	pdfnewwindow=true,
+	filecolor=cyan,
+	%	pdffitwindow=true,
+	pdfpagemode=FullScreen,
+	bookmarks = true,
+	colorlinks=true,
+	linkcolor=blue,
+	citecolor=blue,
+	urlcolor=blue
+}
+
+\makeatletter
+\renewcommand{\@cite}[1]{\textcolor{blue}{[\textcolor{blue}{#1}]}}
+\renewcommand{\eqref}[1]{\textcolor{blue}{(\ref{#1})}}
+\renewcommand{\figureautorefname}{Figure}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+
+\titlecontents{section}
+[0pt]
+{\fontsize{13pt}{19.5pt}\selectfont\bfseries\color{blue}}
+{CHAPTER~\thecontentslabel\ }
+{}
+{\titlerule*[0.8pc]{.}\contentspage}
+
+\titlecontents{subsection}
+[1em]
+{\fontsize{13pt}{19.5pt}\selectfont\color{blue}}
+{\thecontentslabel\ }
+{}
+{\titlerule*[0.8pc]{.}\contentspage}
+
+\titlecontents{subsubsection}
+[2.5em]
+{\color{blue}}
+{\thecontentslabel\ }
+{}
+{\titlerule*[0.8pc]{.}\contentspage}
+
+\input{report.sty}
+
+
+\titleformat{\section}
+{\bfseries\centering}
+{CHAPTER \thesection:}
+{0.5em}
+{\MakeUppercase}
+
+\titleformat{\subsection}
+{\bfseries\itshape}
+{\thesubsection}
+{0.5em}
+{}
+
+%----------------------------------
+\begin{document}
+\clearpage \subfile{sections/titlepage.tex}
+\thispagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\AtBeginDocument{%
+	\fontsize{13pt}{19.5pt}\selectfont
+	\setstretch{1.5}
+}
+
+%\clearpage \subfile{sections/Acknowledgments.tex} \thispagestyle{empty}
+
+\clearpage \tableofcontents \thispagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage \pagenumbering{Roman} \setcounter{page}{1}
+
+%\clearpage \subfile{sections/Abbreviations.tex}
+\clearpage \subfile{sections/List of Figures.tex}
+\clearpage \subfile{sections/List of Tables.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage \pagenumbering{arabic} \setcounter{page}{1}
+
+\clearpage \subfile{sections/chap0.tex}
+\clearpage \subfile{sections/chap1.tex}
+\clearpage \subfile{sections/chap2.tex}
+\clearpage \subfile{sections/chap3.tex}
+
+\clearpage\newpage
+\phantomsection
+\addcontentsline{toc}{section}{CONCLUSION}
+\subfile{sections/CONCLUSION.tex}
+
+\clearpage
+\phantomsection
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\clearpage\newpage
+\phantomsection
+\addcontentsline{toc}{section}{APPENDIX}
+\subfile{sections/Appendix 1.tex}
+\end{document}

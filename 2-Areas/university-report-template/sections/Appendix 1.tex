@@ -1,0 +1,69 @@
+\appendix
+\section*{Appendix 1: MATLAB code for nonlinear dynamic equations of the the inverted pendulum system}
+\label{A1}
+\begin{lstlisting}[language=Matlab]
+function [ddtheta, ddx] = fcn(u, theta, dtheta, M, m, l)
+	g = 9.80665;
+	% ---- ddtheta ----
+	ddtheta_num = u*cos(theta) ...
+	- (M+m)*g*sin(theta) ...
+	+ m*l*cos(theta)*sin(theta)*dtheta;
+	ddtheta_den = m*l*cos(theta)^2 - (M+m)*l;
+	% ---- ddx ----
+	ddx_num = u ...
+	+ m*l*sin(theta)*dtheta^2 ...
+	- m*g*cos(theta)*sin(theta);
+	ddx_den = M + m - m*cos(theta)^2;
+	ddtheta = ddtheta_num / ddtheta_den;
+	ddx     = ddx_num / ddx_den;
+end
+
+\end{lstlisting}
+
+\newpage
+\appendix
+\section*{Appendix 2: Python code for linear ILC-1}
+\label{A2}
+\begin{lstlisting}[language=Python]
+import numpy as np
+import matplotlib.pyplot as plt
+plt.rcParams['font.family'] = 'Times New Roman'
+plt.rcParams['font.size'] = 16
+T = 60
+K1 = 0.1; K2 = 0.15
+epochs = 60
+r = np.zeros(2 * T); t = np.zeros(2 * T)
+y = np.zeros(2 * T); u = np.zeros(2 * T)
+e = np.zeros(2 * T)
+error_history = []
+for i in range(T):
+	r[i] = min(i * 0.1, 2.5)
+	r[2 * T - 1 - i] = r[i]
+	t[i] = i
+	t[T + i] = T + i
+u = r.copy()
+for epoch in range(epochs):
+	for i in range(2 * T - 1):
+		u[i] += K1 * e[i] + K2 * e[i + 1]
+	u[-1] += (K1 + K2) * e[-1]
+	y[0], y[1] = 0, 1
+	for i in range(2, 2 * T):
+		y[i] = u[i - 1] + 0.4 * u[i - 2] - 1.2 * y[i - 1] - 0.3 * y[i - 2]
+	e = r - y
+	error_history.append(np.mean(e**2))
+plt.figure()
+plt.plot(t,r,'k',lw = 2,label='Reference')
+plt.plot(t,y,'r',lw = 2,label='Output (SV1 = 60 Iterations)')
+plt.plot(t,e,'b',lw = 2,label='Error (SV1 = 60 Iterations)')
+plt.title(f'Simulation result after SV1 = 60 Iterations')
+plt.ylim([-1.5, 3])
+plt.legend()
+plt.grid(linestyle = "-.")
+plt.figure()
+plt.plot(range(1,epochs + 1),error_history,'b', marker='o',lw = 2)
+plt.xlabel('Iteration (SV1 = 60)')
+plt.ylabel('MSE Error')
+plt.title('Error convergence over each iteration')
+plt.grid(linestyle = "-.")
+plt.show()
+\end{lstlisting}
