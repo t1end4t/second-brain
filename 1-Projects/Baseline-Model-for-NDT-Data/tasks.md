@@ -2,7 +2,7 @@
 
 ## Active Phase
 
-### Now
+### Now (Urgent - Due Tuesday)
 - [x] Debug training: investigate poor performance (overfitting? data quality? loss function?)
 - [x] Return to planning before any training work
 - [x] Implement classification training baselines: 1DCNN, random forest, logistic regression, MLP

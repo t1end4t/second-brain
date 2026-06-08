@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Plan | 2026-06-07</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --surface: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --success: #4ade80;
+            --warning: #fbbf24;
+            --font-display: 'Syne', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body { width: 100%; height: 100%; }
+
+        body {
+            background: linear-gradient(135deg, var(--bg) 0%, #0f172a 50%, #1a1f35 100%);
+            color: var(--text-primary);
+            font-family: var(--font-display);
+            line-height: 1.7;
+            padding: 3rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .date-label {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--accent), #22d3ee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            font-weight: 300;
+        }
+
+        .main-focus {
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.1) 0%, rgba(34, 211, 238, 0.05) 100%);
+            border: 2px solid var(--accent);
+            border-radius: 0;
+            padding: 2rem;
+            margin: 3rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main-focus::before {
+            content: "▓";
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 80px;
+            opacity: 0.03;
+        }
+
+        .main-focus h2 {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .main-focus p {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.3;
+        }
+
+        .sections {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        section {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 2px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        section h3 {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        section h3::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(56, 189, 248, 0.3), transparent);
+            margin-left: 1rem;
+        }
+
+        .item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            align-items: flex-start;
+        }
+
+        .checkbox {
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--accent);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .item:hover .checkbox {
+            background: rgba(56, 189, 248, 0.1);
+        }
+
+        .item-text {
+            flex: 1;
+            color: var(--text-primary);
+        }
+
+        .time-blocks {
+            grid-column: 1 / -1;
+        }
+
+        .block {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 1rem;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .block-time {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .block-content {
+            color: var(--text-primary);
+            padding-left: 1rem;
+            border-left: 2px solid rgba(56, 189, 248, 0.3);
+        }
+
+        .quote {
+            grid-column: 1 / -1;
+            background: rgba(56, 189, 248, 0.05);
+            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            font-style: italic;
+            color: var(--text-secondary);
+            margin: 3rem 0;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            margin-top: auto;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(56, 189, 248, 0.2);
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 800px) {
+            .sections { grid-template-columns: 1fr; }
+            h1 { font-size: 2.5rem; }
+            .main-focus p { font-size: 1.3rem; }
+            .block { grid-template-columns: 80px 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="date-label">Sunday, June 7 • 2026</div>
+        <h1>Today</h1>
+        <p class="tagline">1 main outcome + realistic execution</p>
+    </header>
+
+    <div class="main-focus">
+        <h2>Primary Focus</h2>
+        <p>Baseline-Model-for-NDT-Data:<br>Implement training using point-level splitting strategy</p>
+    </div>
+
+    <div class="sections">
+        <section>
+            <h3>Secondary Task</h3>
+            <div class="item">
+                <div class="checkbox">☐</div>
+                <div class="item-text">Read one paper from reading queue</div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Success Criteria</h3>
+            <div class="item">
+                <span style="color: var(--success);">✓</span>
+                <div class="item-text">Implement point-level splits; training runs without error</div>
+            </div>
+            <div class="item">
+                <span style="color: var(--success);">✓</span>
+                <div class="item-text">Finish reading one paper and capture key insights</div>
+            </div>
+        </section>
+    </div>
+
+    <section class="time-blocks">
+        <h3>Time Blocks</h3>
+        <div class="block">
+            <div class="block-time">Morning</div>
+            <div class="block-content">
+                <strong>Deep Work:</strong> Baseline-Model-for-NDT-Data — implement point-level splitting strategy
+            </div>
+        </div>
+        <div class="block">
+            <div class="block-time">Afternoon</div>
+            <div class="block-content">
+                <strong>Reading:</strong> Pick one paper from queue; read with notes
+            </div>
+        </div>
+        <div class="block">
+            <div class="block-time">Evening</div>
+            <div class="block-content">
+                <strong>Rest / Capture:</strong> No planned work. Capture any insights.
+            </div>
+        </div>
+    </section>
+
+    <div class="quote">
+        "Reality gap detected: planning 7 tasks when capacity is 1–2. This week: strict focus on the main outcome. Let secondary tasks be truly secondary."
+    </div>
+
+    <section>
+        <h3>Notes for Tomorrow</h3>
+        <div class="item-text" style="color: var(--text-secondary); font-size: 0.9rem;">
+            If main outcome completes early, do NOT expand into new work — protect the win. Use extra time for quality, refinement, or rest.
+        </div>
+    </section>
+
+    <footer>
+        <div>SECOND_BRAIN // DAILY_PLAN</div>
+        <div>2026_06_07_SUNDAY</div>
+    </footer>
+</body>
+</html>
