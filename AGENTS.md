@@ -37,6 +37,7 @@ If instructions conflict, follow the higher-priority item and mention the confli
 
 ### Projects: `1-Projects/{name}/`
 
+- `INDEX.md` — annotated onboarding guide: key files, links, owner/context, when to read.
 - `project.md` — raw thinking: motivation, constraints, open questions.
 - `tasks.md` — action plan using `Now`, `Next`, `Later`, `Waiting`, `Done`.
 - `decisions.md` — optional decisions and rationale.
@@ -75,6 +76,7 @@ When scope is broad or unnamed, use this table:
 - Capturing background: append to the relevant `project.md`; keep messy user voice if appropriate.
 - Adding project tasks: put immediate actions in `Now`, follow-ups in `Next`, deferred ideas in `Later`, blocked items in `Waiting`.
 - Finishing a project: move its folder from `1-Projects/` to `4-Archive/` only when explicitly asked.
+- During weekly review, note repeated AI correction patterns; if they recur, update `AGENTS.md` or the relevant skill.
 
 ## Project Sync
 
