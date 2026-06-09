@@ -56,7 +56,7 @@
 - Group approved LOI windows by `(specimen, waveform)` rather than per TDMS file.
 - Save human-approved LOI windows under `configs/`, starting with `configs/loi_windows.csv`.
 - LOI selection must allow manual center edits because some automatic LOI lines are poor.
-- The LOI selection app should load existing PNG previews from `outputs/preferred_tdms_loi_method`; plotting/regeneration stays in `ndt-plot-preferred-tdms-loi-method`.
+- The LOI selection app should load existing PNG previews from `outputs/preferred_tdms_loi_method`; plotting/regeneration stays in a separate plot command.
 - Manual correction of poor automatic LOI points is done in a separate editor app that writes back to `configs/lift_off_loi_inventory.csv`.
 
 ## 2026-05-26 — Reset to preprocessing only
@@ -69,3 +69,19 @@
 - After rotation (90°/270°), raw `300×301` becomes `301×300`. Normalize all post-rotation data to `300×300×500` by trimming the extra row/col.
 - Apply same normalization to masks so `data.shape[:2] == mask.shape == (300, 300)`.
 - This avoids shape mismatches and simplifies downstream processing.
+
+## 2026-06-07 — Retire file-level split experiments
+
+- Previous file/export-level split experiments produced very poor results.
+- Do not use TDMS-file/export-level split manifests for new training.
+- Remove old experiment runners and active CLI entries tied to file-level split manifests.
+- Next training work must start from a point-level split protocol with explicit leakage controls.
+
+## 2026-06-07 — Use point-level splits for next baseline
+
+- Next baseline uses point-level splits instead of TDMS-file/export-level splits.
+- Keep grouped datasets by lift-off, waveform, sensor, and specimen-side.
+- In classification grouping, corrosion frontside and corrosion backside are separate specimen-side datasets.
+- Within each grouped dataset, every export can contribute points to train, validation, and test.
+- Split assignment uses spatial blocks by default so adjacent pixels are not randomly mixed one-by-one.
+- Treat results as in-file point prediction; do not claim unseen-file generalization from this split.

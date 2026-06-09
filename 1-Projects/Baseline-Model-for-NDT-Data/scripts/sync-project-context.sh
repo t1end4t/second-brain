@@ -1,10 +1,30 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SYNC_FILES=("project.md" "tasks.md" "decisions.md" "results.md")
+SYNC_FILES=(
+  "project.md"
+  "tasks.md"
+  "decisions.md"
+  "results.md"
+  "workflow.md"
+  "split_protocol.md"
+  "LabelingSpec.md"
+)
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-VAULT_PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+DEFAULT_VAULT_PROJECT_DIR="$HOME/second-brain/1-Projects/Baseline-Model-for-NDT-Data"
+
+if [[ -f "$SCRIPT_DIR/../SYNC_STATUS.md" ]]; then
+  VAULT_PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+  DEFAULT_TARGET_DIR=""
+elif [[ -f "$DEFAULT_VAULT_PROJECT_DIR/SYNC_STATUS.md" ]]; then
+  VAULT_PROJECT_DIR="$DEFAULT_VAULT_PROJECT_DIR"
+  DEFAULT_TARGET_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+else
+  VAULT_PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+  DEFAULT_TARGET_DIR=""
+fi
+
 STATUS_FILE="$VAULT_PROJECT_DIR/SYNC_STATUS.md"
 
 usage() {
@@ -16,13 +36,19 @@ Commands:
   push    Copy vault project docs to target docs/.
   pull    Copy target docs/ back to vault project.
 
-Target folder can be passed as arg or stored in SYNC_STATUS.md.
+When run from target docs/, target-folder defaults to the repo root.
+Otherwise target-folder can be passed as arg or stored in SYNC_STATUS.md.
 USAGE
 }
 
 read_target_dir() {
   if [[ $# -ge 1 && -n "${1:-}" ]]; then
     printf '%s\n' "$1"
+    return
+  fi
+
+  if [[ -n "$DEFAULT_TARGET_DIR" ]]; then
+    printf '%s\n' "$DEFAULT_TARGET_DIR"
     return
   fi
 
