@@ -2,6 +2,14 @@
 
 ## Template
 
+## 2026-06-09 — Classification model roadmap
+
+- Keep MLP as a weak baseline, not the main classification model.
+- Implement `1D-CNN` first for improved point/time-series classification because it preserves local waveform structure better than flattened MLP inputs.
+- If `1D-CNN` improves but remains limited, compare stronger time-series CNN variants such as `ResNet1D` or `InceptionTime`.
+- Consider `CNN-GRU` only if longer temporal dependencies appear important after CNN baselines.
+- Treat Transformer models as experimental and lower priority unless the training set is large enough and regularization/validation show overfitting is controlled.
+
 ## 2026-05-30 — Return to planning before training
 
 - Do not jump directly to model training.

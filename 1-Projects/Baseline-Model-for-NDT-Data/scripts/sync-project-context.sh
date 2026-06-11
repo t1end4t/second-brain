@@ -1,15 +1,26 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SYNC_FILES=(
-  "project.md"
-  "tasks.md"
-  "decisions.md"
-  "results.md"
-  "workflow.md"
-  "split_protocol.md"
-  "LabelingSpec.md"
+SYNC_EXCLUDES=(
+  "scripts"
+  "SYNC_STATUS.md"
+  "AGENTS.md"
+  "sync-project-context.sh"
 )
+
+diff_excludes() {
+  local exclude
+  for exclude in "${SYNC_EXCLUDES[@]}"; do
+    printf -- '-x\n%s\n' "$exclude"
+  done
+}
+
+rsync_excludes() {
+  local exclude
+  for exclude in "${SYNC_EXCLUDES[@]}"; do
+    printf -- '--exclude=%s\n' "$exclude"
+  done
+}
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DEFAULT_VAULT_PROJECT_DIR="$HOME/second-brain/1-Projects/Baseline-Model-for-NDT-Data"
@@ -89,28 +100,12 @@ show_status() {
   grep -E '^- \*\*(Status|Last sync|Last direction)\*\*:' "$STATUS_FILE" 2>/dev/null || true
   echo
 
-  local changed=0
-  for file in "${SYNC_FILES[@]}"; do
-    local src="$VAULT_PROJECT_DIR/$file"
-    local dst="$target_dir/docs/$file"
-    if [[ ! -f "$src" ]]; then
-      echo "missing vault:  $file"
-      changed=1
-    elif [[ ! -f "$dst" ]]; then
-      echo "missing target: $file"
-      changed=1
-    elif cmp -s "$src" "$dst"; then
-      echo "same:           $file"
-    else
-      echo "diff:           $file"
-      changed=1
-    fi
-  done
-
-  echo
-  if [[ "$changed" -eq 0 ]]; then
+  local diff_args=()
+  mapfile -t diff_args < <(diff_excludes)
+  if diff -qr "${diff_args[@]}" "$VAULT_PROJECT_DIR/" "$target_dir/docs/"; then
     echo "Result: synced"
   else
+    echo
     echo "Result: not synced"
     echo "Use: $0 push '$target_dir'   # vault -> target"
     echo "Use: $0 pull '$target_dir'   # target -> vault"
@@ -120,16 +115,10 @@ show_status() {
 do_push() {
   local target_dir="$1"
   mkdir -p "$target_dir/docs"
-  for file in "${SYNC_FILES[@]}"; do
-    local src="$VAULT_PROJECT_DIR/$file"
-    local dst="$target_dir/docs/$file"
-    if [[ -f "$src" ]]; then
-      cp "$src" "$dst"
-      echo "pushed: $file"
-    else
-      echo "skip missing: $file"
-    fi
-  done
+  local rsync_args=()
+  mapfile -t rsync_args < <(rsync_excludes)
+  rsync -a --delete "${rsync_args[@]}" "$VAULT_PROJECT_DIR/" "$target_dir/docs/"
+  echo "pushed: project folder"
 
   local bridge="$VAULT_PROJECT_DIR/../../_templates/execution-repo-AGENTS-snippet.md"
   if [[ -f "$bridge" ]]; then
@@ -149,16 +138,10 @@ do_push() {
 
 do_pull() {
   local target_dir="$1"
-  for file in "${SYNC_FILES[@]}"; do
-    local src="$target_dir/docs/$file"
-    local dst="$VAULT_PROJECT_DIR/$file"
-    if [[ -f "$src" ]]; then
-      cp "$src" "$dst"
-      echo "pulled: $file"
-    else
-      echo "skip missing: docs/$file"
-    fi
-  done
+  local rsync_args=()
+  mapfile -t rsync_args < <(rsync_excludes)
+  rsync -a --delete "${rsync_args[@]}" "$target_dir/docs/" "$VAULT_PROJECT_DIR/"
+  echo "pulled: project folder"
 
   set_status synced "target-to-vault"
   echo "Status: synced"

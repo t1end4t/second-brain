@@ -37,3 +37,4 @@
 
 ### Later
 - Revisit model training only after a point-level split protocol is designed, documented, implemented, and checked for leakage
+- For classification model improvement, implement `1D-CNN` first; if needed, compare `ResNet1D`/`InceptionTime`, then `CNN-GRU`; treat Transformer as experimental only after stronger baselines and enough data.

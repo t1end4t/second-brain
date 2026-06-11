@@ -77,7 +77,7 @@ uv run ndt export tdms
 uv run ndt plot tdms
 uv run ndt export stats
 uv run ndt split points
-uv run ndt train point-classification --protocol same_lift_off --dataset z1 --model mlp --balance-mode class_weight
+uv run ndt train point-classification --protocol same_lift_off --dataset z1 --model cnn1d --balance-mode class_weight
 ```
 
 See `docs/split_protocol.md` before training.

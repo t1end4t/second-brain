@@ -141,17 +141,18 @@ Added grouped `ndt split points` for the next training path.
 Added `ndt train point-classification` for classification on grouped point-split manifests.
 
 - Module: `src/ndt_pect_baseline/train_point_classification.py`
-- Models: PyTorch `mlp`, sklearn `logreg`, sklearn `random_forest`
+- Models: PyTorch `cnn1d` default, PyTorch `resnet1d`, PyTorch `mlp`, sklearn `logreg`, sklearn `random_forest`
 - Label modes: `multiclass` (`background`, `rivet`, `corrosion`) and `binary-corrosion` (`non-corrosion`, `corrosion`)
 - Inputs: `outputs/point_splits/<seed>/<protocol>/<dataset>/point_split_manifest.csv` and `outputs/tdms_npy/<export>/X.npy`
-- Outputs: `metrics.json`, `confusion_matrix.csv`, `confusion_matrices.png`, `loss_curve.png` for MLP, `report.html`, and prediction figures under `outputs/point_training/<seed>/<protocol>/<dataset>/<label-mode>/<model>/<balance-mode>/prediction_maps/<split>/<export>/`
-- PyTorch MLP supports `--balance-mode none`, `class_weight`, and `weighted_sampler`; default is `class_weight`.
-- PyTorch MLP uses early stopping by default with `--early-stopping-patience 8`; disable with `--no-early-stopping`.
+- Outputs: `metrics.json`, `confusion_matrix.csv`, `confusion_matrices.png`, `loss_curve.png` for PyTorch models, and prediction figures under `outputs/point_training/<seed>/<protocol>/<dataset>/<label-mode>/<model>/<balance-mode>/prediction_maps/<split>/<export>/`
+- PyTorch `resnet1d`, `cnn1d`, and `mlp` support `--balance-mode none`, `class_weight`, and `weighted_sampler`; default is `class_weight`.
+- PyTorch models use early stopping by default with `--early-stopping-patience 8`; disable with `--no-early-stopping`.
 
 ## Point Classification Batch Runner Added — 2026-06-07
 
 Added `ndt train point-classification-batch` to run grouped point-classification jobs across protocols, datasets, label modes, models, and balance modes.
 
-- Default batch scope: all grouped point-split datasets, both label modes, PyTorch MLP, and balance modes `class_weight`, `weighted_sampler`, `none`.
+- Default batch scope: all grouped point-split datasets, both label modes, PyTorch `cnn1d`, and balance modes `class_weight`, `weighted_sampler`, `none`.
+- Use `--all-experiments` for the standard 1D-CNN sweep: split seeds `ndt-point-split-v1` through `ndt-point-split-v5`, both label modes, and all valid balance modes.
 - Use `--dry-run` to inspect commands before launching long runs.
 - Existing `metrics.json` outputs are skipped unless `--overwrite` is passed.
