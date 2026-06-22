@@ -78,6 +78,7 @@ uv run ndt plot tdms
 uv run ndt export stats
 uv run ndt split points
 uv run ndt train point-classification --protocol same_lift_off --dataset z1 --model cnn1d --balance-mode class_weight
+# Valid models: cnn1d, resnet1d, inception_time, tcn, mlp, logreg, random_forest
 ```
 
 See `docs/split_protocol.md` before training.
