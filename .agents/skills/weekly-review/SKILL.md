@@ -21,21 +21,4 @@ Use this skill when the user says "weekly review", "review the week", "end of we
 
 ## Weekly File Format
 
-```markdown
-# Week {YYYY-Www}
-
-## This Week's Outcomes
-- 
-
-## What Got Done
-- 
-
-## Blocked / Stale
-- 
-
-## Next Week
-- 
-
-## Priority Shifts
-<!-- Move items between Now/Next/Later as needed -->
-```
+Use `_templates/planning/weekly.md` as the weekly file template.

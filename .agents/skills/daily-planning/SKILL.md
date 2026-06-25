@@ -35,24 +35,4 @@ Use this skill when the user says "plan my day", "what should I work on", "start
 
 ## Daily File Format
 
-```markdown
-# {YYYY-MM-DD}
-
-## Main Outcome
-- [single most important thing]
-
-## Secondary
-- [ ] task 1
-- [ ] task 2
-- [ ] task 3
-
-## Time Blocks
-- Morning (deep work): [description]
-- Afternoon: [description]
-
-## Capture
-<!-- Ideas, tasks, thoughts during the day -->
-
-## End of Day
-<!-- What got done. What's next. -->
-```
+Use `_templates/planning/daily.md` as the daily file template.

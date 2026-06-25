@@ -13,10 +13,18 @@ File/export-level splits produced poor results and were removed. Do not use old 
 
 Historical note: multiclass template sanity and depth TCN regression on grouped file-level splits underperformed random/mean baselines.
 
+## Regression Same-Sensor Auto Selection — 2026-06-16
+
+- `ndt train regression --model auto` now evaluates `--auto-models` candidates by validation R² and falls back to `mean_baseline` if no candidate beats the mean baseline.
+- `ndt train regression-batch` now defaults to `same_sensor` protocol and `auto` model selection.
+- Smoke test on tiny `depth/same_sensor/HallAirCore` subset selected `random_forest` over the mean baseline with val R² `0.0683` and test R² `0.0430`; smoke artifacts were removed after verification.
+
 ## Notable Findings
 
 - TDMS raster: direct `reshape(300, 301, 500)` is correct but needs serpentine raster correction; otherwise plots show diagonal fold artifacts. Backside scans need a 180° rotation after correction.
-- Short TDMS files: the loader must handle missing scan points (20 of 113 trusted files are short).
+- Short TDMS files: the loader must handle missing scan points (17 of 144 trusted files are short, each by 1 scan point).
+- Differential sensor dataset added: 36 TDMS files, completing 144 total files across Differential, HallAirCore, HallPotCore, and TMR.
+- `ERR Bo sung` corrections applied: HallAirCore Mixed Chirp z3 and TMR Corrosion Square frontside z1 replaced; old files archived under `~/Documents/NDT-data-archived/replaced-errors`.
 - LOI markers are lobe-crossings on the mean differentiated signal after Air subtraction and low-pass filtering, not lobe peaks.
 - Post-rotation shape normalization: trim `300×301` rotated data to `300×300×500` and apply the same to masks.
 - Classification: temporary best path is `binary-corrosion` + `weighted_sampler` (macro F1 0.48, balanced accuracy 0.56); revisit the full sweep later.

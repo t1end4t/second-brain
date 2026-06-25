@@ -4,7 +4,7 @@
 
 - [ ] Run quick point-classification sweep: `binary-corrosion` + `weighted_sampler`
 - [ ] Run full point-classification sweep across label modes, balance modes, protocols, and datasets
-- [ ] Define regression patch inputs and reintroduce regression training after the classification sweep
+- [ ] Run same-sensor regression sweep with auto model selection and mean-baseline guard
 
 ## Completed
 
@@ -15,6 +15,7 @@
 - Statistical visualizations, TSNR/PCA, and grouped-dataset protocols
 - TDMS preprocessing review: rotate/crop, LOI windows, selected LOI windows
 - Export TDMS as `.npy` arrays and QA plots
+- Point-level regression training reintroduced with grouped manifests, auto model selection, and mean-baseline guard
 
 ## Later
 
