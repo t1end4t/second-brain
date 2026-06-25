@@ -3,15 +3,10 @@
 ## Main Outcome
 -
 
-## Secondary
-- [ ]
-- [ ]
-- [ ]
-
-## Time Blocks
-- Morning (deep work):
-- Afternoon (shallow/admin):
-- Evening:
+## Tasks
+- [ ] 
+    - [ ] 
+    - [ ] 
 
 ## Capture
 <!-- Ideas, tasks, thoughts during the day -->
