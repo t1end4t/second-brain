@@ -1,0 +1,9 @@
+{
+  "id": "srv-9router",
+  "port": 20128,
+  "command": "9router --host 127.0.0.1 --port 20128 --no-browser --log --tray --skip-update",
+  "status": "stopped",
+  "protocol": "HTTP",
+  "cwd": "~",
+  "author": "user"
+}

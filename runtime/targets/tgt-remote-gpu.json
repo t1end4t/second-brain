@@ -1,0 +1,7 @@
+{
+  "id": "tgt-remote-gpu",
+  "kind": "machine",
+  "location": "ssh://developer@cluster-worker-01.internal",
+  "resourceUsage": "NVIDIA RTX 4090 (24GB VRAM) · Load: 4%",
+  "status": "connected"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "auto-ci-push",
+  "trigger": "git.push [main, dev]",
+  "action": "Dispatch run: tsc --noEmit && lint",
+  "target": "local-m3-node",
+  "enabled": true,
+  "lastRun": "12m ago"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "mdl-qwen-7b",
+  "family": "Qwen 2.5 Coder",
+  "hash": "sha256:8f4c219ba71e893e4",
+  "quantization": "Q4_K_M (4-bit Medium)",
+  "parameters": "7.61 Billion",
+  "contextLength": "32,768 tokens",
+  "vramRequired": "4.8 GB RAM",
+  "status": "loaded",
+  "instructFormat": "ChatML"
+}

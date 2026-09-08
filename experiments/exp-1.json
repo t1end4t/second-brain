@@ -1,0 +1,12 @@
+{
+  "id": "exp-1",
+  "claimId": "c1",
+  "questionId": "q1",
+  "status": "planned",
+  "targetMetric": "Weight gradient dot product (< 0.05)",
+  "baseline": "Dense fully connected layer without sparsity penalty",
+  "prediction": "Forcing L1 activity regularization will reduce backward interference by >= 35%",
+  "failureCondition": "Catastrophic forgetting exceeds 15% across tasks A and B",
+  "scope": "Hopfield-style memory networks under 1M parameters",
+  "artifacts": []
+}

@@ -1,0 +1,1 @@
+nomic-embed-text-v1.5-f16.gguf

@@ -1,0 +1,10 @@
+{
+  "id": "c3--e6",
+  "kind": "claim-evidence",
+  "parentId": "c3",
+  "childId": "e6",
+  "status": "holds",
+  "userReason": "Frontier scaling laws confirm larger dictionary capacity resolves superposition trade-offs.",
+  "createdAt": 1700001050000,
+  "author": "user"
+}

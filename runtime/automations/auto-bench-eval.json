@@ -1,0 +1,8 @@
+{
+  "id": "auto-bench-eval",
+  "trigger": "cron [0 0 * * SUN]",
+  "action": "Execute run: prompt-eval-matrix",
+  "target": "remote-gpu-node-01",
+  "enabled": false,
+  "lastRun": "4 days ago"
+}

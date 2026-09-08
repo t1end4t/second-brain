@@ -1,0 +1,8 @@
+{
+  "id": "auto-orphan-lock-clean",
+  "trigger": "interval [every 5m]",
+  "action": "Release locks with heartbeat timeout > 600s",
+  "target": "all targets",
+  "enabled": true,
+  "lastRun": "3m ago"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "c3--e4",
+  "kind": "claim-evidence",
+  "parentId": "c3",
+  "childId": "e4",
+  "status": "holds",
+  "userReason": "Mathematical toy models establish superlinear scaling of feature capacity with sparsity.",
+  "createdAt": 1700000850000,
+  "author": "user"
+}

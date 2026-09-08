@@ -1,0 +1,23 @@
+{
+  "id": "p3",
+  "authors": "Elhage, N., Hume, T., Olsson, C., et al.",
+  "year": 2022,
+  "citation": "Anthropic Transformer Circuit Thread (2022)",
+  "pageCount": 68,
+  "sections": [
+    {
+      "id": "sec-p3-1",
+      "title": "1. Geometric Framework of Superposition",
+      "paragraphs": [
+        {
+          "id": "p3-par-1",
+          "linkedClaimId": "c3"
+        },
+        {
+          "id": "p3-par-2",
+          "linkedClaimId": "c3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "tgt-local-node",
+  "kind": "machine",
+  "location": "127.0.0.1 (unix://localhost)",
+  "resourceUsage": "CPU: 18% · RAM: 14.2/36 GB · Disk: 48%",
+  "status": "connected"
+}

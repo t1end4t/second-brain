@@ -1,0 +1,9 @@
+{
+  "id": "run-8923",
+  "status": "completed",
+  "target": "docker-engine-local",
+  "duration": "3m 12s",
+  "resourceLock": "SHARED [docker.sock]",
+  "timestamp": "28m ago",
+  "exitCode": 0
+}

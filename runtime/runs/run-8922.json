@@ -1,0 +1,9 @@
+{
+  "id": "run-8922",
+  "status": "completed",
+  "target": "local-m3-node",
+  "duration": "14s",
+  "resourceLock": "READ_ONLY [src/]",
+  "timestamp": "1h ago",
+  "exitCode": 0
+}

@@ -1,0 +1,8 @@
+{
+  "id": "run-8924",
+  "status": "running",
+  "target": "local-m3-node",
+  "duration": "1m 24s",
+  "resourceLock": "EXCLUSIVE [src/ast_cache]",
+  "timestamp": "2m ago"
+}

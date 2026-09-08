@@ -1,0 +1,8 @@
+{
+  "id": "auto-docker-rebuild",
+  "trigger": "vfs.change [Dockerfile, flake.nix]",
+  "action": "docker build -t headroom:code .",
+  "target": "docker-engine-local",
+  "enabled": true,
+  "lastRun": "28m ago"
+}
