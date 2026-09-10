@@ -1,1 +1,0 @@
-Weekly Model Throughput Benchmark

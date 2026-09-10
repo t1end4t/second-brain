@@ -1,9 +1,0 @@
-{
-  "id": "run-8921",
-  "status": "failed",
-  "target": "remote-gpu-node-01",
-  "duration": "42s",
-  "resourceLock": "EXCLUSIVE [gpu:0]",
-  "timestamp": "2h ago",
-  "exitCode": 137
-}

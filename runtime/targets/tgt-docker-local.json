@@ -1,7 +1,0 @@
-{
-  "id": "tgt-docker-local",
-  "kind": "container",
-  "location": "/var/run/docker.sock",
-  "resourceUsage": "Active containers: 2 · Memory: 2.1 GB",
-  "status": "busy"
-}

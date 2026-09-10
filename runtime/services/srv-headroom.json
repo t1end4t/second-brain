@@ -1,8 +1,0 @@
-{
-  "id": "srv-headroom",
-  "port": 8787,
-  "command": "docker run --rm -p 127.0.0.1:8787:8787 --mount type=bind,source=\"$(pwd)\",target=/workspace -w /workspace -e HEADROOM_CODE_AWARE_ENABLED=1 -e HEADROOM_KOMPRESS_BACKEND=onnx_cpu ghcr.io/headroomlabs-ai/headroom:code",
-  "status": "stopped",
-  "protocol": "HTTP/REST",
-  "cwd": "/home/tiendat/codebases/side-projects/thinking-os"
-}
