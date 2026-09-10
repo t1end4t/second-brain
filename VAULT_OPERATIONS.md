@@ -67,7 +67,7 @@ INDEX.md and problem briefs are plain documents with no sidecar. Keep them outsi
 - If the app reports that the workspace changed or that a refresh failed, stop and report it. Do not repeat writes to force a save.
 - Outside the running app, another Thinking OS tab may still autosave over external edits. In that case, ask me to close tabs using this vault first.
 - The app rejects a stale save instead of overwriting newer files. Report the exact paths you changed so I can confirm them on the affected surface.
-- Read the existing record and a sibling record. Preserve unknown metadata fields. Check the collection's schema before adding fields; siblings are examples, not permission to copy their IDs or results. In the Thinking OS source repository, src/types.ts, src/productivityTypes.ts, and src/learnTypes.ts define records; server/vault.mjs defines serialization. If the schema cannot be established, ask rather than inventing keys.
+- Read the existing record and a sibling record. Preserve unknown metadata fields. The Create section below is the schema of record: use it and do not open the Thinking OS source repository for routine record work. Siblings are examples, not permission to copy their IDs or results. If a field is genuinely absent from this file, ask instead of inventing keys.
 - Back up affected files outside synchronized collection directories before editing or deleting them.
 - Say which files you will create, edit, or delete, and wait for confirmation when the change is not clearly implied by my request.
 
@@ -88,6 +88,54 @@ Create `tasks/pipeline/<id>.md` containing `# <title>`, a blank line, and the de
 Create `tasks/direction/<id>.md` containing `# <title>`, a blank line, and the description. Create `tasks/direction/<id>.json` with `id`, `horizon`, `status`, `createdAt` (a current ISO timestamp string), `author`, and `lastEditedBy`. Horizon must be one-year / five-year; status must be active / achieved / paused. Optional fields: `targetDate`, `parentGoalId` (an existing goal, normally the five-year goal a one-year goal serves), and `isCurrentFocus`. Unless specified, use `active` and omit the optional fields. Keep title and description in Markdown, not duplicated in the sidecar.
 
 A five-year goal is a north star: one observable end state per record, not a list. Keep unaccepted candidates in a brief under `briefs/`, not as goal records.
+
+### Create a research record
+
+Research timestamps are epoch milliseconds. Every record is an `.md` plus a `.json` sidecar with the same ID; the sidecar never repeats the Markdown body.
+
+| Record | Markdown body | Required sidecar fields | Optional sidecar fields |
+| --- | --- | --- | --- |
+| Question | question title, no `#` | `id`, `tags`, `createdAt`, `author` | none |
+| Claim | claim text, no `#` | `id`, `rejected`, `createdAt`, `author` | `rejectionReason` (required when `rejected` is true) |
+| Evidence | evidence title | `id`, `origin`, `form`, `citation`, `createdAt`, `author` | `paperId`, `validity`, `validityReason` |
+| Open problem | problem text | `id`, `citation`, `createdAt` | `candidateId` |
+| Candidate question | question title | `id`, `openProblemIds`, `createdAt` | `promotedQuestionId` |
+| Experiment | experiment title | `id`, `claimId`, `questionId`, `status`, `targetMetric`, `baseline`, `prediction`, `failureCondition`, `scope`, `artifacts` | none |
+| Link | none; JSON only | `id`, `kind`, `parentId`, `childId`, `status`, `userReason`, `createdAt`, `author` | `check` |
+
+Enumerations: evidence `origin` is literature / experiment / own_reasoning; evidence `form` is measurement / derivation / counterexample; `validity` is unassessed / valid / invalid / uncertain; experiment `status` is planned / running / done; link `kind` is question-claim / claim-evidence; link `status` is holds / weak / missing.
+
+A link ID follows `<parentId>--<childId>`. An experiment artifact needs `id`, `name`, `type` (plot / table / notes / checkpoint), `path`, `contentHash`, and `status` (present / missing); `observation` is required once the experiment is done. Set `validity` only from an assessment I made or requested, never from your own reading.
+
+### Create a runtime record
+
+The Markdown body is the bare name with no `#`. Sidecars carry no `lastEditedBy`.
+
+| Record | Directory | Required sidecar fields | Enumerations |
+| --- | --- | --- | --- |
+| Service | `runtime/services/` | `id`, `port` (number or null), `command`, `status` | status: running / idle / stopped |
+| Run | `runtime/agent-jobs/runs/` | `id`, `status`, `target`, `duration`, `resourceLock`, `timestamp` | status: running / completed / failed / queued |
+| Model | `runtime/llm-models/` | `id`, `hash`, `quantization`, `parameters`, `contextLength`, `vramRequired`, `status` | status: loaded / ready / downloading |
+| Automation | `runtime/agent-jobs/automations/` | `id`, `trigger`, `action`, `target`, `enabled`, `lastRun` | none |
+| Target | `runtime/agent-jobs/targets/` | `id`, `kind`, `location`, `resourceUsage`, `status` | kind: machine / repo / workspace / container; status: connected / busy / offline |
+
+Optional: service `uptime`, `protocol`, `cwd`, `createdAt` (epoch ms), `author`; run `exitCode`; model `family`, `instructFormat`. A run record describes a run that happened; do not invent one.
+
+### Create a learning unit
+
+Create `learn/board/<id>.md` containing `# <title>`, a blank line, and the description. The sidecar holds `id`, `source`, `tags`, `blocks`, `createdAt`, `updatedAt` (epoch ms), and `author`. `source` needs `kind` (book / video / paper / course / article / note) and `title`, optionally `url` and `authorOrChannel`. Optional: `sections`, `activeSectionId`, `notation`. Preserve unrecognized legacy keys such as `book` and `chapter`.
+
+Every block needs `id`, `kind`, `level`, `createdAt`, and `updatedAt`; `locator` and `sectionId` are optional. Level is remembering / understanding / applying / analyzing / evaluating / creating. Block kinds and their own fields: `note` (`text`), `card` (`front`, `back`, `box`, `dueAt`), `image` (`caption`, `dataUrl`), `table` (`title`, `columns`, `rows`), `tree` (`title`, `nodes`), `graph` (`title`, `nodes`, `edges`), `derivation` (`title`, `steps`), `tensor` (`title`, `rows`), `code` (`title`, `language`, `code`).
+
+### Create a paper or weekly review
+
+A paper lives in `research/papers/`. The Markdown body is `# <title>`, a blank line, then the extracted `markdown`. The sidecar holds `id`, `authors`, `year`, `citation`, `pageCount`, and `sections`; optional `doi`, `url`, `pdfUrl`, `pdfDataUrl`, `abstract`, `journal`, `highlights`, `createdAt` (epoch ms). A section needs `id` and `paragraphs`, optionally `title`; a paragraph needs `id` and optionally `linkedClaimId`. A highlight needs `id`, `text`, `createdAt`, optionally `color` (amber / emerald / sky / rose / purple), `pageNumber`, `note`, `sectionId`, and `rects`. Do not fabricate `authors`, `year`, `citation`, or extracted text; import papers from a real source.
+
+A weekly review lives in `tasks/reviews/`. The Markdown body is `# <title>`, a blank line, then the notes. The sidecar holds `id`, `weekOf`, `status` (draft / complete), and `createdAt` (an ISO timestamp string); optional `completedAt`, `focusGoalIds`, `completedTaskIds`, `author`, `lastEditedBy`.
+
+### When a field is not documented here
+
+Every collection now has a recipe above. If a record rejects a field or the app shows a record wrongly, the app schema changed and this file is stale: read `src/types.ts`, `src/productivityTypes.ts`, `src/learnTypes.ts`, and `server/vault.mjs` in the Thinking OS source repository, then update this file in the same turn. Do not consult the source repository for routine record creation.
 
 ## Edit
 

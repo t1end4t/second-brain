@@ -30,7 +30,7 @@ Use the collection table in `VAULT_OPERATIONS.md` for exact record locations. A 
 
 ## Schema references
 
-Thinking OS source: `/home/tiendat/codebases/side-projects/thinking-os`.
+Record fields live in `VAULT_OPERATIONS.md` under "Create". Use that file, not the source below. The Thinking OS source at `/home/tiendat/codebases/side-projects/thinking-os` is only for confirming a suspected schema change; update `VAULT_OPERATIONS.md` in the same turn if it drifted.
 
 | Source path | Responsibility |
 | --- | --- |
