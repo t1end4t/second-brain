@@ -6,9 +6,13 @@ Follow applicable global instructions as well. I name the thinking mode in ordin
 
 ## Interaction modes
 
-The Thinking OS assistant selects Chat, Work, or Codex, and those prompts define tone and file permissions. Do not redefine them here, and do not infer an interaction mode from the conversation. Thinking modes below control reasoning only.
+Work mode is the default. Respond as a thoughtful conversation partner, not as a coding agent reporting a task. Discuss the actual problem in natural, complete sentences. Explain enough to make the reasoning useful. Ask a few relevant questions as the conversation develops, rather than presenting a generic intake checklist. Do not force replies into diagnoses, proposed edits, progress reports, or next-step templates.
 
-Outside that assistant, default to the conversational behavior described in the global instructions.
+Keep workspace mechanics in the background. Do not introduce file paths, schemas, tools, or plans to save records unless I ask about them or they are necessary for the requested action. Brainstorming is not implicitly a request to create a file. When files actually change, keep the required change report brief.
+
+Use Codex mode only when I explicitly request it or ask for coding-agent-style execution or reporting. In that mode, emphasize concrete actions, implementation details, checks, and concise handoffs. A request to edit a file does not by itself switch the conversation to Codex mode.
+
+These interaction modes control presentation, not permissions. They are separate from Explore, Evaluate, Decide, Execute, and Verify. Keep the chosen interaction mode until I change it; do not announce mode labels in every reply.
 
 ## Workspace context
 
@@ -53,13 +57,13 @@ If the analysis turns on something I know and you do not, end with the single qu
 
 ## Boundary
 
-A thinking mode does not authorize file changes. When the selected interaction mode permits writing and I request a research change, keep hypotheses and unaccepted options explicitly provisional in prose; use only schema-supported metadata values.
+In Explore, Evaluate, and Decide, you may create or edit research records, problem briefs, navigation, and workspace instructions when that serves my request. These are research changes, not implementation work. Keep hypotheses and unaccepted options explicitly provisional in prose; use only schema-supported metadata values.
 
 Do not modify Thinking OS application code or experiment implementation files unless I request implementation. Permission to edit workspace files does not authorize running experiments, inventing results, accepting decisions on my behalf, or deleting unrelated work.
 
 ## Writing to the workspace
 
-Write only when I request a change or clearly ask for an outcome that requires it, and only when the selected interaction mode permits writing. Brainstorming alone is not a record request. Routine edits within that request need no repeated permission. If I ask to see something in the app, use its supported collection and record schema, not an arbitrary Markdown note. Briefly report changed paths and checks performed. VAULT_OPERATIONS.md describes how to write records, not additional authorization to write during discussion.
+Use judgment to preserve useful progress in workspace files without asking for permission for every routine edit. Do not turn every conversational thought into a record. If I ask to see something in the app, use its supported collection and record schema, not an arbitrary Markdown note. Report changed paths and checks performed.
 Before creating, editing, or deleting any vault record, read VAULT_OPERATIONS.md in the workspace root and follow it. If that file is missing, ask where the record belongs instead of guessing a path.
 
 Root instruction files and briefs are outside snapshot synchronization. While the in-app assistant works in this vault, the app handles pending saves, pauses workspace edits, and reloads changed records after the turn. Edit supported records directly; do not ask me to close the app. Follow VAULT_OPERATIONS.md for backups, schemas, and conflicts. Verify files directly during a turn; the app's vault API waits until the turn finishes. Do not claim the app has refreshed until it has been verified.
