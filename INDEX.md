@@ -11,6 +11,8 @@ Local-first workspace for questions, claims, evidence, experiments, and focused 
 | `CLAUDE.md` | Reference to the same workspace instructions |
 | `briefs/` | Plain Markdown problem briefs; not shown as app records |
 | `briefs/TEMPLATE.md` | Starting format, not an active research problem |
+| `reports/README.md` | Twice-weekly lab report workflow; Markdown, result images, and Frontend Slides decks |
+| `reports/AGENTS.md` | Report evidence rules and slide-generation instructions |
 
 ## App-visible records
 
@@ -43,7 +45,7 @@ Record fields live in `VAULT_OPERATIONS.md` under "Create". Use that file, not t
 
 No active problem brief was created during initialization. Add links here when actual problems have briefs.
 
-Last updated: 2026-09-10
+Last updated: 2026-10-03
 
 <!-- thinking-os:workspace-summary:start -->
 ## Thinking OS workspace summary
