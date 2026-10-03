@@ -1,0 +1,11 @@
+# Scout Brief
+
+## Question
+
+What research systems use LLM agents to autonomously generate hypotheses, run experiments, evaluate results, and iteratively improve the research process, and how effective and genuinely autonomous are they?
+
+## Purpose
+
+Build a focused map of autonomous research systems using LLM agents, identify credible end-to-end examples, compare how they close the hypothesis-experiment-evaluation loop, and expose current capability limits and open design problems.
+
+<!-- thinking-os:scout-prose:eyJxdWVzdGlvbiI6IldoYXQgcmVzZWFyY2ggc3lzdGVtcyB1c2UgTExNIGFnZW50cyB0byBhdXRvbm9tb3VzbHkgZ2VuZXJhdGUgaHlwb3RoZXNlcywgcnVuIGV4cGVyaW1lbnRzLCBldmFsdWF0ZSByZXN1bHRzLCBhbmQgaXRlcmF0aXZlbHkgaW1wcm92ZSB0aGUgcmVzZWFyY2ggcHJvY2VzcywgYW5kIGhvdyBlZmZlY3RpdmUgYW5kIGdlbnVpbmVseSBhdXRvbm9tb3VzIGFyZSB0aGV5PyIsInB1cnBvc2UiOiJCdWlsZCBhIGZvY3VzZWQgbWFwIG9mIGF1dG9ub21vdXMgcmVzZWFyY2ggc3lzdGVtcyB1c2luZyBMTE0gYWdlbnRzLCBpZGVudGlmeSBjcmVkaWJsZSBlbmQtdG8tZW5kIGV4YW1wbGVzLCBjb21wYXJlIGhvdyB0aGV5IGNsb3NlIHRoZSBoeXBvdGhlc2lzLWV4cGVyaW1lbnQtZXZhbHVhdGlvbiBsb29wLCBhbmQgZXhwb3NlIGN1cnJlbnQgY2FwYWJpbGl0eSBsaW1pdHMgYW5kIG9wZW4gZGVzaWduIHByb2JsZW1zLiJ9 -->

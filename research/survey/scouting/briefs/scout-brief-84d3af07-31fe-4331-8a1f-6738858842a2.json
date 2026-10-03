@@ -1,0 +1,57 @@
+{
+  "scope": [
+    "Autonomous scientific discovery and AI-for-science systems using LLMs or language-model agents",
+    "Closed-loop hypothesis generation, experiment design or execution, result analysis, and iterative refinement",
+    "LLM-based research agents, multi-agent scientist systems, and automated machine-learning or algorithm-discovery systems when they exhibit the full research loop",
+    "Applications in machine learning, computational science, biology, chemistry, and other empirical sciences",
+    "Evaluation of autonomy, novelty, correctness, reproducibility, efficiency, and human involvement"
+  ],
+  "exclusions": [
+    "Exclude papers that only propose LLM-generated hypotheses without experiment execution or result-driven iteration.",
+    "Exclude generic autonomous-agent frameworks, coding agents, or scientific assistants unless they are evaluated on a research loop matching the scope.",
+    "Exclude papers where experiments are only simulated examples with no meaningful evaluation of the autonomous process, unless they provide a clearly useful methodological foundation.",
+    "Exclude opinion pieces, blog posts, and non-research demos unless needed to locate the corresponding primary paper."
+  ],
+  "constraints": [
+    "Prioritize systems that implement an end-to-end loop: LLM agents generate or select hypotheses, execute experiments or evaluations, interpret results, and use feedback to improve subsequent research actions.",
+    "Require concrete empirical demonstrations with reported results, artifacts, benchmarks, or reproducible experimental procedures.",
+    "Include both single-agent and multi-agent systems, but label the distinction and identify which components are automated versus human-controlled.",
+    "Prefer primary research papers and authoritative preprints from 2023 onward; include earlier foundational work only when directly necessary to explain the lineage.",
+    "Extract the research domain, hypothesis representation, experiment execution mechanism, evaluation protocol, iteration strategy, and level of human involvement."
+  ],
+  "searchDirections": [
+    {
+      "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+      "reason": "Find primary papers describing complete autonomous research loops."
+    },
+    {
+      "query": "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+      "reason": "Capture systems framed as closed-loop scientific discovery or hypothesis testing."
+    },
+    {
+      "query": "multi-agent LLM scientist research experiment evaluation paper",
+      "reason": "Find multi-agent research systems with explicit coordination and iterative evaluation."
+    },
+    {
+      "query": "LLM automated machine learning research agent generate test improve algorithms paper",
+      "reason": "Include algorithm-discovery and automated-ML systems when they instantiate the target research loop."
+    }
+  ],
+  "screeningCriteria": [
+    "The paper describes an implemented system or a sufficiently specified prototype, not only a conceptual architecture.",
+    "The system contains at least three linked stages among hypothesis generation, experiment planning or execution, result evaluation, and iterative improvement; prioritize papers covering all four.",
+    "The paper reports experiments that test the system's research behavior or scientific outputs.",
+    "The paper makes clear what the LLM controls, what tools or environments it uses, and where humans intervene.",
+    "The paper provides enough methodological detail to compare its loop, evaluation, and limitations with other systems.",
+    "For each recommendation, classify loop completeness, domain, agent structure, tool use, evaluation strength, and reproducibility."
+  ],
+  "maxRecommendations": 5,
+  "createdFrom": {
+    "kind": "assistant",
+    "reference": "User request on September 21, 2026: papers about autonomous research using LLMs, focused on hypothesis generation, experiments, evaluation, and iterative improvement."
+  },
+  "author": "model:assistant",
+  "id": "scout-brief-84d3af07-31fe-4331-8a1f-6738858842a2",
+  "createdAt": 1790002132029,
+  "updatedAt": 1790002132029
+}

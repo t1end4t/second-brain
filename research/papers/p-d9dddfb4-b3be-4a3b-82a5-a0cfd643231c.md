@@ -1,0 +1,6 @@
+# A Survey on Agent Skills for LLMs: A Lifecycle Perspective from Construction to Ecosystems
+
+# A Survey on Agent Skills for LLMs: A Lifecycle Perspective from Construction to Ecosystems
+
+## Abstract
+Skills--modular, reusable units of agent capability ranging from prompt templates to executable artifacts such as SKILL.md--have emerged as a central abstraction through which LLM-based agents accumulate, compose, and refine procedural knowledge. Despite rapid progress, the skill layer remains poorly understood: contributions to construction, access, training integration, safety, and evaluation are scattered across disjoint literatures without a unifying framework. We address this gap with three contributions. First, we introduce a lifecycle-oriented taxonomy that characterizes skills along four orthogonal axes: representation, source, granularity, and role. Second, we organize the landscape into six interconnected dimensions -- Construction and Evolution, Access and Composition, Model Integration via Training, Safety, Evaluation and Feedback, and Skill-Native Systems and Ecosystems -- and systematically map existing work onto this structure. Third, for each dimension we identify structural challenges and forward-looking research directions, including lifecycle management, compositional safety, dynamic utility evaluation, and ecosystem standardization.

@@ -1,0 +1,1458 @@
+{
+  "id": "scout-run-fab0ee5e-0678-4f28-b843-dca02fbef474",
+  "source": {
+    "kind": "brief",
+    "id": "scout-brief-84d3af07-31fe-4331-8a1f-6738858842a2"
+  },
+  "inputSnapshot": {
+    "question": "Which papers study systems in which LLM agents autonomously generate hypotheses, run experiments or evaluations, interpret results, and iteratively improve the research process? What capabilities, system designs, evaluation methods, and limitations distinguish them?",
+    "purpose": "Map the strongest work on autonomous scientific research systems built with LLMs and identify designs worth deeper study.",
+    "scope": [
+      "Autonomous scientific discovery and AI-for-science systems using LLMs or language-model agents",
+      "Closed-loop hypothesis generation, experiment design or execution, result analysis, and iterative refinement",
+      "LLM-based research agents, multi-agent scientist systems, and automated machine-learning or algorithm-discovery systems when they exhibit the full research loop",
+      "Applications in machine learning, computational science, biology, chemistry, and other empirical sciences",
+      "Evaluation of autonomy, novelty, correctness, reproducibility, efficiency, and human involvement"
+    ],
+    "exclusions": [
+      "Exclude papers that only propose LLM-generated hypotheses without experiment execution or result-driven iteration.",
+      "Exclude generic autonomous-agent frameworks, coding agents, or scientific assistants unless they are evaluated on a research loop matching the scope.",
+      "Exclude papers where experiments are only simulated examples with no meaningful evaluation of the autonomous process, unless they provide a clearly useful methodological foundation.",
+      "Exclude opinion pieces, blog posts, and non-research demos unless needed to locate the corresponding primary paper."
+    ],
+    "constraints": [
+      "Prioritize systems that implement an end-to-end loop: LLM agents generate or select hypotheses, execute experiments or evaluations, interpret results, and use feedback to improve subsequent research actions.",
+      "Require concrete empirical demonstrations with reported results, artifacts, benchmarks, or reproducible experimental procedures.",
+      "Include both single-agent and multi-agent systems, but label the distinction and identify which components are automated versus human-controlled.",
+      "Prefer primary research papers and authoritative preprints from 2023 onward; include earlier foundational work only when directly necessary to explain the lineage.",
+      "Extract the research domain, hypothesis representation, experiment execution mechanism, evaluation protocol, iteration strategy, and level of human involvement."
+    ],
+    "searchDirections": [
+      {
+        "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+        "reason": "Find primary papers describing complete autonomous research loops."
+      },
+      {
+        "query": "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+        "reason": "Capture systems framed as closed-loop scientific discovery or hypothesis testing."
+      },
+      {
+        "query": "multi-agent LLM scientist research experiment evaluation paper",
+        "reason": "Find multi-agent research systems with explicit coordination and iterative evaluation."
+      },
+      {
+        "query": "LLM automated machine learning research agent generate test improve algorithms paper",
+        "reason": "Include algorithm-discovery and automated-ML systems when they instantiate the target research loop."
+      }
+    ],
+    "screeningCriteria": [
+      "The paper describes an implemented system or a sufficiently specified prototype, not only a conceptual architecture.",
+      "The system contains at least three linked stages among hypothesis generation, experiment planning or execution, result evaluation, and iterative improvement; prioritize papers covering all four.",
+      "The paper reports experiments that test the system's research behavior or scientific outputs.",
+      "The paper makes clear what the LLM controls, what tools or environments it uses, and where humans intervene.",
+      "The paper provides enough methodological detail to compare its loop, evaluation, and limitations with other systems.",
+      "For each recommendation, classify loop completeness, domain, agent structure, tool use, evaluation strength, and reproducibility."
+    ],
+    "maxRecommendations": 5,
+    "recencyPolicy": "recent",
+    "createdFrom": {
+      "kind": "assistant",
+      "reference": "User request on September 21, 2026: papers about autonomous research using LLMs, focused on hypothesis generation, experiments, evaluation, and iterative improvement."
+    },
+    "author": "model:assistant",
+    "id": "scout-brief-84d3af07-31fe-4331-8a1f-6738858842a2",
+    "createdAt": 1790002132029,
+    "updatedAt": 1790002132029
+  },
+  "status": "partial",
+  "sources": [
+    "OpenAlex",
+    "arXiv",
+    "Crossref"
+  ],
+  "executedQueries": [
+    "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+    "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+    "multi-agent LLM scientist research experiment evaluation paper",
+    "LLM automated machine learning research agent generate test improve algorithms paper",
+    "Which papers study systems in which LLM agents autonomously generate hypotheses, run experiments or evaluations, interpret results, and iteratively improve the research process? What capabilities, system designs, evaluation methods, and limitations distinguish them?"
+  ],
+  "recommendations": [
+    {
+      "id": "c6675b92677343b7637285c1cdb8d403788889013232f1e3d2aa48493b896757",
+      "title": "AI Scientists for Building Virtual-Cell Models",
+      "authors": "Mark Gerstein, Xiangru Tang, Jiapeng Chen, Yanjun Shao, Zhuoyun Yu, Yan Cui, Weixu Wang, Fang Wu, Yuxuan Liao, Yuchen Zhuang, Wenqi Shi, Zhi Huang, Arman Cohan, Xihong Lin, Smita Krishnaswamy, Fabian Theis",
+      "year": 2026,
+      "abstract": "Abstract Autonomous agents, from virtual laboratories to biological data-analysis agents and co-scientists, have begun to turn scientific goals into hypotheses. Whether they can go further and convert real, noisy and complex biological data into executable model hypotheses and architectures that encode testable assumptions remains unclear. Predicting how cells respond to genetic and chemical perturbations (i.e., modeling virtual cells) is a natural test of this ability: it is central to decoding disease mechanisms and therapeutic discovery, yet it demands cross-disciplinary expertise rarely concentrated in a single research group. Here, we introduce CellForge, an organized team of autonomous agents for single-cell perturbation modeling. Given a dataset and a task, it surveys the literature, parses the data, identifies relevant baselines, and formulates a model hypothesis through critic-mediated discussion among agents specialized in data modeling, single-cell biology, and deep learning. It then writes the training code, runs the experiments, and returns a trained predictor including architecture, code, and validation results. The architecture itself is the hypothesis: CellForge produces it end-to-end, with no human specifying the design, loss, or training protocol. Across six perturbation datasets spanning transcriptomic, epigenomic, and proteomic contexts, CellForge yields models that are competitive with hand-crafted state-of-the-art results on established tasks and extends the same workflow to paired multiomic readouts. Blinded human evaluators rate CellForge’s research plans as more scientifically sound and innovative than those from single LLMs or deep-research systems. In summary, we show autonomous agents can complete the full hypothesis-to-validation cycle in single-cell biology, with an AI effectively building another AI, in a complex setting that currently requires a team of human experts.",
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.21203/rs.3.rs-10954762/v1",
+          "source": "Crossref",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7213456819",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://doi.org/10.21203/rs.3.rs-10954762/v1",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+        "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+        "multi-agent LLM scientist research experiment evaluation paper"
+      ],
+      "sources": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+          "retrievedAt": 1790056375918
+        },
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+          "retrievedAt": 1790056378885
+        },
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "multi-agent LLM scientist research experiment evaluation paper",
+          "retrievedAt": 1790056381753
+        },
+        {
+          "provider": "Crossref",
+          "lane": "doi-verification",
+          "query": "10.21203/rs.3.rs-10954762/v1",
+          "retrievedAt": 1790056393846
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "The abstract does not clearly state whether experimental results trigger repeated hypothesis or architecture revision within the same task.",
+        "The exact LLMs, tools, stopping criteria, compute costs, evaluator protocol, and reproducibility procedures are not supplied.",
+        "The degree of human involvement in dataset and task selection remains unspecified."
+      ],
+      "assessmentState": "screened",
+      "relevance": "direct",
+      "evidenceExcerpt": "It then writes the training code, runs the experiments, and returns a trained predictor including architecture, code, and validation results.",
+      "relevanceAssessment": "CellForge directly implements an end-to-end autonomous research workflow. A multi-agent team surveys literature, parses data, identifies baselines, formulates a model hypothesis, writes code, runs experiments, and returns validation results. The abstract explicitly characterizes the model architecture as the hypothesis and reports no human specification of the design, loss, or training protocol.",
+      "expectedValue": "High. The paper offers a concrete multi-agent design, executable hypothesis representation, automated experiment mechanism, cross-dataset evaluation, baseline comparison, and blinded human evaluation.",
+      "qualityConfidence": "high",
+      "qualityEvidence": [
+        "Here, we introduce CellForge, an organized team of autonomous agents for single-cell perturbation modeling.",
+        "The architecture itself is the hypothesis: CellForge produces it end-to-end, with no human specifying the design, loss, or training protocol.",
+        "Across six perturbation datasets spanning transcriptomic, epigenomic, and proteomic contexts, CellForge yields models that are competitive with hand-crafted state-of-the-art results on established tasks and extends the same workflow to paired multiomic readouts.",
+        "Blinded human evaluators rate CellForge’s research plans as more scientifically sound and innovative than those from single LLMs or deep-research systems.",
+        "2026",
+        "OpenAlex",
+        "Crossref"
+      ],
+      "outcome": "recommend",
+      "recommendationReason": "This is the strongest supplied match for an implemented, domain-specific, multi-agent hypothesis-to-validation system with concrete experiments and comparative evaluations.",
+      "coverageTags": [
+        "full research loop",
+        "multi-agent",
+        "single-cell biology",
+        "architecture-as-hypothesis",
+        "code generation and execution arrays? no; experiment execution omitted? actually include all needed"
+      ],
+      "suggestedNextAction": "inspect full text",
+      "decision": "saved",
+      "decisionAt": 1790058120558,
+      "paperId": "p-5d9a9690-8db7-495c-89f9-134013b5f6f6"
+    },
+    {
+      "id": "15c6f36cf2e321601505617215d6725e2c6a8cd69b4957dac80269d1a52e2e00",
+      "title": "Closing the Empirical Loop: Autonomous AI Agents Conduct End‐to‐end Research With Human Participants",
+      "authors": "Gabrielle Wehr, Reuben Rideaux, Amaya J. Fox, David R. Lightfoot, Jason Tangen, Jason B. Mattingley, Shane E. Ehrhardt",
+      "year": 2026,
+      "abstract": "ABSTRACT Artificial intelligence systems are transforming scientific discovery by accelerating specific research tasks, from protein structure prediction to materials design, yet remain confined to narrow domains requiring substantial human oversight. Exponential growth of scientific literature and increasing domain specialization constrain researchers' capacity to synthesize knowledge across disciplines and develop unifying theories, motivating exploration of general‐purpose AI systems for science. Here we show that a domain‐agnostic, agentic AI Scientist system can independently navigate the scientific workflow ‐from hypothesis generation through data collection to manuscript preparation. The system autonomously designed and executed three psychological studies on visual working memory, mental rotation, and imagery vividness, executed online data collection with 288 participants, developed analysis pipelines through 8h+ continuous coding sessions, and produced completed manuscripts. The results demonstrate the capability of AI scientific discovery pipelines to conduct research with theoretical reasoning and methodological rigor comparable to experienced researchers, though with limitations in conceptual nuance and theoretical interpretation. This is a step toward embodied AI that can test hypotheses through real‐world experiments, accelerating discovery by autonomously exploring regions of scientific space that human cognitive and resource constraints might otherwise leave unexplored. It raises important questions about the nature of scientific understanding and attribution of scientific credit.",
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.1002/advs.76675",
+          "source": "Crossref",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7213206525",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://doi.org/10.1002/advs.76675",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+        "multi-agent LLM scientist research experiment evaluation paper"
+      ],
+      "sources": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+          "retrievedAt": 1790056375920
+        },
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "multi-agent LLM scientist research experiment evaluation paper",
+          "retrievedAt": 1790056381754
+        },
+        {
+          "provider": "Crossref",
+          "lane": "doi-verification",
+          "query": "10.1002/advs.76675",
+          "retrievedAt": 1790056393846
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "The abstract does not explicitly describe result-driven revision across multiple research iterations.",
+        "The basis for the comparison with experienced researchers is not specified.",
+        "The abstract does not identify the agent structure, models, tools, safeguards, reproducibility artifacts, or exact human oversight.",
+        "The reported limitations include conceptual nuance and theoretical interpretation."
+      ],
+      "assessmentState": "screened",
+      "relevance": "direct",
+      "evidenceExcerpt": "Here we show that a domain‐agnostic, agentic AI Scientist system can independently navigate the scientific workflow ‐from hypothesis generation through data collection to manuscript preparation.",
+      "relevanceAssessment": "The system directly covers hypothesis generation, real-world experiment design and execution, online data collection, analysis-pipeline development, and manuscript preparation. It is domain-agnostic and reports three human-participant studies, making it a strong example of autonomous empirical research beyond simulation.",
+      "expectedValue": "High. It provides evidence about broad workflow autonomy, experiments involving real participants, long-running coding activity, completed outputs, and limitations in conceptual interpretation.",
+      "qualityConfidence": "high",
+      "qualityEvidence": [
+        "The system autonomously designed and executed three psychological studies on visual working memory, mental rotation, and imagery vividness, executed online data collection with 288 participants, developed analysis pipelines through 8h+ continuous coding sessions, and produced completed manuscripts.",
+        "The results demonstrate the capability of AI scientific discovery pipelines to conduct research with theoretical reasoning and methodological rigor comparable to experienced researchers, though with limitations in conceptual nuance and theoretical interpretation.",
+        "2026",
+        "OpenAlex",
+        "Crossref"
+      ],
+      "outcome": "recommend",
+      "recommendationReason": "The paper reports unusually complete autonomous research execution, including real participant recruitment and data collection, although the iteration mechanism requires full-text inspection.",
+      "coverageTags": [
+        "end-to-end research",
+        "domain-agnostic agent",
+        "psychology",
+        "human-participant experiments",
+        "data collection and analysis"
+      ],
+      "suggestedNextAction": "inspect full text",
+      "decision": "saved",
+      "decisionAt": 1790058129905,
+      "paperId": "p-10f564eb-d18f-4871-89a9-04ac3966a821"
+    },
+    {
+      "id": "8e035ba29408c8a44fdbd85c2871fc1c85d834e309732dc6da43792aa90e1e37",
+      "title": "Auto-RecSys: Harnessing Autonomous Research Agents for Industry-Scale Recommender System",
+      "authors": "Ming Li, Dai Li, Xuying Ning, Bo Sun, Rui Li, Yi Zhang, Silvia Gong, Xuan Cao, Rui Li, Cornelia Carapcea, Qunshu Zhang, Zhigang Wang, Yinglong Xia, Andy Wang",
+      "year": 2026,
+      "abstract": "Auto-research agents have shown the potential to automate hypothesis generation, experiment execution, and iterative refinement. However, scaling this paradigm to industry-scale recommendation models introduces two challenges: (1) long feedback loops, where model training can take days, making serial iteration prohibitively slow and requiring parallel exploration across multiple research directions; and (2) system complexity, where large configurations, fragile infrastructure dependencies, and multi-day GPU jobs require robust and recoverable execution. We present Auto-RecSys, an autonomous research system for long-horizon experimentation on industry-scale recommendation models. Auto-RecSys addresses these challenges through three harness designs: (1) distributed asynchronous execution for running multiple experiments in parallel across servers, (2) centralized cross-server memory for persistent and recoverable execution across sessions and failures, and (3) cognitive-procedural separation, where natural-language skill files guide LLM reasoning while deterministic scripts enforce operational correctness. Auto-RecSys further employs a dual-loop self-evolving architecture: an Execution Evolution Loop in which model-specific playbooks accumulate operational knowledge by recording failed attempts and crystallizing successful pipelines, and an Idea Evolution Loop in which experimental outcomes inform subsequent ideation. Evaluated on recommendation models, Auto-RecSys significantly reduces the human time required per experiment cycle and improves execution reliability as its playbooks mature.",
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.48550/arxiv.2609.10922",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7212233845",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://arxiv.org/abs/2609.10922",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+          "retrievedAt": 1790056375921
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "The abstract does not report exact evaluation metrics or baseline values for the claimed reductions and reliability improvements.",
+        "The abstract does not specify the precise hypothesis representation or result-interpretation method.",
+        "The abstract does not quantify the level of human intervention beyond reduced human time.",
+        "No full-text review, venue assessment, citation assessment, code assessment, or dataset assessment was performed."
+      ],
+      "assessmentState": "screened",
+      "relevance": "direct",
+      "evidenceExcerpt": "We present Auto-RecSys, an autonomous research system for long-horizon experimentation on industry-scale recommendation models.",
+      "relevanceAssessment": "Directly matches the target loop: the abstract explicitly states hypothesis generation, experiment execution, iterative refinement, outcome-informed ideation, parallel execution, persistent memory, and reduced human time.",
+      "expectedValue": "High-value candidate for studying long-horizon autonomous ML research, distributed experiment execution, persistent cross-session memory, operational reliability, and separate execution- and idea-evolution loops.",
+      "qualityConfidence": "high",
+      "qualityEvidence": [
+        "Auto-research agents have shown the potential to automate hypothesis generation, experiment execution, and iterative refinement.",
+        "Auto-RecSys further employs a dual-loop self-evolving architecture: an Execution Evolution Loop in which model-specific playbooks accumulate operational knowledge by recording failed attempts and crystallizing successful pipelines, and an Idea Evolution Loop in which experimental outcomes inform subsequent ideation.",
+        "Evaluated on recommendation models, Auto-RecSys significantly reduces the human time required per experiment cycle and improves execution reliability as its playbooks mature.",
+        "2026"
+      ],
+      "outcome": "recommend",
+      "recommendationReason": "The supplied abstract explicitly covers the requested hypothesis, experiment, feedback, and iterative-improvement stages and reports empirical evaluation of execution reliability and human time.",
+      "coverageTags": [
+        "full-loop evidence",
+        "autonomous ml research",
+        "recommendation systems",
+        "distributed execution",
+        "persistent memory"
+      ],
+      "suggestedNextAction": "open abstract",
+      "decision": "saved",
+      "decisionAt": 1790058132727,
+      "paperId": "p-cb873f6c-263d-4d0f-b62a-a398f92892b3"
+    },
+    {
+      "id": "ac4f0816e5f3e119bc46f3f491710f10a50fc530d887a945350b681542148564",
+      "title": "Agent-driven Model Development for RNA 3D Structure Prediction",
+      "authors": "Maciej Majewski, Laura Malo, Ariadna Montero-Blay, Matteo Marengo, Ricardo Nascimento Dos Santos, Paraskevi Gkeka, Hervé Minoux",
+      "year": 2026,
+      "abstract": "Abstract Large language model (LLM) agents have shown promise in driving scientific discovery, but their effectiveness in complex, real-world biological problems remains underexplored. We ask whether a general-purpose LLM agent can drive semi-autonomous development of a model for a genuinely hard biological problem, RNA 3D structure prediction. We designed a development loop where, under a fixed budget and with human supervision, the agent iteratively proposed, implemented, trained, and evaluated model changes. Over 297 iterations, the model evolved from a randomly-initialised baseline to QuickFold, an 8.9 M-parameter folding trunk that matches the strongest open-source baselines (RhoFold+, NuFold) on lDDT and TM-score within noise on a held-out test set at a fraction of their inference cost. We frame this less as a new predictor than as a case study in feedback-driven, agent-led model development.",
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.64898/2026.09.08.749228",
+          "source": "Crossref",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7212024955",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://doi.org/10.64898/2026.09.08.749228",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper"
+      ],
+      "sources": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+          "retrievedAt": 1790056375924
+        },
+        {
+          "provider": "Crossref",
+          "lane": "doi-verification",
+          "query": "10.64898/2026.09.08.749228",
+          "retrievedAt": 1790056393846
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "The loop uses human supervision.",
+        "The abstract does not specify the exact intervention frequency, proposal representation, or reproducibility artifacts.",
+        "The reported result concerns one biological modeling task."
+      ],
+      "assessmentState": "screened",
+      "relevance": "direct",
+      "evidenceExcerpt": "We designed a development loop where, under a fixed budget and with human supervision, the agent iteratively proposed, implemented, trained, and evaluated model changes.",
+      "relevanceAssessment": "Directly studies an iterative LLM-agent research loop that proposes model changes, executes training, evaluates results, and continues development under human supervision.",
+      "expectedValue": "Strong case study for feedback-driven model development in RNA structure prediction, including iteration count, execution mechanism, human involvement, held-out evaluation, and comparison with baselines.",
+      "qualityConfidence": "high",
+      "qualityEvidence": [
+        "Over 297 iterations, the model evolved from a randomly-initialised baseline to QuickFold, an 8.9 M-parameter folding trunk that matches the strongest open-source baselines (RhoFold+, NuFold) on lDDT and TM-score within noise on a held-out test set at a fraction of their inference cost.",
+        "We frame this less as a new predictor than as a case study in feedback-driven, agent-led model development.",
+        "OpenAlex",
+        "Crossref"
+      ],
+      "outcome": "recommend",
+      "recommendationReason": "The abstract explicitly describes iterative proposal, implementation, training, and evaluation across 297 iterations, closely matching the target research loop.",
+      "coverageTags": [
+        "rna structure prediction",
+        "single-agent development",
+        "iterative model changes",
+        "training and evaluation",
+        "human supervision"
+      ],
+      "suggestedNextAction": "inspect full text",
+      "decision": "saved",
+      "decisionAt": 1790058138143,
+      "paperId": "p-460400c4-1ca4-4a02-bcae-7139f865be55"
+    },
+    {
+      "id": "994c37ff3368fe51029bbe6992cb683d9e9d47d9cb0659d1ef3688d1066a05fb",
+      "title": "Qiushi Engine on AstaBench E2E-Bench-Hard",
+      "authors": "Wenhao Li, Shuxing Yang, Fujia Chen, Jincheng Mi, Yuang Pan, Rui Zhao, Zichen Li, Junyao Wu, Shenzhan Hong, Yaqi Li, Yize Wang, Kaihao Zhu, Taowen Deng, Junjie Yang, Hongsheng Chen, Yihao Yang",
+      "year": 2026,
+      "abstract": "This report analyzes Qiushi Engine v0.8 across all 40 test tasks in AstaBench E2E-Bench-Hard, a benchmark that requires autonomous agents to carry a research question through experimental design, code implementation, actual execution, result analysis, and report delivery. Qiushi Engine is model-configurable; this evaluation selected DeepSeek deepseek-v4pro-preview as the model backend. The official AstaBench leaderboard records a score of 0.816 and an average benchmark cost of USD 15.209 per task, while the full-precision local recomputation is $81.59 \\pm 1.87$. Four tasks satisfied every rubric item, yielding a full-task completion rate of 4/40 = 10% -- 7 percentage points above, and about 3.3 times, the approximately 3% best rate reported for AstaBench's official agents. Across 507 required rubric items, 416 were satisfied (82.1%). Official scoring archives and 40 Meta-Trace records show sustained production and verification of reports, code, and experimental artifacts; the principal gaps lie in repeated runs, external dependencies, specified metrics, and ablation studies. The report explains the benchmark, system workflow, aggregate results, representative cases, and limits of interpretation.",
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.48550/arxiv.2609.08196",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7212061607",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://arxiv.org/abs/2609.08196",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+          "retrievedAt": 1790056375924
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "The abstract does not explicitly state whether result analysis changes subsequent experiments.",
+        "Only four of 40 tasks satisfied every rubric item.",
+        "Reported gaps include repeated runs, external dependencies, specified metrics, and ablation studies."
+      ],
+      "assessmentState": "screened",
+      "relevance": "direct",
+      "evidenceExcerpt": "This report analyzes Qiushi Engine v0.8 across all 40 test tasks in AstaBench E2E-Bench-Hard, a benchmark that requires autonomous agents to carry a research question through experimental design, code implementation, actual execution, result analysis, and report delivery.",
+      "relevanceAssessment": "Directly evaluates an autonomous agent on end-to-end research tasks spanning experimental design, implementation, execution, analysis, artifact production, and reporting.",
+      "expectedValue": "Strong source for evaluation methodology, task-level completion, rubric-item performance, execution cost, artifact verification, and concrete failure categories in end-to-end autonomous research.",
+      "qualityConfidence": "high",
+      "qualityEvidence": [
+        "The official AstaBench leaderboard records a score of 0.816 and an average benchmark cost of USD 15.209 per task, while the full-precision local recomputation is $81.59 \\pm 1.87$.",
+        "Four tasks satisfied every rubric item, yielding a full-task completion rate of 4/40 = 10% -- 7 percentage points above, and about 3.3 times, the approximately 3% best rate reported for AstaBench's official agents.",
+        "Across 507 required rubric items, 416 were satisfied (82.1%).",
+        "OpenAlex"
+      ],
+      "outcome": "recommend",
+      "recommendationReason": "The benchmark directly exercises most stages of the target research loop and reports detailed completion, cost, rubric, and artifact evidence.",
+      "coverageTags": [
+        "end-to-end research",
+        "experimental execution",
+        "result analysis",
+        "astabench",
+        "artifact verification"
+      ],
+      "suggestedNextAction": "inspect full text",
+      "decision": "saved",
+      "decisionAt": 1790058143886,
+      "paperId": "p-75012895-90eb-48b2-8bd2-738dc2964f3d"
+    }
+  ],
+  "uncertain": [
+    {
+      "id": "d618e0a246161b4a9e1702a61f853c878cdc22f9e0981950fc445529c794ee1f",
+      "title": "Discovery Foundation Models: Toward Open-Ended Discovery Intelligence",
+      "authors": "Ling Yang, Zhenfei Yin, Yingcheng Wu",
+      "year": 2026,
+      "abstract": "Foundation models have progressed from learning and reasoning over existing knowledge, to increasingly learning through action, tool use, and outcome feedback. We argue that the next frontier is a further transition: from solving and acting within problems specified by humans to participating in the process by which new problems, representations, explanations, and knowledge are created. We refer to this capability as Discovery Intelligence. We formulate Discovery Foundation Models (DFMs) as general-purpose model systems for open-ended discovery. A DFM operates over a revisable research state and supports seven coupled capabilities spanning problem discovery, formulation, representation construction, hypothesis formation, intervention, evidence-grounded revision, and continual discovery improvement. We instantiate this framework with Zetema, which couples explicit research-state dynamics, verification and experimental gating, external grounding, and cross-task Discovery Skill evolution. We further ground the framework with GALILEO, a real therapeutic-discovery system in which Dry-Lab reasoning, robotic and hands-on Wet-Lab experimentation, external biological evidence, and iterative hypothesis and design revision form a closed physical discovery loop. We then formulate a unified approach to capability formation and process-centered evaluation, enabling discovery behavior to be trained, improved, and measured beyond final-answer performance. Together, these components establish discovery as a learnable, executable, and evaluable capability of foundation-model systems. We view this shift as a broader progression in intelligence scaling: from learning over existing knowledge, to learning from action outcomes, and ultimately to participating in the construction, testing, and revision of the structures through which new knowledge is discovered. Code: https://github.com/Gen-Verse/DFM-Plans",
+      "identities": [
+        {
+          "kind": "openalex",
+          "value": "W7213372933",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "url",
+          "value": "https://arxiv.org/abs/2609.15973",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+        "large language model agent scientific discovery closed-loop experiments hypothesis testing paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+          "retrievedAt": 1790056375920
+        },
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+          "retrievedAt": 1790056378887
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "The abstract does not report specific experimental results, benchmarks, comparison systems, or quantitative outcomes.",
+        "The division of control among models, robots, hands-on wet-lab work, and humans is unclear.",
+        "The reproducibility value of the linked code cannot be inferred without inspecting it.",
+        "The relationship between the general framework, Zetema, and GALILEO requires clarification."
+      ],
+      "assessmentState": "screened",
+      "relevance": "direct",
+      "evidenceExcerpt": "We further ground the framework with GALILEO, a real therapeutic-discovery system in which Dry-Lab reasoning, robotic and hands-on Wet-Lab experimentation, external biological evidence, and iterative hypothesis and design revision form a closed physical discovery loop.",
+      "relevanceAssessment": "The paper directly addresses open-ended autonomous discovery. It specifies a revisable research state, hypothesis formation, intervention, evidence-grounded revision, experimental gating, skill evolution, and a closed physical loop combining dry-lab and wet-lab work.",
+      "expectedValue": "Potentially high for system architecture, physical experiment integration, process-centered evaluation, and continual improvement. The abstract does not provide concrete experimental outcomes needed to establish evaluation strength.",
+      "qualityConfidence": "medium",
+      "qualityEvidence": [
+        "A DFM operates over a revisable research state and supports seven coupled capabilities spanning problem discovery, formulation, representation construction, hypothesis formation, intervention, evidence-grounded revision, and continual discovery improvement.",
+        "We instantiate this framework with Zetema, which couples explicit research-state dynamics, verification and experimental gating, external grounding, and cross-task Discovery Skill evolution.",
+        "We then formulate a unified approach to capability formation and process-centered evaluation, enabling discovery behavior to be trained, improved, and measured beyond final-answer performance.",
+        "Code: https://github.com/Gen-Verse/DFM-Plans",
+        "2026",
+        "OpenAlex"
+      ],
+      "outcome": "uncertain",
+      "recommendationReason": "The system is highly relevant and explicitly closed-loop, but the supplied abstract does not establish the concrete empirical evaluation required for a recommendation.",
+      "coverageTags": [
+        "closed physical discovery loop",
+        "foundation-model system",
+        "therapeutic discovery",
+        "dry-lab and wet-lab",
+        "iterative hypothesis revision"
+      ],
+      "suggestedNextAction": "inspect full text"
+    },
+    {
+      "id": "0cb3fe57625760ce32a19e95c43429812e3e3239d707e899adcd749cb40aab5d",
+      "title": "AppliedScientist: Automated Scientific Revision Through Iterative AI Reviewing",
+      "authors": "Vidushee Vats, Karun Sharma, Shengzhi Li, Shichao Pei",
+      "year": 2026,
+      "abstract": "Automated reviewing systems are increasingly evaluated based on the quality of the reviews they produce. Yet a review is only useful if acting on it leads to a measurable improvement in the paper. We present AppliedScientist, a closed-loop system that couples an autonomous AI scientist with an AI reviewer, and evaluate it by iteratively revising rejected papers from a range of research subfields. To mirror how human authors build on earlier drafts, the AI scientist has access to its previous versions during revision. To avoid bias from prior judgments, however, each review is generated independently, with the reviewer having no memory of earlier feedback or scores. We compare three revision settings: one initialized with the original venue reviews, one initialized with AI-generated reviews, and autonomous self-revision using the same fixed prompt in every round. Because the reviewer both guides and evaluates the revision, we also assess the human-initialized revisions using Stanford Reviewer as an independent evaluator. Reviewer-guided revision consistently improves more than fixed-prompt self-revision, and Stanford Reviewer also assigns higher scores to later revisions. AppliedScientist resolves 128 of 150 execution-related weaknesses (85.3%), but only 2 of 18 idea-related weaknesses (11.1%), suggesting that iterative revision is effective at improving experiments and implementation, but rarely changes concerns about novelty or significance.",
+      "identities": [
+        {
+          "kind": "openalex",
+          "value": "W7213371831",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "url",
+          "value": "https://arxiv.org/abs/2609.14738",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+        "large language model agent scientific discovery closed-loop experiments hypothesis testing paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+          "retrievedAt": 1790056375920
+        },
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+          "retrievedAt": 1790056378887
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "The abstract does not explicitly describe hypothesis generation.",
+        "The abstract does not explicitly describe autonomous experiment execution.",
+        "The abstract describes revision of rejected papers rather than a complete new-discovery research loop.",
+        "No full-text review, venue assessment, citation assessment, code assessment, or dataset assessment was performed."
+      ],
+      "assessmentState": "screened",
+      "relevance": "direct",
+      "evidenceExcerpt": "We present AppliedScientist, a closed-loop system that couples an autonomous AI scientist with an AI reviewer, and evaluate it by iteratively revising rejected papers from a range of research subfields.",
+      "relevanceAssessment": "Directly studies an autonomous, iterative research-improvement loop with independent evaluation. The supplied abstract emphasizes paper revision and execution-related weaknesses, but does not explicitly establish autonomous hypothesis generation or experiment execution.",
+      "expectedValue": "Useful for studying reviewer-guided iteration, independent evaluation, and the distinction between improving implementation or experiments versus improving ideas.",
+      "qualityConfidence": "medium",
+      "qualityEvidence": [
+        "We present AppliedScientist, a closed-loop system that couples an autonomous AI scientist with an AI reviewer, and evaluate it by iteratively revising rejected papers from a range of research subfields.",
+        "AppliedScientist resolves 128 of 150 execution-related weaknesses (85.3%), but only 2 of 18 idea-related weaknesses (11.1%)",
+        "2026"
+      ],
+      "outcome": "uncertain",
+      "recommendationReason": "Strong evidence for closed-loop revision and result-based evaluation, but insufficient supplied evidence for the full hypothesis-generation, experiment-execution, interpretation, and iterative-improvement loop required by the brief.",
+      "coverageTags": [
+        "closed-loop revision",
+        "ai scientist",
+        "ai reviewer",
+        "independent evaluation",
+        "execution-versus-idea improvement"
+      ],
+      "suggestedNextAction": "open abstract"
+    },
+    {
+      "id": "9adde80ad9744f6e956bc69f30054c097f87069e11636d3cc5cb3bb2e6c11bdf",
+      "title": "ECDSA.Fail: Open Autoresearch for Optimizing Elliptic-Curve Point Addition in Shor's Algorithm",
+      "authors": "Jieyi Long, Theodore Pender, Zhao Huang, Manuel B. Santos, Samrendra Singh, Bartosz Naskręcki, Bit Wonka, Joe Doyle, Pierre-Luc Dallaire-Demers, Francesco Giannicola, Ruben M. L. Paschoarelli, Oli Freuler, Jackie Chia-Hsun Lee, Vasily Gnuchev, Gopi Kannappan, John Boyer, Xavier Butler, Akash Balasubramani, Jordan Newman, Bereket Dereje, Alexander Hertlein, Robert Kodra, Lucas Lévy, Shaan Patel, JT Rose, Matt Zweil, Okechukwu Wisdom, Tarek El-Eter, Edison Lee, Michael Dong, Alan Li, Anto Joseph, Gajesh Naik, Gautham Anant, Soubhik Deb, Justin Drake",
+      "year": 2026,
+      "abstract": "We propose Open Autoresearch, a paradigm in which humans and AI agents publish evaluator-verified improvements to a public leaderboard. We instantiate it in ECDSA.Fail, optimizing reversible secp256k1 point-addition circuits, a bottleneck in Shor's algorithm for elliptic-curve cryptography. The benchmark minimizes the spacetime-inspired score $S=Q\\times T$, where $Q$ is peak logical qubit width and $T$ is average executed Toffoli count. Participants reduced $S$ by 86.1%. At the data cutoff (26 July 2026), the best-scoring circuit uses 1,151 qubits and 1,299,453 average executed Toffoli gates, giving $Q\\times T\\approx1.496$ billion. This is more than 50% below Google's published point-addition score thresholds (arXiv:2603.28846), under different accounting conventions. Because the benchmark supplies one addend classically, we construct a coherent windowed-addition-compatible variant implementing the single-call interface required by windowed Shor. It uses 1,162 qubits and 1,684,161 average executed Toffoli gates. On 100,000 random inputs, its empirical success probability is $\\hat{p}=0.99809$, giving $Q\\times T/\\hat{p}\\approx1.961$ billion under an independently rerunnable per-call sensitivity model, not a full-Shor success estimate. Its qubit and Toffoli counts lie below Google's published thresholds and Schrottenloher's reported operating points (arXiv:2606.02235), although differing interfaces, accounting conventions, and validation scope preclude formal dominance. After the cutoff, the score was further reduced to 1.259 billion, while a separate low-width circuit reached 813 qubits. The public record shows AI agents complementing human judgment, providing evidence for open autoresearch on efficiently evaluable, machine-checkable objectives.",
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.48550/arxiv.2609.09582",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7212156114",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://arxiv.org/abs/2609.09582",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+          "retrievedAt": 1790056375921
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "The abstract says AI agents, not Large Language Model agents.",
+        "The abstract describes evaluator-verified circuit improvements but does not explicitly describe hypothesis generation.",
+        "The abstract does not explicitly describe iterative result interpretation or autonomous selection of subsequent research actions.",
+        "The abstract describes human and AI participation, so the degree of autonomy is not fully specified.",
+        "No full-text review, venue assessment, citation assessment, code assessment, or dataset assessment was performed."
+      ],
+      "assessmentState": "screened",
+      "relevance": "supporting",
+      "evidenceExcerpt": "We propose Open Autoresearch, a paradigm in which humans and AI agents publish evaluator-verified improvements to a public leaderboard.",
+      "relevanceAssessment": "Relevant as a machine-checkable, evaluator-driven improvement paradigm, but the supplied abstract does not identify LLM agents, autonomous hypothesis generation, result interpretation, or a complete scientific research loop.",
+      "expectedValue": "Potential methodological background for public evaluation, machine-checkable objectives, and human-agent collaboration in automated algorithm improvement.",
+      "qualityConfidence": "medium",
+      "qualityEvidence": [
+        "The benchmark minimizes the spacetime-inspired score $S=Q\\times T$",
+        "On 100,000 random inputs, its empirical success probability is $\\hat{p}=0.99809$",
+        "The public record shows AI agents complementing human judgment, providing evidence for open autoresearch on efficiently evaluable, machine-checkable objectives.",
+        "2026"
+      ],
+      "outcome": "uncertain",
+      "recommendationReason": "Useful adjacent evidence for evaluator-driven algorithm discovery, but the supplied abstract does not establish the LLM-based, end-to-end autonomous research loop required for a primary recommendation.",
+      "coverageTags": [
+        "open autoresearch",
+        "algorithm optimization",
+        "machine-checkable evaluation",
+        "human-agent collaboration",
+        "quantum circuits"
+      ],
+      "suggestedNextAction": "open abstract"
+    },
+    {
+      "id": "687afd5bfa7ceeff9ceb144775f947d4ab6bdb48f0576cf090ad3e08af4e435b",
+      "title": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?",
+      "authors": "Yuqiao Tan, Shizhu He, Jun Zhao, Kang Liu",
+      "year": 2026,
+      "abstract": "While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what models learn and ensure safe alignment. Mechanistic interpretability tools are essential to bridge this gap, among which Sparse Autoencoders (SAEs) serve as a cornerstone by isolating interpretable features for model inspection and steering. In this paper, we introduce SAEScientist-Bench to evaluate whether AI agents can act as scientists utilizing SAE tools for autonomous mechanistic discovery. Given a target concept, an agent designs contrastive probes and navigates a Gemma Scope dictionary of 131K+ features in Gemma-2-9B-IT to discover the optimal feature, evaluated against curated expert reference features anchored on Neuronpedia across activation rank, concept selectivity on contrastive texts, and causal steering. Across 10 agent configurations and 20 tasks, frontier agents demonstrate genuine discovery capabilities and lead different evaluation dimensions, but remain well behind the expert baseline, approaching expert levels on separating target concepts from contrastive controls while lagging substantially in causal generation steering. Further analysis reveals that although agents can design contrasts to rule out spurious candidates, they frequently misinterpret experimental measurements. These results establish experimental model understanding as a measurable capability for closed-loop autonomous AI R&D. Our code is available at https://github.com/Trae1ounG/SAEScientist.",
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.48550/arxiv.2609.09113",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7212060465",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://arxiv.org/abs/2609.09113",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+          "retrievedAt": 1790056375924
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "The abstract does not explicitly describe an iterative feedback strategy.",
+        "The tasks begin with a supplied target concept rather than autonomous research-question generation.",
+        "Agents remain well behind the expert baseline and frequently misinterpret measurements."
+      ],
+      "assessmentState": "screened",
+      "relevance": "supporting",
+      "evidenceExcerpt": "Given a target concept, an agent designs contrastive probes and navigates a Gemma Scope dictionary of 131K+ features in Gemma-2-9B-IT to discover the optimal feature, evaluated against curated expert reference features anchored on Neuronpedia across activation rank, concept selectivity on contrastive texts, and causal steering.",
+      "relevanceAssessment": "Studies autonomous experimental interpretability research with agent-designed probes, tool use, measurement, and evaluation, but the abstract does not clearly describe result-driven iterative refinement of research actions.",
+      "expectedValue": "Useful evaluation framework for autonomous mechanistic discovery, including agent configurations, expert references, causal tests, and a documented measurement-interpretation failure mode.",
+      "qualityConfidence": "high",
+      "qualityEvidence": [
+        "Across 10 agent configurations and 20 tasks, frontier agents demonstrate genuine discovery capabilities and lead different evaluation dimensions, but remain well behind the expert baseline, approaching expert levels on separating target concepts from contrastive controls while lagging substantially in causal generation steering.",
+        "Further analysis reveals that although agents can design contrasts to rule out spurious candidates, they frequently misinterpret experimental measurements.",
+        "Our code is available at https://github.com/Trae1ounG/SAEScientist.",
+        "OpenAlex"
+      ],
+      "outcome": "uncertain",
+      "recommendationReason": "The system covers experimental design, tool-driven discovery, and result evaluation, but loop completeness and iterative improvement are unclear from the abstract.",
+      "coverageTags": [
+        "mechanistic interpretability",
+        "sae tools",
+        "contrastive probes",
+        "causal steering",
+        "agent benchmark"
+      ],
+      "suggestedNextAction": "inspect full text"
+    },
+    {
+      "id": "f911114338363b61ed61008455fb7109eae261ec46773b7968e219942ac2b91e",
+      "title": "Evolutionary Ensemble Search: Council-Guided Program Evolution with Persistent Memory",
+      "authors": "Juan P. Madrigal-Cianci, Eshan Chordia",
+      "year": 2026,
+      "abstract": "Evolutionary Ensemble Search (EES) constructs machine-learning procedures through expert-guided program evolution. A role-specialized council turns task evidence and experimental results into structured search directions. An orchestrator allocates these directions to execution specialists and an evolutionary engine. The engine selects measured parents, diagnoses their errors, and produces descendants through code mutation, structured pipeline edits, and crossover. Each child must execute and acquire its own validation evidence. Population archives retain useful alternatives, while compatible predictions compete in a validation-gated ensemble stage. Search adapts through parent-relative operator credit, session memory, and problem-indexed lessons retrieved across runs. We specify these mechanisms, distinguish their execution profiles, and define the contracts required to compare candidates as their computations change. A public MLE-bench Lite development ledger records medal-threshold artifacts on 19 of 22 tasks (86.36\\%), with best outcomes of 11 gold, five silver, and three bronze. The procedures span text, images, tables, audio, scientific geometry, and deterministic transformations. The campaign includes grade feedback between runs, external-source routes, and mixed confirmation procedures; its aggregate is an achieved development result, not a blind autonomous-agent success rate. The report contributes a concrete architecture for cumulative executable search and a versioned account of its cross-modal development outcomes.",
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.48550/arxiv.2609.17590",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7213497853",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://arxiv.org/abs/2609.17590",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "large language model agent scientific discovery closed-loop experiments hypothesis testing paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+          "retrievedAt": 1790056378889
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "The supplied abstract does not explicitly identify an LLM.",
+        "The aggregate is explicitly described as an achieved development result, not a blind autonomous-agent success rate.",
+        "Human involvement and intervention points are not specified."
+      ],
+      "assessmentState": "screened",
+      "relevance": "supporting",
+      "evidenceExcerpt": "The engine selects measured parents, diagnoses their errors, and produces descendants through code mutation, structured pipeline edits, and crossover. Each child must execute and acquire its own validation evidence. Population archives retain useful alternatives, while compatible predictions compete in a validation-gated ensemble stage. Search adapts through parent-relative operator credit, session memory, and problem-indexed lessons retrieved across runs.",
+      "relevanceAssessment": "This is a strong adjacent automated-ML search system with candidate generation, execution, validation, error diagnosis, memory, and cross-run adaptation. The supplied abstract does not establish that the system uses LLM agents or clarify human control, so target-scope inclusion remains uncertain.",
+      "expectedValue": "Potentially useful for comparing executable hypothesis representations, validation-gated search, memory, and iterative improvement, subject to verification of the LLM-agent component and autonomy model.",
+      "qualityConfidence": "medium",
+      "qualityEvidence": [
+        "Evolutionary Ensemble Search: Council-Guided Program Evolution with Persistent Memory",
+        "A role-specialized council turns task evidence and experimental results into structured search directions.",
+        "A public MLE-bench Lite development ledger records medal-threshold artifacts on 19 of 22 tasks (86.36\\%), with best outcomes of 11 gold, five silver, and three bronze.",
+        "2026"
+      ],
+      "outcome": "uncertain",
+      "recommendationReason": "Strong loop-like automated search evidence, but LLM use and autonomous research status are unsupported by the supplied material.",
+      "coverageTags": [
+        "automated ml search",
+        "candidate execution",
+        "validation feedback",
+        "persistent memory",
+        "iterative improvement"
+      ],
+      "suggestedNextAction": "inspect full text"
+    },
+    {
+      "id": "e14c57f383ac2868ab50ce7558d548f4d472ecd3ed67e1c3e5431a620da97fb6",
+      "title": "Human-AI Relationships at the Intersection of Engineering, Ethics, and Policy: A Systematic Review",
+      "authors": "Zi An Wang, Srikanth Hari, Tinah Dembele, Channarong Intahchomphoo",
+      "year": 2026,
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.21203/rs.3.rs-11042784/v1",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7213538380",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://doi.org/10.21203/rs.3.rs-11042784/v1",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "multi-agent LLM scientist research experiment evaluation paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "multi-agent LLM scientist research experiment evaluation paper",
+          "retrievedAt": 1790056381752
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "OpenAlex abstract unavailable.",
+        "No supplied abstract supports assessment of hypothesis generation, experiment execution, result interpretation, iteration, agent structure, evaluation, or human involvement."
+      ],
+      "assessmentState": "screened",
+      "relevance": "irrelevant",
+      "evidenceExcerpt": "Human-AI Relationships at the Intersection of Engineering, Ethics, and Policy: A Systematic Review",
+      "relevanceAssessment": "The title indicates a systematic review of human-AI relationships, ethics, and policy. It does not identify an autonomous scientific research system or a closed experimental loop.",
+      "expectedValue": "Low for the target research-system map. The unavailable abstract prevents definitive screening beyond the title.",
+      "qualityConfidence": "low",
+      "qualityEvidence": [
+        "2026",
+        "OpenAlex"
+      ],
+      "outcome": "uncertain",
+      "recommendationReason": "A recommendation is not possible because the abstract is missing. The title appears outside scope, but title-only evidence is insufficient for definitive rejection.",
+      "coverageTags": [
+        "systematic review",
+        "human-ai relationships",
+        "ethics",
+        "policy",
+        "missing abstract"
+      ],
+      "suggestedNextAction": "open abstract"
+    },
+    {
+      "id": "c53aee8a41bd79bf3f19f8fc1f92f6e6765a49ac0b1a03359a418087fe0dfc4a",
+      "title": "Transforming Science with Large Language Models: A Survey on AI-assisted Scientific Discovery, Experimentation, Content Generation, and Evaluation",
+      "authors": "Steffen Eger, Yong Cao, Jennifer D'Souza, Andreas Geiger, Christian Greisinger, Stephanie Gross, Yufang Hou, Brigitte Krenn, Anne Lauscher, Yizhi Li, Chenghua Lin, Nafise Moosavi, Wei Zhao, Tristan Miller",
+      "year": 2026,
+      "abstract": "With the advent of large multimodal language models, science is now at a threshold of an AI-based technological transformation. An emerging ecosystem of models and tools aims to support researchers throughout the scientific lifecycle, including (1) searching for relevant literature, (2) generating research ideas and conducting experiments, (3) producing text-based content, (4) creating multimodal artifacts such as figures and diagrams, and (5) evaluating scientific work, as in peer review. In this survey, we provide a curated overview of literature representative of the core techniques, evaluation practices, and emerging trends in AI-assisted scientific discovery. Across the five tasks outlined above, we discuss datasets, methods, results, evaluation strategies, limitations, and ethical concerns, including risks to research integrity through the misuse of generative models. We aim for this survey to serve both as an accessible, structured orientation for newcomers to the field, as well as a catalyst for new AI-based initiatives and their integration into future “AI4Science” systems.",
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.1145/3845596",
+          "source": "Crossref",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W4407310674",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://doi.org/10.1145/3845596",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper"
+      ],
+      "sources": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+          "retrievedAt": 1790056375925
+        },
+        {
+          "provider": "Crossref",
+          "lane": "doi-verification",
+          "query": "10.1145/3845596",
+          "retrievedAt": 1790056393846
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [],
+      "assessmentState": "unscreened"
+    },
+    {
+      "id": "5b22ae3fe61e5a796e8a996e317ecc72979a216302d8ccfb7428822f34d9c996",
+      "title": "Generative artificial intelligence for nanomaterial discovery and nanoengineering: From data-driven design to autonomous laboratories",
+      "authors": "Vilas A. Chavan",
+      "year": 2026,
+      "abstract": "From conventional trial-and-error experimentation, nanomaterials research is moving toward data-centric and autonomous discovery paradigms that couple nanotechnology with artificial intelligence (AI). In this review, we critically examine how generative artificial intelligence, including generative adversarial networks, variational autoencoders, diffusion models, transformer architectures and large language models, enables inverse design of nanomaterials and supports nanoengineering across diverse application domains. The review provides a structured and critical survey on AI-driven nanomaterial discovery, focusing on studies where generative models explore nanoscale composition–structure spaces and where self-driving laboratories (SDLs) close the loop between design, synthesis, characterization and performance evaluation. We provide a comparative analysis of major generative architectures for nanomaterial tasks, highlighting differences in validity, novelty, diversity, conditional control and computational cost. Representative case studies are discussed in which generative models and autonomous experimentation have led to experimentally validated nanomaterials, such as quantum dots, nano-porous frameworks and functional nanocomposites. A dedicated section analyzes data infrastructures and nano-specific challenges, including size-dependent phenomena, surface and interface dominance, defect sensitivity, nano-bio interactions and dataset bias. Fundamental limitations of artificial intelligence in nanomaterials are examined, covering data scarcity for morphology-rich systems, interpretability, reproducibility, safety and regulatory aspects. Finally, the review outlines research priorities for multimodal foundation models, physics-informed generative frameworks, agentic AI scientists, digital twins (DTs) and next-generation SDLs that can accelerate nanomaterial discovery while remaining scientifically reliable and ethically responsible. Together, these perspectives position generative AI as a key engine for future nanoengineering, provided that nano-specific data ecosystems and rigorous validation workflows are developed alongside algorithmic advances.",
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.1016/j.nxnano.2026.100728",
+          "source": "Crossref",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7208809976",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://doi.org/10.1016/j.nxnano.2026.100728",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper"
+      ],
+      "sources": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+          "retrievedAt": 1790056375925
+        },
+        {
+          "provider": "Crossref",
+          "lane": "doi-verification",
+          "query": "10.1016/j.nxnano.2026.100728",
+          "retrievedAt": 1790056393846
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [],
+      "assessmentState": "unscreened"
+    },
+    {
+      "id": "2ac261c2b68527007105206e30f4fc216cd5ae15cf77cedb0b7a1f712c8d09ef",
+      "title": "Artificial intelligence–assisted lead optimization in drug discovery: bridging computational advances and translational challenges",
+      "authors": "Fatma AlZahraa A. A. Mohamed, Ahmed Mohsen Kamal El-sagheir",
+      "year": 2026,
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.1007/s00044-026-03616-4",
+          "source": "Crossref",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7213462974",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://doi.org/10.1007/s00044-026-03616-4",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+        "multi-agent LLM scientist research experiment evaluation paper"
+      ],
+      "sources": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+          "retrievedAt": 1790056378885
+        },
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "multi-agent LLM scientist research experiment evaluation paper",
+          "retrievedAt": 1790056381753
+        },
+        {
+          "provider": "Crossref",
+          "lane": "doi-verification",
+          "query": "10.1007/s00044-026-03616-4",
+          "retrievedAt": 1790056393846
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "OpenAlex abstract unavailable."
+      ],
+      "assessmentState": "unscreened"
+    },
+    {
+      "id": "96fae5580998b68bbda3d801b1e81032d63fb4e9fe0388130dfabb7618da36d5",
+      "title": "Beyond the drug-centric view: Advancing AI virtual cell platforms for environmental perturbation modelling",
+      "authors": "Daniel Ukaegbu, Victor Curean, Andreas Bender, Alexandra Maertens",
+      "year": 2026,
+      "abstract": "Environmental exposures contribute substantially to global morbidity and mortality, with their biological effects shaped by factors such as dose, exposure duration, life-stage timing, and cumulative or sequential exposure patterns. With rapid advances in AI based virtual cell (VC) technologies, current frameworks emphasize genet-ic and pharmacological perturbations, leaving environmental perturbations insufficiently modelled. This imbal-ance is due to fundamental structural limitations in data availability, chemical space coverage, and representa-tional design, as well as lacking standardized annotation of dose, timing and mixtures, which are core deter-minants of environmental perturbations. This review argues that incorporating environmental perturbations as a foundational component of virtual cell development is necessary to extend these models toward environ-mental and public health applications. We review the evolution of these perturbation predictive models from mathematical models to deep learning and foundation model architectures, evaluate the status of virtual cell efforts across genomic, transcriptomic, proteomic, metabolomic and phenomic modalities, and show the sys-tematic gaps that currently limit their applicability to environmental health. We outline key challenges, includ-ing data scarcity and bias, inadequate representation of environmental perturbations, limited multimodal inte-gration, and weak benchmarking practices. To address these issues, we propose the development of stand-ardized environmental perturbation datasets, integrated and standalone multimodal architectures, uncertainty-aware evaluation metrics, and regulatory-aligned benchmarking frameworks which are all geared toward ad-vancing in silico perturbation and non-animal testing, promoting the 3Rs paradigm. Plain language summaryArtificial intelligence (AI) is increasingly being used to create “virtual cells” that can predict how human cells respond to drugs and other biological changes. Most current efforts focus on pharmaceutical applications and largely overlook the environmental exposures that influence health throughout life. We discuss current ad-vances, key challenges, and opportunities for integrating environmental perturbations into AI-driven biological models. This article argues that future virtual cell systems should explicitly account for the domain-specific characteristics of environmental perturbations, including chemicals, pollutants, and other stressors. More predictive and human-relevant virtual cell platforms could reduce reliance on animal testing by complementing or replacing some traditional experimental approaches. Incorporating environmental exposures into virtual cells may therefore advance both public health protection and the 3Rs principles of replacement, reduction, and refinement of animal use in research.",
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.14573/altex.2606062",
+          "source": "Crossref",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7213556714",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://doi.org/10.14573/altex.2606062",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "large language model agent scientific discovery closed-loop experiments hypothesis testing paper"
+      ],
+      "sources": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+          "retrievedAt": 1790056378885
+        },
+        {
+          "provider": "Crossref",
+          "lane": "doi-verification",
+          "query": "10.14573/altex.2606062",
+          "retrievedAt": 1790056393846
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [],
+      "assessmentState": "unscreened"
+    },
+    {
+      "id": "c6b5d57d46115466d5d9c58d47b734aa58c2ec25c2229d08669d5133b4e3cfd6",
+      "title": "Revealing the Pitfalls and Re-evaluating the Advancement of Heterophilic Graph Learning",
+      "authors": "Sitao Luan, Qincheng Lu, Chenqing Hua, Jiaqi Zhu, Xinyu Wang, Xiao-Wen Chang, Xiao-Wen Chang",
+      "year": 2026,
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.1007/978-3-032-38410-2_45",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W4403618905",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://arxiv.org/abs/2409.05755",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "large language model agent scientific discovery closed-loop experiments hypothesis testing paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+          "retrievedAt": 1790056378887
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "OpenAlex abstract unavailable."
+      ],
+      "assessmentState": "unscreened"
+    },
+    {
+      "id": "c91c4baa91186af22abdef387594d7a1fde306d954beb0c62ac8c6ce5c646c0a",
+      "title": "Monitoring and Discovering Reward Hacking with Internal Representations during LLM Evaluations",
+      "authors": "Leon Bergen, Usha Bhalla, Andrew Lee, Barak Widawsky, Linas Nasvytis, Connor Watts, Siddharth Boppana, Sidharth Baskaran, Dron Hazra, Michael Byun, Atticus Geiger, Owen Lewis, Matthew Kowal, Vasudev Shyam, Thomas Fel, Thomas McGrath, Ekdeep Singh Lubana, Jack Merullo",
+      "year": 2026,
+      "abstract": "As models scale, reward hacking becomes more frequent, more sophisticated, and more consequential. Does it leave a telltale signature in model representations? This work analyzes how reward hacking is represented internally in frontier open source LLMs, and how those representations can be used to understand and discover the range of hacking behaviors a model displays. In particular, we find that simple difference of means vectors coherently represent reward hacking in Kimi K3, GLM 5.2, and Qwen 3.8 Max across a variety of behaviors in common evaluations. Despite their simplicity, these vectors are both generalizable and interpretable, and we can use them to reliably detect reward hacking. We first evaluate reward hacking in commonly reported benchmarks like DeepSWE and SWE-bench, finding that models reward hack excessively in these environments; GLM 5.2 hacks in 57.2% of rollouts on DeepSWE and in 73% of rollouts on SWE-bench. Catching these requires monitors; LLM monitors are effective, but expensive detectors. We show that DoM vectors are similarly effective but virtually free, catching 3.1% more hacks in Kimi K3 and 7.9% fewer hacks in GLM 5.2 on DeepSWE at a monitor matched false positive rate. DoM vectors run on the chain-of-thought also predict reward hacks in the model's subsequent actions, meaning we can run them online and catch potential hacks before they occur. Finally, we analyze probe-hits that LLM monitors do not catch and discover other undesirable behaviors, as well as show transfer to finding hacks in non-SWE evaluations. Together, these results provide evidence that simple, white-box methods can be used to scalably study and monitor reward hacking behaviors in frontier open source models",
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.48550/arxiv.2609.19101",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7213510743",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://arxiv.org/abs/2609.19101",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "large language model agent scientific discovery closed-loop experiments hypothesis testing paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+          "retrievedAt": 1790056378887
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [],
+      "assessmentState": "unscreened"
+    },
+    {
+      "id": "4a5279b1b40252b0732da764a5d48a41bc2854619a37fc3831f9123315e498f9",
+      "title": "Auditable AI Ethics in Education: Developing Measurable Competencies for Sustainable Development across K-12 and University Curricula",
+      "authors": "Elena Gaevskaya, Rustam Shadiev, Nikolay Borisov, Aleksandra Pushkina, Peter Fedkin",
+      "year": 2026,
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.21203/rs.3.rs-10863151/v1",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7212611092",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://doi.org/10.21203/rs.3.rs-10863151/v1",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "multi-agent LLM scientist research experiment evaluation paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "multi-agent LLM scientist research experiment evaluation paper",
+          "retrievedAt": 1790056381754
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "OpenAlex abstract unavailable."
+      ],
+      "assessmentState": "unscreened"
+    },
+    {
+      "id": "f4d43a0bb7496b16793d32e650daf1b0a11cb16884af3aeed5d2c053206e3d00",
+      "title": "Proceedings of the 16th International Conference on Disability, Virtual Reality & Associated Technologies",
+      "authors": "",
+      "year": 2026,
+      "abstract": "The Proceedings of the 16th International Conference on Disability, Virtual Reality & Associated Technologies (ICDVRAT 2026) contain the contributions presented at ICDVRAT 2026, which takes place in Copenhagen, Denmark, from 15 to 18 September 2026. The conference marks the 30th anniversary of the ICDVRAT conference series and brings together participants from 17 countries. The proceedings reflect the interdisciplinary scope of the conference and include research and development related to disability, accessibility, virtual reality, augmented reality, artificial intelligence, rehabilitation, healthcare, education, and associated technologies. Contributions are organised across themes including AI and social interaction, stroke and neuromotor rehabilitation, autism spectrum disorders, mental health applications of VR, biosensing and neuroadaptive systems, embodiment and immersion, accessibility and inclusion, cognitive assessment and training, and education and pedagogy. Since its inception in 1996, ICDVRAT has provided a meeting place for researchers, clinicians, practitioners, technology developers, and users interested in the application of virtual reality and associated technologies in disability, rehabilitation, healthcare, and inclusion. The 2026 proceedings continue this tradition by presenting current research and emerging perspectives from an international community working across disciplines and sectors.",
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.54337/aau.icdvrat26",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7213203783",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://journals.aau.dk/index.php/ICDVRAT/issue/view/572/262",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "multi-agent LLM scientist research experiment evaluation paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "multi-agent LLM scientist research experiment evaluation paper",
+          "retrievedAt": 1790056381754
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [],
+      "assessmentState": "unscreened"
+    },
+    {
+      "id": "1cace56c283820e203691da4b989e19695ea13fea9b1ee9e380e915cd7dc27f7",
+      "title": "Static validation for declarative service orchestration: enabling reliable CI/CD and MLOps pipelines",
+      "authors": "Stelios Sotiriadis",
+      "year": 2026,
+      "identities": [
+        {
+          "kind": "openalex",
+          "value": "W7161462214",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "url",
+          "value": "https://eprints.bbk.ac.uk/id/eprint/57406/1/1-s2.0-S0167739X26002189-main.pdf",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "LLM automated machine learning research agent generate test improve algorithms paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "LLM automated machine learning research agent generate test improve algorithms paper",
+          "retrievedAt": 1790056384313
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "OpenAlex abstract unavailable."
+      ],
+      "assessmentState": "unscreened"
+    },
+    {
+      "id": "4abc0c9241facb4772d2e7decc9ba08a8b06d49b120a52c87a006b91583d5681",
+      "title": "Mutation-based multi-agent test case update",
+      "authors": "Dawei Tian, Jiakun LIU, Yun Peng, Yichen Zhang, Jianlei Chi, Jun SUN, Xiaohong SU",
+      "year": 2026,
+      "abstract": "Modern software systems evolve rapidly under CI/CD practices, where tests are critical for quality. However, substantial code changes often render existing test cases obsolete, causing pipeline disruptions, reduced productivity, and compromised quality. Recent automatic test update approaches leverage LLMs to refine test cases via execution feedback and exact-matching context retrieval, prioritizing executability and line coverage but suffering three limitations: (1) neglecting test assertion adequacy, weakening fault detection; (2) relying on coarse line coverage instead of specific uncovered lines/branches; (3) using exact-matching retrieval, which fails for LLM hallucinated queries. To address these, we propose MuMuTestUp, a mutation-guided multi-agent framework with three specialized agents: Mutation Analysis (strengthens assertions via surviving mutants), Coverage Analysis (generates targeted repair instructions for uncovered lines/branches), and Semantic Retrieval (handles hallucinations via semantic-similarity search). We also construct PRBENCH, a 571-sample pull-request-level dataset from 10 open-source Java projects (validated for cross-commit update scenarios). Evaluations against state-of-the-art baselines use both open-source (Deepseek-V3.2) and closed-source (GPT-4.1) LLMs.",
+      "identities": [
+        {
+          "kind": "openalex",
+          "value": "W7202008909",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "url",
+          "value": "https://ink.library.smu.edu.sg/sis_research/11196",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "LLM automated machine learning research agent generate test improve algorithms paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "LLM automated machine learning research agent generate test improve algorithms paper",
+          "retrievedAt": 1790056384313
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [],
+      "assessmentState": "unscreened"
+    },
+    {
+      "id": "133f356c4b477ba5e48910908b784919e31128b29ab630782f6bf0286ab83227",
+      "title": "Algorithmic stratification in social media narrative framing: an agent-based testing of sex and educational disparities in career information access",
+      "authors": "Yingying Ni, Yi Mou",
+      "year": 2026,
+      "abstract": "Abstract This study investigates how social media algorithms create information accessibility gaps through an Agent-based Testing (ABT) approach. Using 640 controlled virtual accounts on REDnote (RED) varying by sex and educational levels, 96,000 career-related search results were analyzed. Findings reveal significant algorithmic stratification patterns: lower-educated and women users receive more positively emotional and gender-stereotyped content, and the inter-sectional influence between the assigned sex and educational level of those accounts collectively shapes the narrative perspective and framing of the content, creating complex stratified recommendation patterns. This study makes several contributions: it empirically demonstrates gender discrimination in social media algorithmic recommendation systems, quantifies the differential career information delivery across sex groups, and identifies specific mechanisms through which algorithmic systems perpetuate gender inequality in career development opportunities. These findings provide empirical evidence for mitigating algorithmic gender discrimination in the occupational domain.",
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.1057/s41599-026-09142-3",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7208728217",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://doi.org/10.1057/s41599-026-09142-3",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "LLM automated machine learning research agent generate test improve algorithms paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "LLM automated machine learning research agent generate test improve algorithms paper",
+          "retrievedAt": 1790056384313
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [],
+      "assessmentState": "unscreened"
+    },
+    {
+      "id": "9fbc25ddbfe566b7fabbd6f21828c8b63242a02b59bc6b7559a74b6ab92cf543",
+      "title": "Beyond direct AI exposure: Measuring network-mediated labor risk through multilayer occupational networks",
+      "authors": "Soyoung Park, Junghyun Oh, Minkyung Song, Jin‐Woo Lee, Jincheul Jang, Sungsu Lim",
+      "year": 2026,
+      "identities": [
+        {
+          "kind": "doi",
+          "value": "10.21203/rs.3.rs-10965551/v1",
+          "source": "OpenAlex",
+          "canonical": true
+        },
+        {
+          "kind": "openalex",
+          "value": "W7213601921",
+          "source": "OpenAlex",
+          "canonical": false
+        },
+        {
+          "kind": "url",
+          "value": "https://doi.org/10.21203/rs.3.rs-10965551/v1",
+          "source": "OpenAlex"
+        }
+      ],
+      "matchingQueries": [
+        "LLM automated machine learning research agent generate test improve algorithms paper"
+      ],
+      "sources": [
+        "OpenAlex"
+      ],
+      "provenance": [
+        {
+          "provider": "OpenAlex",
+          "lane": "lexical",
+          "query": "LLM automated machine learning research agent generate test improve algorithms paper",
+          "retrievedAt": 1790056384314
+        }
+      ],
+      "metadataConflicts": [],
+      "limitations": [
+        "OpenAlex abstract unavailable."
+      ],
+      "assessmentState": "unscreened"
+    }
+  ],
+  "rejectionCounts": {
+    "irrelevant": 24,
+    "background": 9,
+    "insufficient-reading-value": 5,
+    "redundant-or-shortlist-budget": 3
+  },
+  "limitations": [
+    "OpenAlex semantic failed: OpenAlex semantic failed (HTTP 400).",
+    "Screening failed for 6 candidate(s): Assessment c53aee8a41bd79bf3f19f8fc1f92f6e6765a49ac0b1a03359a418087fe0dfc4a quality evidence is not present in the supplied metadata.",
+    "Screening failed for 6 candidate(s): The operation was aborted"
+  ],
+  "screening": {
+    "model": "codex:9router",
+    "instructionsVersion": "scout-screening-v1"
+  },
+  "createdAt": 1790058082949
+}

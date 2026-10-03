@@ -1,0 +1,67 @@
+{
+  "scope": [
+    "Autonomous scientific discovery agents",
+    "AI scientist and automated machine-learning research systems",
+    "LLM-guided hypothesis generation linked to executable experiments",
+    "Agentic experimentation in computational science, simulation, and laboratory settings",
+    "Multi-agent research workflows with critic, evaluator, or self-improvement loops",
+    "Benchmarks and evaluations of autonomous research capability"
+  ],
+  "exclusions": [
+    "Generic LLM agent frameworks without a research-specific closed loop.",
+    "Papers limited to literature review, retrieval, summarization, or scientific question answering.",
+    "Hypothesis-generation-only systems that do not test or evaluate hypotheses.",
+    "Experiment-planning systems that do not execute experiments or consume resulting observations.",
+    "Opinion pieces, position papers, marketing pages, and unsupported project descriptions.",
+    "Autonomous coding agents unless their explicit objective is scientific or machine-learning research and they evaluate iterative research outcomes."
+  ],
+  "constraints": [
+    "Prioritize papers that describe an end-to-end or substantially closed research loop: hypothesis generation, experiment design or execution, result evaluation, and iterative refinement.",
+    "Include systems using executable computational experiments, simulations, code, laboratory automation, or structured tool use.",
+    "Capture system architecture, degree of autonomy, human involvement, research domain, evaluation methodology, iteration mechanism, artifacts produced, and reported limitations.",
+    "Prefer primary papers with concrete system evaluations, ablations, case studies, or reproducible artifacts.",
+    "Include influential foundational work plus recent work available through September 21, 2026."
+  ],
+  "searchDirections": [
+    {
+      "query": "\"AI scientist\" LLM autonomous hypothesis experiment evaluation iterative research",
+      "reason": "Find systems explicitly framed as end-to-end autonomous research or automated scientific discovery."
+    },
+    {
+      "query": "LLM agent autonomous scientific discovery hypothesis generation experiment execution feedback loop",
+      "reason": "Capture domain-general and scientific-agent systems that close the research loop."
+    },
+    {
+      "query": "LLM agents automated machine learning research generate hypotheses run experiments evaluate results",
+      "reason": "Find systems that conduct ML research through code generation, training runs, result analysis, and iteration."
+    },
+    {
+      "query": "large language model laboratory automation autonomous experimentation hypothesis testing",
+      "reason": "Find embodied or instrument-connected systems that execute real laboratory experiments."
+    },
+    {
+      "query": "multi-agent scientific research critic evaluator iterative experiment LLM",
+      "reason": "Identify architectures using specialized agents for hypothesis, execution, critique, and refinement."
+    },
+    {
+      "query": "benchmark evaluation autonomous research agents scientific discovery LLM",
+      "reason": "Find rigorous benchmarks, comparative evaluations, and studies of autonomy limits."
+    }
+  ],
+  "screeningCriteria": [
+    "The paper presents or rigorously evaluates a research-oriented system using one or more LLM agents.",
+    "The system covers at least three stages of the loop, with strong preference for all four: hypothesis generation, experiment execution, result evaluation, and iterative refinement.",
+    "Experiment execution is operational rather than merely proposed: code, simulation, tools, instruments, or another environment produces observations.",
+    "The paper provides evidence sufficient to assess autonomy and effectiveness, such as task success, novelty, correctness, reproducibility, human intervention, cost, failure modes, or expert review.",
+    "The work adds a distinct architecture, domain, evaluation method, or empirical finding rather than duplicating another recommendation."
+  ],
+  "maxRecommendations": 5,
+  "createdFrom": {
+    "kind": "assistant",
+    "reference": "User request on September 21, 2026: papers on autonomous research using LLMs, focused on agents that generate hypotheses, run experiments, evaluate results, and iteratively improve research."
+  },
+  "author": "model:assistant",
+  "id": "scout-brief-c2d0de6c-796d-4c90-b1c6-71080c6be280",
+  "createdAt": 1789996061349,
+  "updatedAt": 1789996061349
+}

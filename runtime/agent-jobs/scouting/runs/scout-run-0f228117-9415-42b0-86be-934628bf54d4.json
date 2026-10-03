@@ -1,0 +1,383 @@
+{
+  "id": "scout-run-0f228117-9415-42b0-86be-934628bf54d4",
+  "source": {
+    "kind": "brief",
+    "id": "scout-brief-84d3af07-31fe-4331-8a1f-6738858842a2"
+  },
+  "inputSnapshot": {
+    "question": "Which papers study systems in which LLM agents autonomously generate hypotheses, run experiments or evaluations, interpret results, and iteratively improve the research process? What capabilities, system designs, evaluation methods, and limitations distinguish them?",
+    "purpose": "Map the strongest work on autonomous scientific research systems built with LLMs and identify designs worth deeper study.",
+    "scope": [
+      "Autonomous scientific discovery and AI-for-science systems using LLMs or language-model agents",
+      "Closed-loop hypothesis generation, experiment design or execution, result analysis, and iterative refinement",
+      "LLM-based research agents, multi-agent scientist systems, and automated machine-learning or algorithm-discovery systems when they exhibit the full research loop",
+      "Applications in machine learning, computational science, biology, chemistry, and other empirical sciences",
+      "Evaluation of autonomy, novelty, correctness, reproducibility, efficiency, and human involvement"
+    ],
+    "exclusions": [
+      "Exclude papers that only propose LLM-generated hypotheses without experiment execution or result-driven iteration.",
+      "Exclude generic autonomous-agent frameworks, coding agents, or scientific assistants unless they are evaluated on a research loop matching the scope.",
+      "Exclude papers where experiments are only simulated examples with no meaningful evaluation of the autonomous process, unless they provide a clearly useful methodological foundation.",
+      "Exclude opinion pieces, blog posts, and non-research demos unless needed to locate the corresponding primary paper."
+    ],
+    "constraints": [
+      "Prioritize systems that implement an end-to-end loop: LLM agents generate or select hypotheses, execute experiments or evaluations, interpret results, and use feedback to improve subsequent research actions.",
+      "Require concrete empirical demonstrations with reported results, artifacts, benchmarks, or reproducible experimental procedures.",
+      "Include both single-agent and multi-agent systems, but label the distinction and identify which components are automated versus human-controlled.",
+      "Prefer primary research papers and authoritative preprints from 2023 onward; include earlier foundational work only when directly necessary to explain the lineage.",
+      "Extract the research domain, hypothesis representation, experiment execution mechanism, evaluation protocol, iteration strategy, and level of human involvement."
+    ],
+    "searchDirections": [
+      {
+        "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+        "reason": "Find primary papers describing complete autonomous research loops."
+      },
+      {
+        "query": "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+        "reason": "Capture systems framed as closed-loop scientific discovery or hypothesis testing."
+      },
+      {
+        "query": "multi-agent LLM scientist research experiment evaluation paper",
+        "reason": "Find multi-agent research systems with explicit coordination and iterative evaluation."
+      },
+      {
+        "query": "LLM automated machine learning research agent generate test improve algorithms paper",
+        "reason": "Include algorithm-discovery and automated-ML systems when they instantiate the target research loop."
+      }
+    ],
+    "screeningCriteria": [
+      "The paper describes an implemented system or a sufficiently specified prototype, not only a conceptual architecture.",
+      "The system contains at least three linked stages among hypothesis generation, experiment planning or execution, result evaluation, and iterative improvement; prioritize papers covering all four.",
+      "The paper reports experiments that test the system's research behavior or scientific outputs.",
+      "The paper makes clear what the LLM controls, what tools or environments it uses, and where humans intervene.",
+      "The paper provides enough methodological detail to compare its loop, evaluation, and limitations with other systems.",
+      "For each recommendation, classify loop completeness, domain, agent structure, tool use, evaluation strength, and reproducibility."
+    ],
+    "maxRecommendations": 5,
+    "recencyPolicy": "recent",
+    "createdFrom": {
+      "kind": "assistant",
+      "reference": "User request on September 21, 2026: papers about autonomous research using LLMs, focused on hypothesis generation, experiments, evaluation, and iterative improvement."
+    },
+    "author": "model:assistant",
+    "id": "scout-brief-84d3af07-31fe-4331-8a1f-6738858842a2",
+    "createdAt": 1790002132029,
+    "updatedAt": 1790002132029
+  },
+  "state": "cancelled",
+  "activeStage": "screening",
+  "executedQueries": [
+    "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+    "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+    "multi-agent LLM scientist research experiment evaluation paper",
+    "LLM automated machine learning research agent generate test improve algorithms paper",
+    "Which papers study systems in which LLM agents autonomously generate hypotheses, run experiments or evaluations, interpret results, and iteratively improve the research process? What capabilities, system designs, evaluation methods, and limitations distinguish them?"
+  ],
+  "providerAttempts": [
+    {
+      "provider": "OpenAlex",
+      "lane": "lexical",
+      "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+      "status": "completed",
+      "attempts": 1,
+      "resultCount": 20,
+      "startedAt": 1790051651937,
+      "completedAt": 1790051654547,
+      "truncated": true
+    },
+    {
+      "provider": "OpenAlex",
+      "lane": "lexical",
+      "query": "large language model agent scientific discovery closed-loop experiments hypothesis testing paper",
+      "status": "completed",
+      "attempts": 1,
+      "resultCount": 19,
+      "startedAt": 1790051654549,
+      "completedAt": 1790051657206,
+      "truncated": false
+    },
+    {
+      "provider": "OpenAlex",
+      "lane": "lexical",
+      "query": "multi-agent LLM scientist research experiment evaluation paper",
+      "status": "completed",
+      "attempts": 1,
+      "resultCount": 20,
+      "startedAt": 1790051657207,
+      "completedAt": 1790051659458,
+      "truncated": true
+    },
+    {
+      "provider": "OpenAlex",
+      "lane": "lexical",
+      "query": "LLM automated machine learning research agent generate test improve algorithms paper",
+      "status": "completed",
+      "attempts": 1,
+      "resultCount": 20,
+      "startedAt": 1790051659459,
+      "completedAt": 1790051662225,
+      "truncated": true
+    },
+    {
+      "provider": "OpenAlex",
+      "lane": "semantic",
+      "query": "Which papers study systems in which LLM agents autonomously generate hypotheses, run experiments or evaluations, interpret results, and iteratively improve the research process? What capabilities, system designs, evaluation methods, and limitations distinguish them?",
+      "status": "failed",
+      "attempts": 3,
+      "resultCount": 0,
+      "startedAt": 1790051662227,
+      "completedAt": 1790051665801,
+      "truncated": false,
+      "error": "OpenAlex semantic failed (HTTP 400)."
+    },
+    {
+      "provider": "arXiv",
+      "lane": "recent-preprint",
+      "query": "LLM autonomous scientist hypothesis generation experiment execution iterative improvement paper",
+      "status": "completed",
+      "attempts": 1,
+      "resultCount": 0,
+      "startedAt": 1790051665804,
+      "completedAt": 1790051666723,
+      "truncated": false
+    },
+    {
+      "provider": "Crossref",
+      "lane": "doi-verification",
+      "query": "20 DOI records",
+      "status": "completed",
+      "attempts": 1,
+      "resultCount": 10,
+      "startedAt": 1790051666726,
+      "completedAt": 1790051668980,
+      "truncated": true
+    }
+  ],
+  "counters": {
+    "retrieved": 79,
+    "normalized": 64,
+    "screened": 0
+  },
+  "checkpoints": [
+    "retrieval-complete"
+  ],
+  "startedAt": 1790051651935,
+  "updatedAt": 1790051685331,
+  "finishedAt": 1790051685331,
+  "cancellationReason": "Cancelled by user.",
+  "liveCandidates": [
+    {
+      "id": "4b46a34155f4e7326c7182c4f8392306e70bfd8b2ba16b46e77e5c7f5ba95e9b",
+      "title": "Agentic Orchestration of HPC Applications in Cloud",
+      "authors": "Lawrence Livermore National Laboratory (LLNL), Livermore, CA (United States), Vanessa Sochat, USDOE National Nuclear Security Administration (NNSA), Daniel Milroy",
+      "year": 2026,
+      "sources": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "c6675b92677343b7637285c1cdb8d403788889013232f1e3d2aa48493b896757",
+      "title": "AI Scientists for Building Virtual-Cell Models",
+      "authors": "Mark Gerstein, Xiangru Tang, Jiapeng Chen, Yanjun Shao, Zhuoyun Yu, Yan Cui, Weixu Wang, Fang Wu, Yuxuan Liao, Yuchen Zhuang, Wenqi Shi, Zhi Huang, Arman Cohan, Xihong Lin, Smita Krishnaswamy, Fabian Theis",
+      "year": 2026,
+      "sources": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "82d566d45f29ee91fad058952474f1d7371172c432acfe46c4d14b8bf2cee435",
+      "title": "A practical risk framework for large language model use in life science research",
+      "authors": "Thomas Sharpton, Edward W. Davis II, Alexandra Alexiev",
+      "year": 2026,
+      "sources": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "9e78f7cf505deb38ac6e3762a1367e7b8445c94bfd496e2a30a566e59bc9a03a",
+      "title": "At the Edge of the Known: AI, Contingency, and the Dynamics of Discovery",
+      "authors": "Wanhong HUANG",
+      "year": 2026,
+      "sources": [
+        "OpenAlex"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "15c6f36cf2e321601505617215d6725e2c6a8cd69b4957dac80269d1a52e2e00",
+      "title": "Closing the Empirical Loop: Autonomous AI Agents Conduct End‐to‐end Research With Human Participants",
+      "authors": "Gabrielle Wehr, Reuben Rideaux, Amaya J. Fox, David R. Lightfoot, Jason Tangen, Jason B. Mattingley, Shane E. Ehrhardt",
+      "year": 2026,
+      "sources": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "d618e0a246161b4a9e1702a61f853c878cdc22f9e0981950fc445529c794ee1f",
+      "title": "Discovery Foundation Models: Toward Open-Ended Discovery Intelligence",
+      "authors": "Ling Yang, Zhenfei Yin, Yingcheng Wu",
+      "year": 2026,
+      "sources": [
+        "OpenAlex"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "0cb3fe57625760ce32a19e95c43429812e3e3239d707e899adcd749cb40aab5d",
+      "title": "AppliedScientist: Automated Scientific Revision Through Iterative AI Reviewing",
+      "authors": "Vidushee Vats, Karun Sharma, Shengzhi Li, Shichao Pei",
+      "year": 2026,
+      "sources": [
+        "OpenAlex"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "7d4c3ebb87aab0adf9c1f6b67b2ff1678427fccc76c9a631cec3956e0adb9552",
+      "title": "A lightweight and explainable conversational AI framework for natural language SQL learning without large language models",
+      "authors": "Bahasuru Nayanakantha, Kaneeka Vidanage, Smita Nirkhi, Sabyasachi Bhattacharyya",
+      "year": 2026,
+      "sources": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "24473863fb496a5ddb6b9c03bb468cdd26ed60a887cee4ac401a438e74b7ada9",
+      "title": "Autonomous Research for Open-Ended Problems: A Case Study on Telecom Ticket Retrieval",
+      "authors": "Junghyun Min, Hüseyin Uzunalioğlu, Mohamed Trabelsi",
+      "year": 2026,
+      "sources": [
+        "OpenAlex"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "e111de9ab45872a475611c1b857a93a38dd6d273be5fc4f1de7f16679f31d6fd",
+      "title": "The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement",
+      "authors": "Yi Duan, Ying Liu, Zirui Tang, Haodong Chen, Jun Zhou, Yumou Liu, Xu BangRui, Yukai Wu, Sidi Chen, Yuhan Zhou, Haoyu Wang, Xiaoyou Yu, Shaokun Han, Xuzhou Zhu, Le Zhou, Bolin Lu, Wei Zhou, Jiachen Liu, Nuozhou Fang, Jiaxin Tian, Ruoyu Chen, Yuxuan Li, Kai Zuo, Kaiyan Zhang, Qianyu Yang, Zijie Wang, 黎国樑, Conghui He, Zhiyuan Liu, Bowen Zhou, Zhiyuan Liu, Zhoufutu Wen, Jihua Kang, Xuanhe Zhou, Fan Wu",
+      "year": 2026,
+      "sources": [
+        "OpenAlex"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "8e035ba29408c8a44fdbd85c2871fc1c85d834e309732dc6da43792aa90e1e37",
+      "title": "Auto-RecSys: Harnessing Autonomous Research Agents for Industry-Scale Recommender System",
+      "authors": "Ming Li, Dai Li, Xuying Ning, Bo Sun, Rui Li, Yi Zhang, Silvia Gong, Xuan Cao, Rui Li, Cornelia Carapcea, Qunshu Zhang, Zhigang Wang, Yinglong Xia, Andy Wang",
+      "year": 2026,
+      "sources": [
+        "OpenAlex"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "9adde80ad9744f6e956bc69f30054c097f87069e11636d3cc5cb3bb2e6c11bdf",
+      "title": "ECDSA.Fail: Open Autoresearch for Optimizing Elliptic-Curve Point Addition in Shor's Algorithm",
+      "authors": "Jieyi Long, Theodore Pender, Zhao Huang, Manuel B. Santos, Samrendra Singh, Bartosz Naskręcki, Bit Wonka, Joe Doyle, Pierre-Luc Dallaire-Demers, Francesco Giannicola, Ruben M. L. Paschoarelli, Oli Freuler, Jackie Chia-Hsun Lee, Vasily Gnuchev, Gopi Kannappan, John Boyer, Xavier Butler, Akash Balasubramani, Jordan Newman, Bereket Dereje, Alexander Hertlein, Robert Kodra, Lucas Lévy, Shaan Patel, JT Rose, Matt Zweil, Okechukwu Wisdom, Tarek El-Eter, Edison Lee, Michael Dong, Alan Li, Anto Joseph,…",
+      "year": 2026,
+      "sources": [
+        "OpenAlex"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "ac4f0816e5f3e119bc46f3f491710f10a50fc530d887a945350b681542148564",
+      "title": "Agent-driven Model Development for RNA 3D Structure Prediction",
+      "authors": "Maciej Majewski, Laura Malo, Ariadna Montero-Blay, Matteo Marengo, Ricardo Nascimento Dos Santos, Paraskevi Gkeka, Hervé Minoux",
+      "year": 2026,
+      "sources": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "687afd5bfa7ceeff9ceb144775f947d4ab6bdb48f0576cf090ad3e08af4e435b",
+      "title": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?",
+      "authors": "Yuqiao Tan, Shizhu He, Jun Zhao, Kang Liu",
+      "year": 2026,
+      "sources": [
+        "OpenAlex"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "994c37ff3368fe51029bbe6992cb683d9e9d47d9cb0659d1ef3688d1066a05fb",
+      "title": "Qiushi Engine on AstaBench E2E-Bench-Hard",
+      "authors": "Wenhao Li, Shuxing Yang, Fujia Chen, Jincheng Mi, Yuang Pan, Rui Zhao, Zichen Li, Junyao Wu, Shenzhan Hong, Yaqi Li, Yize Wang, Kaihao Zhu, Taowen Deng, Junjie Yang, Hongsheng Chen, Yihao Yang",
+      "year": 2026,
+      "sources": [
+        "OpenAlex"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "2aead7951cdd5d7f9b41309232d9115418d0b32c67afc384ab331c5c228ebd47",
+      "title": "Agentic ML Exploration (A-MLE) for Ads Ranking",
+      "authors": "Erwin Gao, Vinodh Kumar Sunkara, Jingyi Guan, Qinjin Jia, Heng Xu, Xiang Ji, Sherman Wong, Surya Teja Chavali, Pratik Vaishnavi, Aryan Pandhi, Xiaoyu Deng, Zhaodong Wang, Samarth Inani, Fan Yang, Jakob Moberg, Zoe Zu, Nicolas Bievre, Sami Khenissi, Amit Jaspal, Ehsan Fakharizadi, S Viswanathan, Dorothy Sun, Abishek Vanam, Sneha Iyer, Sheela Yadawad, Wenjie Chen, Gaby Nahum, Junhua Gu, Peter Chu, Yucheng Liu, Xin Zhao, Vitor Cid, Chaorong Chen, Vijay Pappu, Ashwin Kumar, Wenlin Chen, Ben Schulte…",
+      "year": 2026,
+      "sources": [
+        "OpenAlex"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "57d786c9c55d272be79462f7febefe176e85b3c450e87d5ea6c0c35684e60487",
+      "title": "Book of Abstracts, DARIAH AE 2026 | Digital Arts and Humanities With and For Society: Building Infrastructures of Engagement",
+      "authors": "Digital Research Infrastructure for the Arts and Humanities, Susan Schreibman, Edward J. Gray, Maria Ilvanidou",
+      "year": 2026,
+      "sources": [
+        "OpenAlex"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "af2c88ad3d95b269c5d37df43dbd7e013b04894a4c1d68470d56d5b2229bdbc7",
+      "title": "MetaRSI / RSI2: A Meta-Recursive Self-Improving System for Recursive Self-Improving Systems Themselves",
+      "authors": "Zihan Tan, Leixin Sun, Zitong Shi, Yitao Liu, Jiajun Wu, Nathaniel Brooks, Jiaru Qian, Xiaoran Shang, Suyuan Huang, Yi Ding, Yangxu Liao, Mukai Li, Qiushi Sun, Shudong Liu, Xuankun Rong, Xiaohang Yu, Zhuo Chen, Hejia Geng, Chenxin Li, Aozhou Wang, Zengji Tu, Robert Tang, Yuxin Zhan, Eric Jiang, Yuxin Wu, Jianqing Zhang, Xiao Liang, Fang Wu, Haochi Zhang, Alexander Marlow, Guancheng Wan",
+      "year": 2026,
+      "sources": [
+        "OpenAlex"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "c53aee8a41bd79bf3f19f8fc1f92f6e6765a49ac0b1a03359a418087fe0dfc4a",
+      "title": "Transforming Science with Large Language Models: A Survey on AI-assisted Scientific Discovery, Experimentation, Content Generation, and Evaluation",
+      "authors": "Steffen Eger, Yong Cao, Jennifer D'Souza, Andreas Geiger, Christian Greisinger, Stephanie Gross, Yufang Hou, Brigitte Krenn, Anne Lauscher, Yizhi Li, Chenghua Lin, Nafise Moosavi, Wei Zhao, Tristan Miller",
+      "year": 2026,
+      "sources": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "status": "retrieved"
+    },
+    {
+      "id": "5b22ae3fe61e5a796e8a996e317ecc72979a216302d8ccfb7428822f34d9c996",
+      "title": "Generative artificial intelligence for nanomaterial discovery and nanoengineering: From data-driven design to autonomous laboratories",
+      "authors": "Vilas A. Chavan",
+      "year": 2026,
+      "sources": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "status": "retrieved"
+    }
+  ],
+  "currentActivity": {
+    "label": "Screening candidate papers",
+    "detail": "Assessing 0 of 64 titles and abstracts.",
+    "startedAt": 1790051668984
+  }
+}

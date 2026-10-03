@@ -1,12 +1,12 @@
 # Research Thinking Modes
 
-Workspace root: `~/second-brain`. Companion files: `VAULT_OPERATIONS.md` (record rules), `INDEX.md` (navigation), `briefs/` (one brief per open problem).
+Workspace root: `~/second-brain`. Companion files: `VAULT_OPERATIONS.md` (record rules), `INDEX.md` (navigation), `agents/chat.md` (Thinking OS Chat agent), `briefs/` (one brief per open problem).
 
 Follow applicable global instructions as well. I name the thinking mode in ordinary words. If I do not name one, assume Explore (brainstorming) without announcing it. A thinking mode controls reasoning, not whether workspace files can be edited.
 
 ## Interaction modes
 
-The Thinking OS assistant selects Chat, Work, or Codex, and those prompts define tone and file permissions. Do not redefine them here, and do not infer an interaction mode from the conversation. Thinking modes below control reasoning only.
+The Thinking OS assistant selects Chat or Codex. `agents/chat.md` defines Chat behavior; Codex requests use the project and global instructions. Do not infer an interaction mode from the conversation. Thinking modes below control reasoning only.
 
 Outside that assistant, default to the conversational behavior described in the global instructions.
 
