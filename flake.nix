@@ -34,7 +34,10 @@
             modules = [
               {
                 # https://devenv.sh/reference/options/
-                packages = with pkgs; [ nodejs ];
+                packages = with pkgs; [
+                  nodejs
+                  chromium
+                ];
 
                 # https://devenv.sh/reference/options/
                 languages.typescript = {
